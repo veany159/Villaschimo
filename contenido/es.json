@@ -123,8 +123,8 @@
     "muy_seguido": "Ya publicaste hace un momento. Espera un poco antes de escribir otra vez."
   },
   "inicio": {
-    "titulo_seo": "Villa Chimo · Casa frente al mar en Chimo, Cabo Corrientes, Jalisco",
-    "descripcion_seo": "Casa completa frente a la playa de Chimo, un pueblo de 280 habitantes en Cabo Corrientes, Jalisco, a 2 h 30 de lancha de Puerto Vallarta. Dos recámaras, alberca privada, para cuatro personas. Reserva directa.",
+    "titulo_seo": "Villa Chimo: casa frente al mar en Chimo, Jalisco",
+    "descripcion_seo": "Casa completa frente a la playa de Chimo, Cabo Corrientes. Dos recámaras, alberca privada, para cuatro personas. A 2 h 30 de lancha de Puerto Vallarta.",
     "hero": {
       "ubica": "Villa Chimo · Chimo, Cabo Corrientes",
       "titulo": "Aquí el ruido más fuerte son las olas del mar.",
@@ -345,8 +345,8 @@
     ]
   },
   "chimo": {
-    "titulo_seo": "Chimo, Cabo Corrientes, Jalisco: cómo llegar, qué hay y cuándo venir",
-    "descripcion_seo": "Chimo es un pueblo pesquero de 280 habitantes en Cabo Corrientes, Jalisco, a 30 km de Puerto Vallarta. Se llega en 2 h 30 de lancha o por terracería desde El Tuito. Qué hay, qué no hay y cuándo conviene venir.",
+    "titulo_seo": "Chimo, Cabo Corrientes: cómo llegar y qué hay",
+    "descripcion_seo": "Chimo es un pueblo pesquero de 280 habitantes en Cabo Corrientes, a 30 km de Puerto Vallarta. Cómo llegar en lancha o por terracería, y qué hay y qué no.",
     "hero_titulo": "Chimo",
     "hero_texto": "Un pueblo pesquero de Cabo Corrientes, en el extremo sur de la Bahía de Banderas. Doscientas ochenta personas y una playa que casi siempre está sola.",
     "secciones": [
@@ -424,8 +424,8 @@
     }
   },
   "experiencias_pagina": {
-    "titulo_seo": "Qué hacer en Chimo y Cabo Corrientes: ballenas, cascadas, pesca y kayaks",
-    "descripcion_seo": "Avistamiento de ballenas del 8 de diciembre al 23 de marzo, cascadas de Cabo Corrientes en temporada de lluvia, pesca de pulpo, kayaks, cotorras y guacamayas. Cada actividad con su temporada y quién la opera.",
+    "titulo_seo": "Qué hacer en Chimo: ballenas, cascadas y pesca",
+    "descripcion_seo": "Ballenas del 8 de diciembre al 23 de marzo, cascadas de Cabo Corrientes, pesca de pulpo, kayaks y guacamayas. Cada actividad con su temporada.",
     "hero_titulo": "Experiencias",
     "hero_texto": "Aquí las cosas tienen temporada. Las ballenas llegan el 8 de diciembre. Las cascadas bajan llenas cuando llueve. El pulpo se saca todo el año, de madrugada.",
     "dia_titulo": "Un día en Chimo",
@@ -461,15 +461,15 @@
     ]
   },
   "diario_pagina": {
-    "titulo_seo": "Diario de Chimo",
-    "descripcion_seo": "Cómo llegar a Chimo, qué llevar, cuándo ver ballenas y en qué se diferencia de Yelapa. Lo que preguntan antes de venir, contestado a detalle.",
+    "titulo_seo": "Diario de Chimo: cómo llegar, qué llevar, ballenas",
+    "descripcion_seo": "Cómo llegar a Chimo desde Puerto Vallarta, qué llevar, cuándo ver ballenas, y en qué se diferencia de Yelapa, Quimixto y Majahuitas.",
     "hero_titulo": "Diario",
     "hero_texto": "Lo que nos preguntan antes de venir, contestado a detalle.",
     "vacio": "Todavía no hay entradas publicadas."
   },
   "reservar": {
-    "titulo_seo": "Reservar en Villas Chimo",
-    "descripcion_seo": "Consulta la disponibilidad de Villa Chimo y del Depa Vallarta y solicita tus fechas. Reserva directa, sin comisión de plataforma.",
+    "titulo_seo": "Reservar Villa Chimo: disponibilidad y tarifas",
+    "descripcion_seo": "Consulta fechas libres de Villa Chimo y del Depa Vallarta. 150 USD por noche más impuestos, casa completa. Reserva directa, sin comisión de plataforma.",
     "hero_titulo": "Reservar",
     "hero_texto": "Elige la casa y las fechas. Te contestamos con el precio cerrado, ya con impuestos, y cómo llegar.",
     "politicas_titulo": "Políticas",

@@ -32,14 +32,14 @@
 
 ## Páginas
 
-- [Inicio](index.html)
-- [Villa Chimo](villa-chimo.html)
-- [Depa Vallarta](depa-vallarta.html)
-- [Chimo, el pueblo](chimo.html) — cómo llegar, qué hay y qué no, alrededores, preguntas frecuentes
-- [Experiencias](experiencias.html)
-- [Diario](diario.html)
-- [Reservar](reservar.html)
-- Versión en inglés: en/
+- [Inicio](https://villaschimo.com/)
+- [Villa Chimo](https://villaschimo.com/villa-chimo.html)
+- [Depa Vallarta](https://villaschimo.com/depa-vallarta.html)
+- [Chimo, el pueblo](https://villaschimo.com/chimo.html) — cómo llegar, qué hay y qué no, alrededores, preguntas frecuentes
+- [Experiencias](https://villaschimo.com/experiencias.html)
+- [Diario](https://villaschimo.com/diario.html)
+- [Reservar](https://villaschimo.com/reservar.html)
+- Versión en inglés: https://villaschimo.com/en/
 
 ## Contacto
 

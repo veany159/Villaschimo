@@ -83,7 +83,8 @@
       "diferenciador": [
         "Lo que hace distinta a esta casa no es una amenidad. Es que no hay nadie más. Ni cuartos al lado, ni alberca compartida, ni gente de paso. Llegas, y el lugar es tuyo hasta que te vas.",
         "Y está el mar, que aquí no es paisaje: es la despensa. Los pescadores salen de madrugada y regresan con lo del día. De la ola a la cacerola, como dicen en el pueblo."
-      ]
+      ],
+      "titulo_seo": "Villa Chimo: casa con alberca privada frente al mar"
     },
     "en": {
       "nombre": "Villa Chimo",
@@ -153,7 +154,8 @@
       "diferenciador": [
         "What makes this house different is not an amenity. It is that nobody else is here. No rooms next door, no shared pool, no one passing through. You arrive, and the place is yours until you leave.",
         "And there is the ocean, which here is not scenery but a pantry. The fishermen leave before dawn and come back with the day's catch. From the wave to the pan, as they say in the village."
-      ]
+      ],
+      "titulo_seo": "Villa Chimo: beachfront house with a private pool"
     },
     "galeria": [
       "villa-alberca-piedra-playa",
@@ -239,7 +241,8 @@
           "Precio por noche",
           "Fotografías"
         ]
-      }
+      },
+      "titulo_seo": "Depa Vallarta: la escala antes y después de Chimo"
     },
     "en": {
       "nombre": "Depa Vallarta",
@@ -282,7 +285,8 @@
           "Nightly rate",
           "Photographs"
         ]
-      }
+      },
+      "titulo_seo": "Depa Vallarta: your stopover before and after Chimo"
     },
     "galeria": [],
     "portada": "",

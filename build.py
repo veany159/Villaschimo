@@ -171,6 +171,18 @@ def leer_entradas(idioma):
     return entradas
 
 
+def url_limpia(ruta):
+    """index.html sobra en una dirección: la gente enlaza a villaschimo.com/
+    y a villaschimo.com/en/, no al archivo. Quitarlo evita que Google vea
+    dos direcciones para la misma página."""
+    r = str(ruta or "").lstrip("/")
+    if r == "index.html":
+        return ""
+    if r.endswith("/index.html"):
+        return r[: -len("index.html")]
+    return r
+
+
 # ---------------------------------------------------------------- plantilla
 def cabeza(ctx, titulo, descripcion, imagen=None, canonica=""):
     cfg, L, base = ctx["cfg"], ctx["L"], ctx["base"]
@@ -181,7 +193,19 @@ def cabeza(ctx, titulo, descripcion, imagen=None, canonica=""):
     alterna = ""
     if ctx["alterna"] is not None:
         otro = L["otro_idioma"]
-        alterna = '<link rel="alternate" hreflang="%s" href="%s">' % (otro["codigo"], e(ctx["alterna"]))
+        ruta_alt = ctx.get("alterna_ruta")
+        if sitio and ruta_alt and canonica:
+            # Google solo lee hreflang con la direccion completa; las relativas las ignora.
+            # Cada pagina se apunta a si misma y a su gemela, y el espanol queda de x-default.
+            propia = "%s/%s" % (sitio, url_limpia(canonica))
+            otra = "%s/%s" % (sitio, url_limpia(ruta_alt))
+            predeterminada = propia if L["codigo"] == "es" else otra
+            alterna = ('<link rel="alternate" hreflang="%s" href="%s">'
+                       '<link rel="alternate" hreflang="%s" href="%s">'
+                       '<link rel="alternate" hreflang="x-default" href="%s">') % (
+                L["codigo"], e(propia), otro["codigo"], e(otra), e(predeterminada))
+        else:
+            alterna = '<link rel="alternate" hreflang="%s" href="%s">' % (otro["codigo"], e(ctx["alterna"]))
 
     plausible = ""
     if cfg.get("analytics", {}).get("plausible_dominio"):
@@ -190,7 +214,7 @@ def cabeza(ctx, titulo, descripcion, imagen=None, canonica=""):
 
     canon = ""
     if sitio and canonica:
-        canon = '<link rel="canonical" href="%s/%s">' % (sitio, canonica.lstrip("/"))
+        canon = '<link rel="canonical" href="%s/%s">' % (sitio, url_limpia(canonica))
 
     return f"""<!DOCTYPE html>
 <html lang="{L['codigo']}">
@@ -1171,7 +1195,7 @@ def pagina_casa(ctx, slug):
 
 </main>
 """
-    titulo = "%s · %s" % (d["nombre"], ctx["cfg"]["marca"])
+    titulo = d.get("titulo_seo") or ("%s · %s" % (d["nombre"], ctx["cfg"]["marca"]))
     return (cabeza(ctx, titulo, d["resumen"], canonica=otro_prefijo(ctx) + slug + ".html")
             + json_ld(ctx, slug) + encabezado(ctx, slug + ".html") + cuerpo + pie(ctx)
             + scripts(ctx, con_calendario=True))
@@ -1429,8 +1453,10 @@ def pagina_entrada(ctx, entrada):
     }
     if sitio:
         articulo["url"] = sitio + "/" + canon
-    return (cabeza(ctx, entrada.get("titulo", "") + " · " + ctx["cfg"]["marca"],
-                   entrada.get("resumen", ""), canonica=canon)
+    # el nombre de la marca solo cabe si el título de la entrada es corto
+    t_entrada = entrada.get("titulo", "")
+    titulo_pag = t_entrada if len(t_entrada) > 45 else (t_entrada + " · " + ctx["cfg"]["marca"])
+    return (cabeza(ctx, titulo_pag, entrada.get("resumen", ""), canonica=canon)
             + json_ld(ctx, extra=articulo)
             + encabezado(ctx, "diario.html") + cuerpo + pie(ctx) + scripts(ctx))
 
@@ -1551,7 +1577,7 @@ def llms_txt(cfg, props, urls):
 
 ## Páginas
 
-- [Inicio]({base}index.html)
+- [Inicio]({base})
 - [Villa Chimo]({base}villa-chimo.html)
 - [Depa Vallarta]({base}depa-vallarta.html)
 - [Chimo, el pueblo]({base}chimo.html) — cómo llegar, qué hay y qué no, alrededores, preguntas frecuentes
@@ -1565,6 +1591,30 @@ def llms_txt(cfg, props, urls):
 - WhatsApp: +{cfg.get('whatsapp', '')}
 - Correo: {cfg.get('correo', '')}
 """
+
+
+def revisar_etiquetas():
+    """Avisa si algún título o descripción se sale del largo que Google muestra.
+    No detiene nada: solo lo dice, para que se pueda corregir en contenido/."""
+    problemas = []
+    for carpeta, _, archivos in os.walk(RAIZ):
+        if any(x in carpeta for x in (".git", "contenido", "scripts", "assets")):
+            continue
+        for a in archivos:
+            if not a.endswith(".html"):
+                continue
+            h = open(os.path.join(carpeta, a), encoding="utf-8").read()
+            rel = os.path.relpath(os.path.join(carpeta, a), RAIZ)
+            t = re.search(r"<title>(.*?)</title>", h, re.S)
+            d = re.search(r'name="description" content="(.*?)"', h, re.S)
+            if t and len(t.group(1)) > 62:
+                problemas.append("  %s · título de %d caracteres (Google corta en ~60)" % (rel, len(t.group(1))))
+            if d and len(d.group(1)) > 160:
+                problemas.append("  %s · descripción de %d caracteres (Google corta en ~158)" % (rel, len(d.group(1))))
+    if problemas:
+        print("Etiquetas largas:")
+        for x in sorted(problemas):
+            print(x)
 
 
 def main():
@@ -1595,8 +1645,10 @@ def main():
             c["base"] = subir + ("" if codigo == "es" else "../")   # hacia la raíz del sitio
             if codigo == "es":
                 c["alterna"] = subir + "en/" + archivo
+                c["alterna_ruta"] = "en/" + archivo      # desde la raiz del sitio
             else:
                 c["alterna"] = subir + "../" + archivo
+                c["alterna_ruta"] = archivo
             return c
 
         paginas = {
@@ -1616,6 +1668,7 @@ def main():
         for entrada in ctx["entradas"]:
             c = con_alterna("diario/" + entrada["slug"] + ".html", profundidad=1)
             c["alterna"] = None  # las entradas no siempre existen en los dos idiomas
+            c["alterna_ruta"] = None
             escribir(os.path.join(carpeta, "diario", entrada["slug"] + ".html"),
                      pagina_entrada(c, entrada))
             urls.append(("" if codigo == "es" else "en/") + "diario/" + entrada["slug"] + ".html")
@@ -1637,7 +1690,7 @@ def main():
     if sitio:
         hoy = date.today().isoformat()
         entradas_xml = "".join(
-            "<url><loc>%s/%s</loc><lastmod>%s</lastmod></url>" % (sitio, u, hoy) for u in urls)
+            "<url><loc>%s/%s</loc><lastmod>%s</lastmod></url>" % (sitio, url_limpia(u), hoy) for u in urls)
         escribir(os.path.join(RAIZ, "sitemap.xml"),
                  '<?xml version="1.0" encoding="UTF-8"?>\n'
                  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">%s</urlset>' % entradas_xml)
@@ -1648,6 +1701,7 @@ def main():
 
     escribir(os.path.join(RAIZ, ".nojekyll"), "")
     escribir(os.path.join(RAIZ, "llms.txt"), llms_txt(cfg, props, urls))
+    revisar_etiquetas()
     print("Listo: %d páginas generadas." % len(urls))
 
 

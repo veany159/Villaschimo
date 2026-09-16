@@ -123,8 +123,8 @@
     "muy_seguido": "You just posted. Give it a moment before writing again."
   },
   "inicio": {
-    "titulo_seo": "Villa Chimo · A beachfront house in Chimo, Cabo Corrientes, Jalisco",
-    "descripcion_seo": "A whole house on the beach at Chimo, a village of 280 people in Cabo Corrientes, Jalisco, two and a half hours by boat from Puerto Vallarta. Two bedrooms, private pool, sleeps four. Book direct.",
+    "titulo_seo": "Villa Chimo: a beachfront house in Chimo, Jalisco",
+    "descripcion_seo": "A whole house on the beach at Chimo, Cabo Corrientes. Two bedrooms, private pool, sleeps four. Two and a half hours by boat from Puerto Vallarta.",
     "hero": {
       "ubica": "Villa Chimo · Chimo, Cabo Corrientes",
       "titulo": "The loudest thing here is the ocean.",
@@ -345,8 +345,8 @@
     ]
   },
   "chimo": {
-    "titulo_seo": "Chimo, Cabo Corrientes, Jalisco: how to get there and what is there",
-    "descripcion_seo": "Chimo is a fishing village of 280 people in Cabo Corrientes, Jalisco, 30 km from Puerto Vallarta. Two and a half hours by boat, or a dirt road from El Tuito. What there is, what there isn't, and when to come.",
+    "titulo_seo": "Chimo, Cabo Corrientes: how to get there, what's there",
+    "descripcion_seo": "Chimo is a fishing village of 280 people in Cabo Corrientes, 30 km from Puerto Vallarta. How to get there by boat or dirt road, and what is there.",
     "hero_titulo": "Chimo",
     "hero_texto": "A fishing village in Cabo Corrientes, at the southern end of Banderas Bay. Two hundred and eighty people and a beach that is nearly always empty.",
     "secciones": [
@@ -424,8 +424,8 @@
     }
   },
   "experiencias_pagina": {
-    "titulo_seo": "What to do in Chimo and Cabo Corrientes: whales, waterfalls, fishing, kayaks",
-    "descripcion_seo": "Whale watching December 8 to March 23, Cabo Corrientes waterfalls in the rainy season, octopus fishing, kayaks, parrots and macaws. Each with its season and who runs it.",
+    "titulo_seo": "What to do in Chimo: whales, waterfalls and fishing",
+    "descripcion_seo": "Whales December 8 to March 23, Cabo Corrientes waterfalls, octopus fishing, kayaks and macaws. Each one with its season and who runs it.",
     "hero_titulo": "Experiences",
     "hero_texto": "Things here have a season. The whales arrive on December 8. The waterfalls run full when it rains. Octopus comes out year-round, before dawn.",
     "dia_titulo": "A day in Chimo",
@@ -461,15 +461,15 @@
     ]
   },
   "diario_pagina": {
-    "titulo_seo": "Chimo Journal",
-    "descripcion_seo": "How to get to Chimo, what to bring, when to see whales, and how it differs from Yelapa. What people ask before they come, answered properly.",
+    "titulo_seo": "Chimo Journal: getting there, what to bring, whales",
+    "descripcion_seo": "How to get to Chimo from Puerto Vallarta, what to bring, when to see whales, and how it differs from Yelapa, Quimixto and Majahuitas.",
     "hero_titulo": "Journal",
     "hero_texto": "What people ask before they come, answered properly.",
     "vacio": "No entries published yet."
   },
   "reservar": {
-    "titulo_seo": "Book Villas Chimo",
-    "descripcion_seo": "Check availability for Villa Chimo and Depa Vallarta and request your dates. Book direct, with no platform commission.",
+    "titulo_seo": "Book Villa Chimo: availability and rates in Chimo, Jalisco",
+    "descripcion_seo": "Check open dates for Villa Chimo and Depa Vallarta. 150 USD per night plus taxes, whole house. Book direct, no platform commission.",
     "hero_titulo": "Book",
     "hero_texto": "Pick the house and the dates. We come back with a firm price, tax included, and how to get here.",
     "politicas_titulo": "Policies",

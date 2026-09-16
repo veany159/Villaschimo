@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://villaschimo.com/sitemap.xml
