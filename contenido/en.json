@@ -1,0 +1,275 @@
+{
+  "_lee_esto": "All site text in English. Its twin is es.json. Change one, change the other.",
+
+  "codigo": "en",
+  "nombre_idioma": "English",
+  "otro_idioma": { "codigo": "es", "nombre": "Español", "prefijo": "" },
+
+  "menu": [
+    { "texto": "Home", "url": "index.html" },
+    { "texto": "Villa Chimo", "url": "villa-chimo.html" },
+    { "texto": "Depa Vallarta", "url": "depa-vallarta.html" },
+    { "texto": "Chimo", "url": "chimo.html" },
+    { "texto": "Experiences", "url": "experiencias.html" },
+    { "texto": "Journal", "url": "diario.html" }
+  ],
+  "cta": "Book",
+  "cta_url": "reservar.html",
+
+  "ui": {
+    "ver_disponibilidad": "Check dates",
+    "como_se_llega": "How you get here",
+    "ver_casa": "See the whole house",
+    "ver_mas": "See more",
+    "leer": "Read",
+    "llegada": "Check-in",
+    "salida": "Check-out",
+    "huespedes": "Guests",
+    "noches": "nights",
+    "noche": "night",
+    "por_noche": "per night",
+    "desde": "From",
+    "total": "Estimated total",
+    "limpieza": "Cleaning",
+    "precio_pendiente": "Rate on request",
+    "elige_fechas": "Pick your dates",
+    "elige_llegada": "Pick your arrival date",
+    "elige_salida": "Now pick your departure",
+    "no_disponible": "Those dates are not open",
+    "minimo_noches": "The minimum is {n} nights on these dates",
+    "solicitar": "Request these dates on WhatsApp",
+    "limpiar": "Clear",
+    "ocupado": "Booked",
+    "libre": "Open",
+    "hoy": "Today",
+    "actualizado": "Availability updated",
+    "mes_anterior": "Previous month",
+    "mes_siguiente": "Next month",
+    "meses": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    "dias": ["M", "T", "W", "T", "F", "S", "S"],
+    "escribir_whatsapp": "Message us on WhatsApp",
+    "volver": "Back",
+    "galeria": "Gallery",
+    "cerrar": "Close",
+    "imagen_anterior": "Previous image",
+    "imagen_siguiente": "Next image",
+    "menu_abrir": "Open menu",
+    "menu_cerrar": "Close menu",
+    "saltar": "Skip to content"
+  },
+
+  "comentarios": {
+    "titulo": "From people who have stayed",
+    "intro": "If you stayed in either house, tell us here. It posts right away.",
+    "nombre": "Your name",
+    "lugar": "Where you came from",
+    "lugar_ph": "Vancouver, Austin, Mexico City…",
+    "mensaje": "Your comment",
+    "mensaje_ph": "What you took away from Chimo.",
+    "calificacion": "Rating",
+    "casa": "Which house did you stay in?",
+    "enviar": "Post comment",
+    "enviando": "Posting…",
+    "gracias": "Done. Thank you for writing.",
+    "error": "Could not post. Please try again in a moment.",
+    "vacio": "No comments yet. If you have been here, be the first to write one.",
+    "sin_configurar": "Comments go live in the next few days. In the meantime, message us on WhatsApp and we will gladly post what you tell us.",
+    "faltan_campos": "Your name or your comment is missing.",
+    "muy_largo": "That comment is too long. 800 characters maximum.",
+    "muy_seguido": "You just posted. Give it a moment before writing again."
+  },
+
+  "inicio": {
+    "titulo_seo": "Villas Chimo · A house on the water in Chimo, Cabo Corrientes",
+    "descripcion_seo": "A whole two-bedroom house in Chimo, a fishing village of 280 people in Cabo Corrientes, Jalisco, reached by open boat from Boca de Tomatlán. Book direct, no middlemen.",
+    "hero": {
+      "titulo": "Villa Chimo",
+      "texto": "A two-bedroom house in a town of 280 people, two and a half hours by boat from Puerto Vallarta. No resort, no nightlife, no paved road to the door.",
+      "sello_numero": "280",
+      "sello_texto": "People"
+    },
+    "datos": [
+      { "n": "2", "t": "Bedrooms" },
+      { "n": "2½", "t": "Baths" },
+      { "n": "1", "t": "Stone pool" },
+      { "n": "0", "t": "Neighbours in sight" }
+    ],
+    "casa": {
+      "etiqueta": "The house",
+      "titulo": "This house started as a way back",
+      "firma": "— The owner"
+    },
+    "casas": {
+      "etiqueta": "Where you sleep",
+      "titulo": "Two houses, one trip"
+    },
+    "llegar": {
+      "etiqueta": "How you get here",
+      "titulo": "Thirty kilometres of coast, three ways to cover them",
+      "aviso": "The last boat leaves in the afternoon. If you land later than that, sleep at Depa Vallarta and travel in the morning. We arrange the boat."
+    },
+    "pueblo": {
+      "etiqueta": "The village",
+      "titulo": "Chimo",
+      "texto": "A fishing village in Cabo Corrientes, at the southern end of Banderas Bay. About 280 people live here and the catch is octopus. The beaches stay empty most of the year because getting here takes effort, and that is the point.",
+      "enlace": "Meet the village and its people"
+    },
+    "experiencias": {
+      "etiqueta": "Experiences",
+      "titulo": "What there is to do, and when you can do it",
+      "enlace": "See all experiences"
+    },
+    "ano": {
+      "etiqueta": "When to come",
+      "titulo": "The year in Chimo"
+    },
+    "diario": {
+      "etiqueta": "Journal",
+      "titulo": "What people ask before they come",
+      "enlace": "Read the Journal"
+    },
+    "cierre": {
+      "titulo": "See you in Chimo?",
+      "texto": "Write to us and we will tell you what dates are open, what it costs, and how we get you here from the airport."
+    }
+  },
+
+  "rutas": [
+    {
+      "n": "ROUTE 01",
+      "titulo": "Panga from Boca de Tomatlán",
+      "filas": [["Departs", "Boca de Tomatlán"], ["From the airport", "40 min by taxi"], ["Service", "8:00 am – 6:30 pm"], ["Best for", "Couples and solo travellers"]]
+    },
+    {
+      "n": "ROUTE 02",
+      "titulo": "Private boat from Vallarta",
+      "filas": [["Departs", "Marina Vallarta"], ["Duration", "2 h 30 min"], ["Luggage", "No practical limit"], ["Best for", "Groups and families"]]
+    },
+    {
+      "n": "ROUTE 03",
+      "titulo": "Dirt road via El Tuito",
+      "filas": [["Departs", "El Tuito, 46 km from PV"], ["Duration", "1 h + 3 h of dirt road"], ["Vehicle", "High-clearance truck"], ["Best for", "Making the trip part of the trip"]]
+    }
+  ],
+
+  "calendario_ano": {
+    "filas": [
+      { "nombre": "Humpback whales", "color": "mar", "tramos": [[1, 2, "Official season"], [3, 1, "to the 23rd"], [12, 1, "Dec 8"]] },
+      { "nombre": "Olive ridley turtles", "color": "selva", "tramos": [[1, 2, "Nesting"], [5, 8, "Nesting and releases at Mayto"]] },
+      { "nombre": "Rain and waterfalls", "color": "agua", "tramos": [[6, 5, "Rivers and waterfalls running"]] },
+      { "nombre": "Season", "color": "teja", "tramos": [[1, 4, "High"], [5, 6, "Low · long stays and retreats"], [11, 2, "High"]] }
+    ],
+    "meses_cortos": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+  },
+
+  "chimo": {
+    "titulo_seo": "Chimo, Jalisco: how to get there, what is there, when to come",
+    "descripcion_seo": "Chimo is a fishing village of 280 people in Cabo Corrientes, 30 km from Puerto Vallarta. How to get there by boat or dirt road, what there is and what there isn't, and when to come.",
+    "hero_titulo": "Chimo",
+    "hero_texto": "A fishing village in Cabo Corrientes, at the southern end of Banderas Bay.",
+    "secciones": [
+      {
+        "etiqueta": "What this place is",
+        "titulo": "Two hundred and eighty people and thirty kilometres of coast",
+        "parrafos": [
+          "Chimo is a locality in the municipality of Cabo Corrientes, Jalisco. About 280 people live here year-round, though the number rises during fishing season and if you count the nearby ranches. It sits roughly 30 kilometres south of Puerto Vallarta along the coastline.",
+          "You hear the ocean all day. Fishing is the main activity and what gets sold is octopus and fish. The village pier has been half-built for more than twenty years, which limits how much can be landed. There is a health post, though there is rarely a doctor there.",
+          "The beaches stay empty most of the year because getting here takes effort. That is exactly the point."
+        ]
+      }
+    ],
+    "hay_no_hay": {
+      "titulo": "What there is and what there isn't",
+      "intro": "We would rather tell you now than have you find out on arrival.",
+      "hay_titulo": "There is",
+      "no_hay_titulo": "There isn't"
+    },
+    "gente": {
+      "etiqueta": "The people",
+      "titulo": "Who lives in Chimo",
+      "texto": "This section will carry portraits and names of the people of the village: who takes you out in the boat, who cooks, who guides you to the waterfalls. It is the one thing no other house on this coast can copy, which is why it is worth doing properly rather than quickly.",
+      "pendiente": "Photo session pending."
+    },
+    "alrededores": {
+      "etiqueta": "Nearby",
+      "titulo": "What is close",
+      "items": [
+        { "nombre": "Yelapa", "texto": "The most visited village on the south shore. Same water, far more people." },
+        { "nombre": "Quimixto", "texto": "A waterfall and horseback rides. Written up as the most untouched village in Mexico." },
+        { "nombre": "Majahuitas", "texto": "A small beach reachable only by sea." },
+        { "nombre": "Las Ánimas", "texto": "First stop on the corridor, with beach restaurants." },
+        { "nombre": "Playa Corrales", "texto": "Heavier surf, and a lighthouse built in 1902." },
+        { "nombre": "Tehuamixtle", "texto": "A bay between cliffs, known for its oysters. A shrimp boat that sank in 1920 is dived here." },
+        { "nombre": "Mayto", "texto": "An open 12 km beach with a sea turtle camp running since 2005." },
+        { "nombre": "El Tuito", "texto": "The municipal seat at 1,085 m, five to ten degrees cooler. Panela cheese, coffee, honey and raicilla." }
+      ]
+    },
+    "llevar": {
+      "etiqueta": "Before you come",
+      "titulo": "What to bring",
+      "items": [
+        "Cash in pesos. There is no ATM.",
+        "Any medication you need. There is no pharmacy.",
+        "Repellent and sunscreen.",
+        "Closed shoes if you plan to walk to the waterfalls.",
+        "A power bank.",
+        "A dry bag if you are taking gear out on the boat."
+      ]
+    }
+  },
+
+  "experiencias_pagina": {
+    "titulo_seo": "Experiences in Chimo and Cabo Corrientes",
+    "descripcion_seo": "Kayaks, whale watching, octopus fishing, waterfalls and the raicilla route. Each one with its season, its duration and who runs it.",
+    "hero_titulo": "Experiences",
+    "hero_texto": "Each one with its season, its duration and who runs it. An activity with a date on it is a reason to choose the week.",
+    "dia_titulo": "A day in Chimo",
+    "dia": [
+      ["06:30", "The fishermen's boat leaves. If you are going, you are up before that."],
+      ["09:00", "Breakfast on the terrace with whatever came in."],
+      ["11:00", "Kayak to the next cove, before the wind comes up."],
+      ["14:00", "Lunch at one of the village kitchens."],
+      ["16:30", "Pool, hammock, or the walk to the lookout."],
+      ["19:00", "The wood oven gets lit."],
+      ["21:00", "You hear the ocean and nothing else."]
+    ]
+  },
+
+  "diario_pagina": {
+    "titulo_seo": "Chimo Journal",
+    "descripcion_seo": "How to get to Chimo, what to bring, when to see whales, and how it differs from Yelapa. What people ask before they come, answered properly.",
+    "hero_titulo": "Journal",
+    "hero_texto": "What people ask before they come, answered properly.",
+    "vacio": "No entries published yet."
+  },
+
+  "reservar": {
+    "titulo_seo": "Book Villas Chimo",
+    "descripcion_seo": "Check availability for Villa Chimo and Depa Vallarta and request your dates. Book direct, with no platform commission.",
+    "hero_titulo": "Book",
+    "hero_texto": "Pick the house and the dates. We come back with a firm price and how to get here.",
+    "politicas_titulo": "Policies",
+    "politicas": [
+      ["Minimum stay", "3 nights in low season, 5 in high, 7 over New Year."],
+      ["Arrival", "Tied to the boat schedule, not a fixed hour. You arrive, you go in."],
+      ["Deposit", "30 % on booking, the rest 15 days before."],
+      ["Cancellation", "Full refund at 30 days, 50 % at 15 days, none after that."],
+      ["Weather", "If the port authority closes the harbour, you move your dates at no cost."],
+      ["Extra guests", "The base rate covers the listed capacity. Ask us about additional people."],
+      ["Events", "Weddings and parties by separate quote only. A village of 280 people cannot absorb an event unannounced."],
+      ["Pets", "Ask us."]
+    ],
+    "nota_pago": "We do not take card payments on the site yet. You request the dates, we confirm availability and price, and the deposit is made by bank transfer. No platform commission."
+  },
+
+  "pie": {
+    "descripcion": "Chimo, Cabo Corrientes, Jalisco, Mexico. Book direct, no middlemen.",
+    "columnas": [
+      { "titulo": "The houses", "enlaces": [["Villa Chimo", "villa-chimo.html"], ["Depa Vallarta", "depa-vallarta.html"], ["Book", "reservar.html"]] },
+      { "titulo": "The place", "enlaces": [["Chimo", "chimo.html"], ["Experiences", "experiencias.html"], ["Journal", "diario.html"]] }
+    ],
+    "contacto_titulo": "Contact",
+    "legal": ["Privacy notice", "Booking terms"],
+    "derechos": "Villas Chimo"
+  }
+}

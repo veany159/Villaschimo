@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Villas Chimo</title>
+<meta name="description" content="Check availability for Villa Chimo and Depa Vallarta and request your dates. Book direct, with no platform commission.">
+
+<link rel="alternate" hreflang="es" href="../reservar.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Book Villas Chimo">
+<meta property="og:description" content="Check availability for Villa Chimo and Depa Vallarta and request your dates. Book direct, with no platform commission.">
+<meta property="og:image" content="../assets/img/og-villas-chimo.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#EFEAE0">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..600&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+
+</head>
+<body>
+<a class="saltar" href="#contenido">Skip to content</a>
+<header class="head">
+<div class="u">
+  <a class="marca" href="index.html">Villas Chimo<span>Cabo Corrientes</span></a>
+  <button class="hamb" aria-expanded="false" aria-controls="nav-principal"
+          aria-label="Open menu"
+          data-abrir="Open menu" data-cerrar="Close menu">
+    <svg viewBox="0 0 18 14" aria-hidden="true"><g stroke="currentColor" stroke-width="1.5"><line x1="0" y1="1" x2="18" y2="1"/><line x1="0" y1="7" x2="18" y2="7"/><line x1="0" y1="13" x2="18" y2="13"/></g></svg>
+  </button>
+  <nav class="nav" id="nav-principal"><a href="index.html">Home</a><a href="villa-chimo.html">Villa Chimo</a><a href="depa-vallarta.html">Depa Vallarta</a><a href="chimo.html">Chimo</a><a href="experiencias.html">Experiences</a><a href="diario.html">Journal</a></nav>
+  <a class="idioma" href="../reservar.html" hreflang="es">Español</a>
+  <a class="btn" href="reservar.html">Book</a>
+</div>
+</header>
+<main id="contenido">
+<section class="hero chico">
+  <img src="../assets/img/villa-alberca-piedra-playa.webp" srcset="../assets/img/villa-alberca-piedra-playa-800.webp 800w, ../assets/img/villa-alberca-piedra-playa.webp 1600w" sizes="(max-width:860px) 100vw, 1600px" alt="Vista desde arriba de la alberca de piedra de Villa Chimo, el techo de teja y la playa de Chimo al fondo" class=""  decoding="async">
+  <span class="velo"></span>
+  <div class="u">
+    <h1>Book</h1>
+    <p class="sub">Pick the house and the dates. We come back with a firm price and how to get here.</p>
+  </div>
+</section>
+
+<section class="pad" id="calendario">
+<div class="u">
+  <div class="encabezado">
+    <h2 class="h2">Pick your dates</h2>
+    <p class="nota" data-actualizado></p>
+  </div>
+  <div class="barra" style="border:1px solid var(--linea-suave);margin-bottom:26px">
+    <div class="u" style="padding-left:22px;padding-right:22px;max-width:none">
+      <div class="campo">
+        <span class="k">House</span>
+        <select class="v" data-selector-casa aria-label="House"><option value="villa-chimo" selected>Villa Chimo</option><option value="depa-vallarta">Depa Vallarta</option></select>
+      </div>
+      <div class="campo">
+        <span class="k">Check-in</span>
+        <button type="button" class="v vacio" data-barra-llegada data-ir-calendario>Pick your dates</button>
+      </div>
+      <div class="campo">
+        <span class="k">Check-out</span>
+        <button type="button" class="v vacio" data-barra-salida data-ir-calendario>Pick your dates</button>
+      </div>
+      <div class="campo">
+        <span class="k">Guests</span>
+        <select class="v" data-selector-huespedes aria-label="Guests"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option></select>
+      </div>
+    </div>
+  </div>
+
+  <div class="cal-wrap" data-calendario data-casa="villa-chimo" data-base="../">
+    <div class="cal-cab">
+      <button type="button" data-mes="-1" aria-label="Previous month">&#8592;</button>
+      <strong data-rango-meses style="font-family:var(--serif);font-size:19px;font-weight:400;text-transform:capitalize"></strong>
+      <button type="button" data-mes="1" aria-label="Next month">&#8594;</button>
+    </div>
+    <div class="cal-meses" data-meses></div>
+    <div class="cal-leyenda">
+      <span><i class="l"></i>Open</span>
+      <span><i class="o"></i>Booked</span>
+      <span><i class="s"></i>Pick your dates</span>
+    </div>
+    <div class="resumen" data-resumen></div>
+  </div>
+</div>
+</section>
+
+<section class="pad pad-top0">
+  <div class="u">
+    <div class="encabezado"><h2 class="h2">Policies</h2></div>
+    <table class="ficha"><tr><th>Minimum stay</th><td>3 nights in low season, 5 in high, 7 over New Year.</td></tr><tr><th>Arrival</th><td>Tied to the boat schedule, not a fixed hour. You arrive, you go in.</td></tr><tr><th>Deposit</th><td>30 % on booking, the rest 15 days before.</td></tr><tr><th>Cancellation</th><td>Full refund at 30 days, 50 % at 15 days, none after that.</td></tr><tr><th>Weather</th><td>If the port authority closes the harbour, you move your dates at no cost.</td></tr><tr><th>Extra guests</th><td>The base rate covers the listed capacity. Ask us about additional people.</td></tr><tr><th>Events</th><td>Weddings and parties by separate quote only. A village of 280 people cannot absorb an event unannounced.</td></tr><tr><th>Pets</th><td>Ask us.</td></tr></table>
+    <p class="lead" style="margin-top:26px">We do not take card payments on the site yet. You request the dates, we confirm availability and price, and the deposit is made by bank transfer. No platform commission.</p>
+    <p style="margin-top:26px">
+      <a class="btn claro" href="https://wa.me/5213221234567" target="_blank" rel="noopener">Message us on WhatsApp</a>
+    </p>
+  </div>
+</section>
+
+<section class="pad fondo-cal2" id="comentarios" data-comentarios>
+<div class="u">
+  <div class="encabezado">
+    <h2 class="h2">From people who have stayed</h2>
+    <p class="lead">If you stayed in either house, tell us here. It posts right away.</p>
+  </div>
+  <div class="coms">
+    <div class="com-lista" data-com-lista aria-live="polite"></div>
+    <form class="form" data-com-form novalidate>
+      <div class="dos">
+        <div class="campo">
+          <label for="c-nombre">Your name</label>
+          <input id="c-nombre" name="nombre" type="text" maxlength="80" required autocomplete="name">
+        </div>
+        <div class="campo">
+          <label for="c-lugar">Where you came from</label>
+          <input id="c-lugar" name="lugar" type="text" maxlength="80" placeholder="Vancouver, Austin, Mexico City…">
+        </div>
+      </div>
+      <div class="campo">
+        <label for="c-casa">Which house did you stay in?</label>
+        <select id="c-casa" name="casa"><option value="Villa Chimo">Villa Chimo</option><option value="Depa Vallarta">Depa Vallarta</option></select>
+      </div>
+      <div class="campo">
+        <span class="label" style="display:block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--arena);font-weight:700;margin-bottom:7px">Rating</span>
+        <div class="estrellas-input" data-estrellas><button type="button" data-valor="1" aria-label="1/5">★</button><button type="button" data-valor="2" aria-label="2/5">★</button><button type="button" data-valor="3" aria-label="3/5">★</button><button type="button" data-valor="4" aria-label="4/5">★</button><button type="button" data-valor="5" aria-label="5/5">★</button></div>
+      </div>
+      <div class="campo">
+        <label for="c-texto">Your comment</label>
+        <textarea id="c-texto" name="texto" maxlength="800" required placeholder="What you took away from Chimo."></textarea>
+      </div>
+      <div class="trampa" aria-hidden="true">
+        <label for="c-web">No llenar</label>
+        <input id="c-web" name="sitio_web" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <button type="submit" class="btn">Post comment</button>
+      <p class="aviso-form" data-com-aviso role="status"></p>
+    </form>
+  </div>
+</div>
+</section>
+
+</main>
+<footer class="pie">
+<div class="u">
+  <div class="cols">
+    <div>
+      <span class="marca">Villas Chimo<span>Cabo Corrientes</span></span>
+      <p class="desc">Chimo, Cabo Corrientes, Jalisco, Mexico. Book direct, no middlemen.</p>
+    </div>
+    <div><h4>The houses</h4><ul><li><a href="villa-chimo.html">Villa Chimo</a></li><li><a href="depa-vallarta.html">Depa Vallarta</a></li><li><a href="reservar.html">Book</a></li></ul></div><div><h4>The place</h4><ul><li><a href="chimo.html">Chimo</a></li><li><a href="experiencias.html">Experiences</a></li><li><a href="diario.html">Journal</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="https://wa.me/5213221234567" rel="noopener" target="_blank">WhatsApp</a></li><li><a href="mailto:hola@villaschimo.com">hola@villaschimo.com</a></li><li><a href="https://instagram.com/villaschimo" rel="noopener" target="_blank">Instagram</a></li></ul></div>
+  </div>
+  <div class="base">
+    <span>© 2026 Villas Chimo</span>
+    <span>Privacy notice · Booking terms</span>
+    <span>Español · English</span>
+  </div>
+</div>
+</footer>
+<script>window.VC_CONFIG={"whatsapp": "5213221234567", "moneda": "MXN", "supabase": {"url": "", "clave_publica": ""}};</script>
+<script>window.VC_TEXTOS={"ver_disponibilidad": "Check dates", "como_se_llega": "How you get here", "ver_casa": "See the whole house", "ver_mas": "See more", "leer": "Read", "llegada": "Check-in", "salida": "Check-out", "huespedes": "Guests", "noches": "nights", "noche": "night", "por_noche": "per night", "desde": "From", "total": "Estimated total", "limpieza": "Cleaning", "precio_pendiente": "Rate on request", "elige_fechas": "Pick your dates", "elige_llegada": "Pick your arrival date", "elige_salida": "Now pick your departure", "no_disponible": "Those dates are not open", "minimo_noches": "The minimum is {n} nights on these dates", "solicitar": "Request these dates on WhatsApp", "limpiar": "Clear", "ocupado": "Booked", "libre": "Open", "hoy": "Today", "actualizado": "Availability updated", "mes_anterior": "Previous month", "mes_siguiente": "Next month", "meses": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "dias": ["M", "T", "W", "T", "F", "S", "S"], "escribir_whatsapp": "Message us on WhatsApp", "volver": "Back", "galeria": "Gallery", "cerrar": "Close", "imagen_anterior": "Previous image", "imagen_siguiente": "Next image", "menu_abrir": "Open menu", "menu_cerrar": "Close menu", "saltar": "Skip to content", "solicitud_saludo": "Hello, I would like to check availability at"};window.VC_CASAS={"villa-chimo": {"nombre": "Villa Chimo", "baja": 0, "alta": 0, "limpieza": 0, "temporada_alta": [["12-15", "04-30"]], "min_baja": 3, "min_alta": 5}, "depa-vallarta": {"nombre": "Depa Vallarta", "baja": 0, "alta": 0, "limpieza": 0, "temporada_alta": [["12-15", "04-30"]], "min_baja": 2, "min_alta": 2}};</script>
+<script src="../assets/js/calendario.js" defer></script>
+<script>window.VC_TEXTOS_COM={"titulo": "From people who have stayed", "intro": "If you stayed in either house, tell us here. It posts right away.", "nombre": "Your name", "lugar": "Where you came from", "lugar_ph": "Vancouver, Austin, Mexico City…", "mensaje": "Your comment", "mensaje_ph": "What you took away from Chimo.", "calificacion": "Rating", "casa": "Which house did you stay in?", "enviar": "Post comment", "enviando": "Posting…", "gracias": "Done. Thank you for writing.", "error": "Could not post. Please try again in a moment.", "vacio": "No comments yet. If you have been here, be the first to write one.", "sin_configurar": "Comments go live in the next few days. In the meantime, message us on WhatsApp and we will gladly post what you tell us.", "faltan_campos": "Your name or your comment is missing.", "muy_largo": "That comment is too long. 800 characters maximum.", "muy_seguido": "You just posted. Give it a moment before writing again."};</script>
+<script src="../assets/js/comentarios.js" defer></script>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

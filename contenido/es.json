@@ -1,0 +1,275 @@
+{
+  "_lee_esto": "Todo el texto del sitio en español. Su gemelo es en.json, con lo mismo en inglés. Si cambias algo aquí, cámbialo allá.",
+
+  "codigo": "es",
+  "nombre_idioma": "Español",
+  "otro_idioma": { "codigo": "en", "nombre": "English", "prefijo": "en/" },
+
+  "menu": [
+    { "texto": "Inicio", "url": "index.html" },
+    { "texto": "Villa Chimo", "url": "villa-chimo.html" },
+    { "texto": "Depa Vallarta", "url": "depa-vallarta.html" },
+    { "texto": "Chimo", "url": "chimo.html" },
+    { "texto": "Experiencias", "url": "experiencias.html" },
+    { "texto": "Diario", "url": "diario.html" }
+  ],
+  "cta": "Reservar",
+  "cta_url": "reservar.html",
+
+  "ui": {
+    "ver_disponibilidad": "Ver disponibilidad",
+    "como_se_llega": "Cómo se llega",
+    "ver_casa": "Ver la casa completa",
+    "ver_mas": "Ver más",
+    "leer": "Leer",
+    "llegada": "Llegada",
+    "salida": "Salida",
+    "huespedes": "Huéspedes",
+    "noches": "noches",
+    "noche": "noche",
+    "por_noche": "por noche",
+    "desde": "Desde",
+    "total": "Total estimado",
+    "limpieza": "Limpieza",
+    "precio_pendiente": "Precio a confirmar",
+    "elige_fechas": "Elige tus fechas",
+    "elige_llegada": "Elige la fecha de llegada",
+    "elige_salida": "Ahora elige la salida",
+    "no_disponible": "Esas fechas no están libres",
+    "minimo_noches": "El mínimo es de {n} noches en estas fechas",
+    "solicitar": "Solicitar estas fechas por WhatsApp",
+    "limpiar": "Limpiar",
+    "ocupado": "Ocupado",
+    "libre": "Libre",
+    "hoy": "Hoy",
+    "actualizado": "Disponibilidad actualizada el",
+    "mes_anterior": "Mes anterior",
+    "mes_siguiente": "Mes siguiente",
+    "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
+    "dias": ["L", "M", "M", "J", "V", "S", "D"],
+    "escribir_whatsapp": "Escribir por WhatsApp",
+    "volver": "Volver",
+    "galeria": "Galería",
+    "cerrar": "Cerrar",
+    "imagen_anterior": "Imagen anterior",
+    "imagen_siguiente": "Imagen siguiente",
+    "menu_abrir": "Abrir menú",
+    "menu_cerrar": "Cerrar menú",
+    "saltar": "Saltar al contenido"
+  },
+
+  "comentarios": {
+    "titulo": "Lo que dicen los que ya vinieron",
+    "intro": "Si te quedaste en alguna de las dos casas, cuéntalo aquí. Se publica al momento.",
+    "nombre": "Tu nombre",
+    "lugar": "De dónde vienes",
+    "lugar_ph": "Guadalajara, Vancouver, Ciudad de México…",
+    "mensaje": "Tu comentario",
+    "mensaje_ph": "Qué te llevaste de Chimo.",
+    "calificacion": "Calificación",
+    "casa": "¿En cuál te quedaste?",
+    "enviar": "Publicar comentario",
+    "enviando": "Publicando…",
+    "gracias": "Listo. Gracias por escribir.",
+    "error": "No se pudo publicar. Intenta otra vez en un momento.",
+    "vacio": "Todavía no hay comentarios. Si ya viniste, sé la primera persona en escribir.",
+    "sin_configurar": "Los comentarios se activan en los próximos días. Mientras tanto, escríbenos por WhatsApp y con gusto publicamos lo que nos cuentes.",
+    "faltan_campos": "Falta tu nombre o tu comentario.",
+    "muy_largo": "El comentario es demasiado largo. Máximo 800 caracteres.",
+    "muy_seguido": "Ya publicaste hace un momento. Espera un poco antes de escribir otra vez."
+  },
+
+  "inicio": {
+    "titulo_seo": "Villas Chimo · Una casa frente al mar en Chimo, Cabo Corrientes",
+    "descripcion_seo": "Casa completa de dos recámaras en Chimo, un pueblo pesquero de 280 personas en Cabo Corrientes, Jalisco. Se llega en panga desde Boca de Tomatlán. Reserva directa, sin intermediarios.",
+    "hero": {
+      "titulo": "Villa Chimo",
+      "texto": "Una casa de dos recámaras en un pueblo de 280 personas, a dos horas y media de lancha de Puerto Vallarta. No hay resort, no hay antro, no hay carretera hasta la puerta.",
+      "sello_numero": "280",
+      "sello_texto": "Habitantes"
+    },
+    "datos": [
+      { "n": "2", "t": "Recámaras" },
+      { "n": "2½", "t": "Baños" },
+      { "n": "1", "t": "Alberca de piedra" },
+      { "n": "0", "t": "Vecinos a la vista" }
+    ],
+    "casa": {
+      "etiqueta": "La casa",
+      "titulo": "Esta casa empezó como un regreso",
+      "firma": "— El dueño"
+    },
+    "casas": {
+      "etiqueta": "Dónde dormir",
+      "titulo": "Dos casas, un solo viaje"
+    },
+    "llegar": {
+      "etiqueta": "Cómo se llega",
+      "titulo": "Treinta kilómetros de costa, tres maneras de recorrerlos",
+      "aviso": "La última panga sale por la tarde. Si tu vuelo aterriza después, duerme en el Depa Vallarta y sal al día siguiente. Nosotros coordinamos la lancha."
+    },
+    "pueblo": {
+      "etiqueta": "El pueblo",
+      "titulo": "Chimo",
+      "texto": "Un pueblo pesquero de Cabo Corrientes, en el extremo sur de la Bahía de Banderas. Viven 280 personas y se pesca pulpo. Las playas se quedan vacías casi todo el año porque llegar cuesta trabajo, y ese es exactamente el punto.",
+      "enlace": "Conocer el pueblo y a su gente"
+    },
+    "experiencias": {
+      "etiqueta": "Experiencias",
+      "titulo": "Qué se puede hacer y cuándo se puede hacer",
+      "enlace": "Ver todas las experiencias"
+    },
+    "ano": {
+      "etiqueta": "Cuándo venir",
+      "titulo": "El año en Chimo"
+    },
+    "diario": {
+      "etiqueta": "Diario",
+      "titulo": "Lo que preguntan antes de venir",
+      "enlace": "Ver el Diario completo"
+    },
+    "cierre": {
+      "titulo": "¿Nos vemos en Chimo?",
+      "texto": "Escríbenos y te decimos qué fechas hay, cuánto sale y cómo te llevamos desde el aeropuerto."
+    }
+  },
+
+  "rutas": [
+    {
+      "n": "RUTA 01",
+      "titulo": "Panga desde Boca de Tomatlán",
+      "filas": [["Salida", "Boca de Tomatlán"], ["Del aeropuerto", "40 min en taxi"], ["Horario", "8:00 – 18:30"], ["Para", "Pareja o viajero solo"]]
+    },
+    {
+      "n": "RUTA 02",
+      "titulo": "Lancha privada desde Vallarta",
+      "filas": [["Salida", "Marina Vallarta"], ["Duración", "2 h 30 min"], ["Equipaje", "Sin límite práctico"], ["Para", "Grupos y familias"]]
+    },
+    {
+      "n": "RUTA 03",
+      "titulo": "Terracería vía El Tuito",
+      "filas": [["Salida", "El Tuito, 46 km de PV"], ["Duración", "1 h + 3 h de terracería"], ["Vehículo", "Camioneta alta"], ["Para", "El viaje como parte del plan"]]
+    }
+  ],
+
+  "calendario_ano": {
+    "filas": [
+      { "nombre": "Ballena jorobada", "color": "mar", "tramos": [[1, 2, "Temporada oficial"], [3, 1, "al 23"], [12, 1, "8 dic"]] },
+      { "nombre": "Tortuga golfina", "color": "selva", "tramos": [[1, 2, "Anidación"], [5, 8, "Anidación y liberación en Mayto"]] },
+      { "nombre": "Lluvias y cascadas", "color": "agua", "tramos": [[6, 5, "Ríos y cascadas con agua"]] },
+      { "nombre": "Temporada", "color": "teja", "tramos": [[1, 4, "Alta"], [5, 6, "Baja · estancias largas y retiros"], [11, 2, "Alta"]] }
+    ],
+    "meses_cortos": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+  },
+
+  "chimo": {
+    "titulo_seo": "Chimo, Jalisco: cómo llegar, qué hay y cuándo venir",
+    "descripcion_seo": "Chimo es un pueblo pesquero de 280 personas en Cabo Corrientes, a 30 km de Puerto Vallarta. Cómo llegar en panga o por terracería, qué hay y qué no, y cuándo conviene venir.",
+    "hero_titulo": "Chimo",
+    "hero_texto": "Un pueblo pesquero de Cabo Corrientes, en el extremo sur de la Bahía de Banderas.",
+    "secciones": [
+      {
+        "etiqueta": "Qué es este lugar",
+        "titulo": "Doscientas ochenta personas y treinta kilómetros de costa",
+        "parrafos": [
+          "Chimo es una localidad del municipio de Cabo Corrientes, Jalisco. Viven alrededor de 280 personas fijas, aunque la cifra sube en temporada de pesca y si se cuentan las rancherías cercanas. Está a unos 30 kilómetros de Puerto Vallarta siguiendo la línea de costa hacia el sur.",
+          "Aquí se oye el mar todo el día. La pesca es la actividad principal y lo que se comercializa es pulpo y pescado. El muelle del pueblo lleva más de veinte años a medias, lo que limita la actividad. Hay centro de salud, aunque casi nunca hay médico de planta.",
+          "Las playas se quedan vacías casi todo el año porque llegar cuesta trabajo. Ese es exactamente el punto."
+        ]
+      }
+    ],
+    "hay_no_hay": {
+      "titulo": "Lo que hay y lo que no",
+      "intro": "Preferimos decirlo antes y no que te enteres al llegar.",
+      "hay_titulo": "Sí hay",
+      "no_hay_titulo": "No hay"
+    },
+    "gente": {
+      "etiqueta": "La gente",
+      "titulo": "Quiénes viven en Chimo",
+      "texto": "Esta sección se llena con los retratos y los nombres de la gente del pueblo: quién te lleva en panga, quién cocina, quién guía a las cascadas. Es lo que ninguna otra casa de la zona puede copiar, y por eso vale la pena hacerlo bien y no con prisa.",
+      "pendiente": "Sesión de fotos pendiente."
+    },
+    "alrededores": {
+      "etiqueta": "Alrededores",
+      "titulo": "Qué hay cerca",
+      "items": [
+        { "nombre": "Yelapa", "texto": "El pueblo más visitado del corredor sur. Mismo mar, mucha más gente." },
+        { "nombre": "Quimixto", "texto": "Cascada y paseo a caballo. Se ha publicado como el pueblo más virgen de México." },
+        { "nombre": "Majahuitas", "texto": "Playa pequeña de acceso solo por mar." },
+        { "nombre": "Las Ánimas", "texto": "Primera parada del corredor, con restaurantes de playa." },
+        { "nombre": "Playa Corrales", "texto": "Oleaje fuerte para surfistas, con un faro de 1902." },
+        { "nombre": "Tehuamixtle", "texto": "Bahía entre acantilados, famosa por sus ostiones. Hay un barco camaronero hundido en 1920 que se bucea." },
+        { "nombre": "Mayto", "texto": "Playa abierta de 12 km, con campamento tortuguero desde 2005." },
+        { "nombre": "El Tuito", "texto": "Cabecera municipal a 1 085 metros, de 5 a 10 °C más fresco. Queso panela, café, miel y raicilla." }
+      ]
+    },
+    "llevar": {
+      "etiqueta": "Antes de venir",
+      "titulo": "Qué llevar",
+      "items": [
+        "Efectivo en pesos. No hay cajero.",
+        "Los medicamentos que necesites. No hay farmacia.",
+        "Repelente y bloqueador.",
+        "Zapato cerrado si piensas caminar a las cascadas.",
+        "Una batería portátil.",
+        "Bolsa seca si vas a salir en panga con equipo."
+      ]
+    }
+  },
+
+  "experiencias_pagina": {
+    "titulo_seo": "Experiencias en Chimo y Cabo Corrientes",
+    "descripcion_seo": "Kayaks, avistamiento de ballenas, pesca de pulpo, cascadas y la ruta de la raicilla. Cada actividad con su temporada, duración y quién la opera.",
+    "hero_titulo": "Experiencias",
+    "hero_texto": "Cada una con su temporada, su duración y quién la opera. Una actividad con fecha es una razón para elegir la semana.",
+    "dia_titulo": "Un día en Chimo",
+    "dia": [
+      ["06:30", "Sale la panga de los pescadores. Si vas, te levantas antes."],
+      ["09:00", "Desayuno en la terraza con lo que se pescó."],
+      ["11:00", "Kayak hasta la cala de al lado, antes de que entre el viento."],
+      ["14:00", "Comida en una de las cocinas del pueblo."],
+      ["16:30", "Alberca, hamaca, o caminata al mirador."],
+      ["19:00", "Se prende el horno de leña."],
+      ["21:00", "Se oye el mar y nada más."]
+    ]
+  },
+
+  "diario_pagina": {
+    "titulo_seo": "Diario de Chimo",
+    "descripcion_seo": "Cómo llegar a Chimo, qué llevar, cuándo ver ballenas y en qué se diferencia de Yelapa. Lo que preguntan antes de venir, contestado a detalle.",
+    "hero_titulo": "Diario",
+    "hero_texto": "Lo que preguntan antes de venir, contestado a detalle.",
+    "vacio": "Todavía no hay entradas publicadas."
+  },
+
+  "reservar": {
+    "titulo_seo": "Reservar en Villas Chimo",
+    "descripcion_seo": "Consulta la disponibilidad de Villa Chimo y del Depa Vallarta y solicita tus fechas. Reserva directa, sin comisión de plataforma.",
+    "hero_titulo": "Reservar",
+    "hero_texto": "Elige la casa y las fechas. Te contestamos con el precio cerrado y cómo llegar.",
+    "politicas_titulo": "Políticas",
+    "politicas": [
+      ["Mínimo de noches", "3 en temporada baja, 5 en alta, 7 en fin de año."],
+      ["Llegada", "Ligada al horario de la panga, no a una hora fija. Llegas y entras."],
+      ["Depósito", "30 % al reservar, el resto 15 días antes."],
+      ["Cancelación", "Reembolso total a 30 días, 50 % a 15 días, sin reembolso después."],
+      ["Clima", "Si la capitanía cierra el puerto, cambias de fecha sin costo."],
+      ["Huéspedes extra", "El precio base cubre hasta la capacidad indicada. Consulta por personas adicionales."],
+      ["Eventos", "Bodas y fiestas solo con cotización aparte. Un pueblo de 280 personas no absorbe un evento sin avisar."],
+      ["Mascotas", "Consúltanos."]
+    ],
+    "nota_pago": "Todavía no cobramos con tarjeta en el sitio. Solicitas las fechas, te confirmamos disponibilidad y precio, y el depósito se hace por transferencia. Sin comisión de plataforma."
+  },
+
+  "pie": {
+    "descripcion": "Chimo, Cabo Corrientes, Jalisco, México. Reserva directa, sin intermediarios.",
+    "columnas": [
+      { "titulo": "Las casas", "enlaces": [["Villa Chimo", "villa-chimo.html"], ["Depa Vallarta", "depa-vallarta.html"], ["Reservar", "reservar.html"]] },
+      { "titulo": "El lugar", "enlaces": [["Chimo", "chimo.html"], ["Experiencias", "experiencias.html"], ["Diario", "diario.html"]] }
+    ],
+    "contacto_titulo": "Contacto",
+    "legal": ["Aviso de privacidad", "Términos de reserva"],
+    "derechos": "Villas Chimo"
+  }
+}

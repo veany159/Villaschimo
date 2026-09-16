@@ -1,0 +1,15 @@
+{
+  "_lee_esto": "Fechas ocupadas de cada casa. Mientras no conectes Airbnb, edítalas a mano aquí: una fecha por renglón, entre comillas, formato AAAA-MM-DD, separadas por comas. La última no lleva coma. Cuando conectes Airbnb, este archivo se actualiza solo cada día y ya no hay que tocarlo.",
+  "fuente": "manual",
+  "actualizado": "",
+  "casas": {
+    "villa-chimo": {
+      "ocupadas": [],
+      "fuente": "manual"
+    },
+    "depa-vallarta": {
+      "ocupadas": [],
+      "fuente": "manual"
+    }
+  }
+}

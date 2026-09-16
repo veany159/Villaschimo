@@ -1,0 +1,174 @@
+{
+  "_lee_esto": "Las actividades que se ofrecen. Agrega o quita bloques completos (desde la llave que abre hasta la que cierra). Cuando tengas el precio real, cambia 'precio_desde' de 0 al número.",
+
+  "experiencias": [
+    {
+      "id": "kayak",
+      "icono": "kayak",
+      "destacada": true,
+      "temporada": "todo-el-ano",
+      "precio_desde": 0,
+      "es": {
+        "nombre": "Kayaks",
+        "cuando": "Todo el año",
+        "duracion": "Por hora o por día",
+        "opera": "Desde la casa",
+        "texto": "Salir remando de la playa de Chimo y bordear la costa hasta las calas que no tienen camino. El mar está tranquilo en la mañana; para mediodía se levanta el viento del noroeste y conviene regresar."
+      },
+      "en": {
+        "nombre": "Kayaks",
+        "cuando": "Year-round",
+        "duracion": "By the hour or by the day",
+        "opera": "From the house",
+        "texto": "Paddle out from Chimo beach and follow the coast to coves with no trail to them. The water is flat in the morning; by midday the northwest wind picks up and it is time to come back."
+      }
+    },
+    {
+      "id": "ballenas",
+      "icono": "ballena",
+      "destacada": true,
+      "temporada": "8 dic – 23 mar",
+      "precio_desde": 0,
+      "es": {
+        "nombre": "Avistamiento de ballenas",
+        "cuando": "8 de diciembre al 23 de marzo",
+        "duracion": "3 horas",
+        "opera": "Prestador con permiso",
+        "texto": "La ballena jorobada llega a Bahía de Banderas cada invierno a parir y criar. Las fechas son las publicadas en el Diario Oficial de la Federación, y los prestadores necesitan permiso y curso. Salimos con quien lo tiene."
+      },
+      "en": {
+        "nombre": "Whale watching",
+        "cuando": "December 8 to March 23",
+        "duracion": "3 hours",
+        "opera": "Permitted operator",
+        "texto": "Humpback whales come into Banderas Bay every winter to calve. The season dates are the ones published in Mexico's federal gazette, and operators need a permit and a certification course. We go out with someone who has both."
+      }
+    },
+    {
+      "id": "pesca",
+      "icono": "pesca",
+      "destacada": true,
+      "temporada": "todo-el-ano",
+      "precio_desde": 0,
+      "es": {
+        "nombre": "Salir a pescar pulpo",
+        "cuando": "Todo el año",
+        "duracion": "4 horas",
+        "opera": "Pescadores del pueblo",
+        "texto": "Con quien lo hace todos los días. Se sale de madrugada y se regresa a desayunar lo que se pescó. Chimo vive de esto: el pulpo y el pescado son la economía del pueblo."
+      },
+      "en": {
+        "nombre": "Octopus fishing",
+        "cuando": "Year-round",
+        "duracion": "4 hours",
+        "opera": "Village fishermen",
+        "texto": "With the people who do it every day. You leave before dawn and come back to eat what you caught. This is what Chimo lives on: octopus and fish are the village economy."
+      }
+    },
+    {
+      "id": "cascadas",
+      "icono": "cascada",
+      "destacada": true,
+      "temporada": "jun – oct",
+      "precio_desde": 0,
+      "es": {
+        "nombre": "Cascadas de Cabo Corrientes",
+        "cuando": "Junio a octubre, cuando llueve",
+        "duracion": "Medio día",
+        "opera": "Guía local",
+        "texto": "En temporada de lluvia las cascadas de la sierra bajan llenas y el monte se pone verde. Es la mejor época para caminarlas, y la más barata para venir."
+      },
+      "en": {
+        "nombre": "Cabo Corrientes waterfalls",
+        "cuando": "June to October, the rainy months",
+        "duracion": "Half a day",
+        "opera": "Local guide",
+        "texto": "In the rainy season the waterfalls in the sierra run full and the hills turn green. It is the best time to walk to them, and the cheapest time to come."
+      }
+    },
+    {
+      "id": "panga",
+      "icono": "panga",
+      "destacada": false,
+      "temporada": "todo-el-ano",
+      "precio_desde": 0,
+      "es": {
+        "nombre": "Paseo en panga por la costa sur",
+        "cuando": "Todo el año",
+        "duracion": "Medio día",
+        "opera": "Lancheros de Chimo",
+        "texto": "Yelapa, Quimixto, Majahuitas y las playas sin nombre que hay entre una y otra. Se para donde se quiera y se come donde haya cocina abierta."
+      },
+      "en": {
+        "nombre": "Boat trip along the south shore",
+        "cuando": "Year-round",
+        "duracion": "Half a day",
+        "opera": "Chimo boatmen",
+        "texto": "Yelapa, Quimixto, Majahuitas and the unnamed beaches in between. You stop where you want and eat wherever a kitchen is open."
+      }
+    },
+    {
+      "id": "aves",
+      "icono": "ave",
+      "destacada": false,
+      "temporada": "todo-el-ano",
+      "precio_desde": 0,
+      "es": {
+        "nombre": "Guacamayas y aves",
+        "cuando": "Todo el año, mejor al amanecer",
+        "duracion": "2 horas",
+        "opera": "Guía local",
+        "texto": "La selva de Cabo Corrientes empieza donde termina la playa. Las guacamayas se oyen antes de verse, y pasan en pareja a la misma hora casi todos los días."
+      },
+      "en": {
+        "nombre": "Macaws and birdlife",
+        "cuando": "Year-round, best at dawn",
+        "duracion": "2 hours",
+        "opera": "Local guide",
+        "texto": "The jungle of Cabo Corrientes starts where the beach ends. You hear the macaws before you see them, and they pass in pairs at the same hour most days."
+      }
+    },
+    {
+      "id": "tortugas",
+      "icono": "tortuga",
+      "destacada": false,
+      "temporada": "may – feb",
+      "precio_desde": 0,
+      "es": {
+        "nombre": "Liberación de tortugas en Mayto",
+        "cuando": "Golfina de mayo a febrero · verde de octubre a marzo",
+        "duracion": "Día completo, por tierra",
+        "opera": "Campamento Tortuguero Mayto",
+        "texto": "El campamento opera desde 2005 y protege cuatro especies. Recibe visitantes y voluntarios, y se puede participar en las liberaciones. Queda en la ruta terrestre, saliendo por El Tuito."
+      },
+      "en": {
+        "nombre": "Turtle release at Mayto",
+        "cuando": "Olive ridley May–February · green turtle October–March",
+        "duracion": "Full day, by road",
+        "opera": "Campamento Tortuguero Mayto",
+        "texto": "The camp has run since 2005 and protects four species. It takes visitors and volunteers, and you can take part in a release. It sits on the overland route, out through El Tuito."
+      }
+    },
+    {
+      "id": "raicilla",
+      "icono": "raicilla",
+      "destacada": false,
+      "temporada": "todo-el-ano",
+      "precio_desde": 0,
+      "es": {
+        "nombre": "Ruta de la raicilla en El Tuito",
+        "cuando": "Todo el año",
+        "duracion": "Día completo, por tierra",
+        "opera": "Tabernas de El Tuito",
+        "texto": "El Tuito está a 1 085 metros y se siente de cinco a diez grados más fresco que Vallarta. Ahí están las tabernas de raicilla, el queso panela, el café y la miel. Cabo Corrientes es parada oficial de la Ruta de la Raicilla de Jalisco."
+      },
+      "en": {
+        "nombre": "The raicilla route in El Tuito",
+        "cuando": "Year-round",
+        "duracion": "Full day, by road",
+        "opera": "El Tuito distilleries",
+        "texto": "El Tuito sits at 1,085 metres and runs five to ten degrees cooler than Vallarta. This is where the raicilla distilleries are, along with panela cheese, coffee and honey. Cabo Corrientes is an official stop on Jalisco's Raicilla Route."
+      }
+    }
+  ]
+}
