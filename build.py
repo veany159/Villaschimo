@@ -37,6 +37,12 @@ def e(s):
     return _html.escape(str("" if s is None else s), quote=True)
 
 
+def parrafos(texto, clase="lead"):
+    """Convierte un texto con renglones en blanco en varios párrafos."""
+    trozos = [t.strip() for t in str(texto or "").split("\n\n") if t.strip()]
+    return "".join('<p class="%s">%s</p>' % (clase, e(t)) for t in trozos)
+
+
 def slugificar(s):
     s = re.sub(r"[^\w\s-]", "", str(s).lower(), flags=re.UNICODE)
     return re.sub(r"[\s_]+", "-", s).strip("-")
@@ -543,6 +549,37 @@ def bloque_publico(ctx, fondo=""):
 </section>"""
 
 
+def bloque_faq(ctx, fondo="fondo-cal2"):
+    """Bloque citable. Escrito para que un buscador o un asistente de IA pueda
+    tomar la respuesta completa y citar el sitio: pregunta literal como
+    encabezado, dato numérico en la primera oración."""
+    L = ctx["L"]
+    F = L["faq"]
+    items = "".join(
+        '<div class="faq-item"><h3>%s</h3><p>%s</p></div>' % (e(x["p"]), e(x["r"]))
+        for x in F["items"])
+    datos = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": x["p"],
+             "acceptedAnswer": {"@type": "Answer", "text": x["r"]}}
+            for x in F["items"]
+        ],
+    }
+    schema = '<script type="application/ld+json">%s</script>' % json.dumps(datos, ensure_ascii=False)
+    return f"""<section class="pad {fondo}" id="preguntas">
+<div class="u">
+  <div class="encabezado">
+    <p class="lbl">{e(F['etiqueta'])}</p>
+    <h2 class="h2">{e(F['titulo'])}</h2>
+  </div>
+  <div class="faqs">{items}</div>
+</div>
+{schema}
+</section>"""
+
+
 def bloque_precio(ctx):
     L, cfg, props = ctx["L"], ctx["cfg"], ctx["props"]
     R, U = L["reservar"], L["ui"]
@@ -734,37 +771,94 @@ def bloque_calendario(ctx, casa_inicial="villa-chimo", con_selector=True):
 </section>"""
 
 
-def json_ld(ctx, slug=None):
+def json_ld(ctx, slug=None, extra=None):
+    """Datos estructurados. Es lo que leen Google y los asistentes de IA antes
+    que el texto, y lo que decide si te citan a ti o a otro."""
     cfg, L, props = ctx["cfg"], ctx["L"], ctx["props"]
     sitio = (cfg.get("sitio_url") or "").rstrip("/")
+    tel = "+" + cfg.get("whatsapp", "") if cfg.get("whatsapp") else None
+    bloques = []
+
     if slug:
         p = props[slug]
         d = p[L["codigo"]]
-        datos = {
+        f = p.get("ficha", {})
+        t = p.get("tarifas", {})
+        amen = []
+        for g in d.get("amenidades", []):
+            for x in g["items"]:
+                if "confirmar" in x.lower() or "confirmed" in x.lower():
+                    continue
+                amen.append({"@type": "LocationFeatureSpecification", "name": x, "value": True})
+
+        casa = {
             "@context": "https://schema.org",
-            "@type": "LodgingBusiness",
+            "@type": "VacationRental",
             "name": d["nombre"],
             "description": d["resumen"],
-            "address": {"@type": "PostalAddress", "addressLocality": d["lugar"],
+            "address": {"@type": "PostalAddress", "addressLocality": d["lugar"].split(",")[0].strip(),
                         "addressRegion": "Jalisco", "addressCountry": "MX"},
-            "numberOfRooms": p.get("ficha", {}).get("recamaras") or None,
-            "telephone": "+" + cfg.get("whatsapp", ""),
+            "containsPlace": {
+                "@type": "Accommodation",
+                "occupancy": {"@type": "QuantitativeValue", "value": f.get("huespedes") or None},
+                "numberOfBedrooms": f.get("recamaras") or None,
+                "numberOfBathroomsTotal": f.get("banos") or None,
+            },
+            "amenityFeature": amen or None,
+            "petsAllowed": True if slug == "villa-chimo" else None,
+            "telephone": tel,
         }
+        if t.get("baja"):
+            casa["priceRange"] = "$%s %s" % (t["baja"], cfg.get("moneda", "MXN"))
+            casa["offers"] = {
+                "@type": "Offer",
+                "price": t["baja"],
+                "priceCurrency": cfg.get("moneda", "MXN"),
+                "availability": "https://schema.org/InStock",
+                "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "price": t["baja"],
+                    "priceCurrency": cfg.get("moneda", "MXN"),
+                    "unitCode": "DAY",
+                    "valueAddedTaxIncluded": False,
+                },
+            }
         if sitio:
-            datos["url"] = sitio + "/" + otro_prefijo(ctx) + slug + ".html"
-            datos["image"] = sitio + "/assets/img/og-villas-chimo.jpg"
+            casa["url"] = sitio + "/" + otro_prefijo(ctx) + slug + ".html"
+            casa["image"] = sitio + "/assets/img/og-villas-chimo.jpg"
+        bloques.append(casa)
     else:
-        datos = {
+        org = {
             "@context": "https://schema.org",
-            "@type": "Organization",
+            "@type": "LodgingBusiness",
             "name": cfg["marca"],
-            "email": cfg.get("correo", ""),
-            "telephone": "+" + cfg.get("whatsapp", ""),
+            "description": L["inicio"]["descripcion_seo"],
+            "address": {"@type": "PostalAddress", "addressLocality": "Chimo",
+                        "addressRegion": "Jalisco", "addressCountry": "MX"},
+            "areaServed": "Cabo Corrientes, Jalisco, México",
+            "telephone": tel,
+            "email": cfg.get("correo") or None,
+            "sameAs": [cfg.get("instagram")] if cfg.get("instagram") else None,
+            "currenciesAccepted": cfg.get("moneda", "MXN"),
+            "paymentAccepted": "Transferencia bancaria, tarjeta de crédito, Zelle, PayPal, efectivo",
         }
         if sitio:
-            datos["url"] = sitio
-    datos = {k: v for k, v in datos.items() if v}
-    return '<script type="application/ld+json">%s</script>' % json.dumps(datos, ensure_ascii=False)
+            org["url"] = sitio
+            org["image"] = sitio + "/assets/img/og-villas-chimo.jpg"
+        bloques.append(org)
+
+    if extra:
+        bloques.append(extra)
+
+    def limpiar(o):
+        if isinstance(o, dict):
+            return {k: limpiar(v) for k, v in o.items() if v is not None and limpiar(v) not in ({}, [], None)}
+        if isinstance(o, list):
+            return [limpiar(x) for x in o if x is not None]
+        return o
+
+    return "".join('<script type="application/ld+json">%s</script>' % json.dumps(limpiar(b), ensure_ascii=False)
+                   for b in bloques)
 
 
 # ------------------------------------------------------------------ páginas
@@ -824,6 +918,7 @@ def pagina_inicio(ctx):
   <span class="velo"></span>
   <div class="sello"><b>{e(I['hero']['sello_numero'])}</b><span>{e(I['hero']['sello_texto'])}</span></div>
   <div class="u">
+    <p class="ubica">{e(I['hero']['ubica'])}</p>
     <h1>{e(I['hero']['titulo'])}</h1>
     <p class="sub">{e(I['hero']['texto'])}</p>
     <div class="acciones">
@@ -841,7 +936,7 @@ def pagina_inicio(ctx):
     <div>
       <p class="lbl">{e(I['casa']['etiqueta'])}</p>
       <h2 class="h2" style="margin-top:12px">{e(I['casa']['titulo'])}</h2>
-      <p class="lead">{e(dv['historia'])}</p>
+      {parrafos(dv['historia'])}
       <p class="sig">{e(I['casa']['firma'])}</p>
       <p style="margin-top:26px"><a class="enlace" href="{pre}villa-chimo.html">{e(L['ui']['ver_casa'])}</a></p>
     </div>
@@ -991,14 +1086,14 @@ def pagina_casa(ctx, slug):
 
     diferenciador = ""
     if d.get("diferenciador"):
-        parrafos = "".join('<p class="lead">%s</p>' % e(x) for x in d["diferenciador"])
+        dif = "".join('<p class="lead">%s</p>' % e(x) for x in d["diferenciador"])
         diferenciador = f"""<section class="pad pad-top0">
   <div class="u split invertido">
     {img(ctx, 'chimo-atardecer-aereo', alt_chimo(ctx, 'chimo-atardecer-aereo'), ancho=640)}
     <div>
       <p class="lbl">{'Por qué aquí' if es else 'Why here'}</p>
       <h2 class="h2" style="margin-top:12px;margin-bottom:20px">{e(d.get('diferenciador_titulo', ''))}</h2>
-      {parrafos}
+      {dif}
     </div>
   </div>
 </section>"""
@@ -1033,7 +1128,7 @@ def pagina_casa(ctx, slug):
     <div>
       <p class="lbl">{'La casa' if es else 'The house'}</p>
       <h2 class="h2" style="margin-top:12px">{e(d['nombre'])}</h2>
-      <p class="lead">{e(d['historia'])}</p>
+      {parrafos(d['historia'])}
     </div>
     <table class="ficha">{ficha}</table>
   </div>
@@ -1090,12 +1185,12 @@ def pagina_chimo(ctx):
 
     secciones = ""
     for s in C["secciones"]:
-        parrafos = "".join('<p class="lead">%s</p>' % e(x) for x in s["parrafos"])
+        cuerpo_sec = "".join('<p class="lead">%s</p>' % e(x) for x in s["parrafos"])
         secciones += f"""<section class="pad">
   <div class="u">
     <p class="lbl">{e(s['etiqueta'])}</p>
     <h2 class="h2" style="margin-top:12px;margin-bottom:22px">{e(s['titulo'])}</h2>
-    {parrafos}
+    {cuerpo_sec}
   </div>
 </section>"""
 
@@ -1180,6 +1275,8 @@ def pagina_chimo(ctx):
 {bloque_mapa(ctx, "pad-top0")}
 
 {bloque_ano(ctx)}
+
+{bloque_faq(ctx)}
 
 </main>
 """
@@ -1319,8 +1416,22 @@ def pagina_entrada(ctx, entrada):
 </main>
 """
     canon = otro_prefijo(ctx) + "diario/" + entrada["slug"] + ".html"
+    sitio = (ctx["cfg"].get("sitio_url") or "").rstrip("/")
+    articulo = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": entrada.get("titulo", ""),
+        "description": entrada.get("resumen", ""),
+        "datePublished": entrada.get("fecha", ""),
+        "inLanguage": L["codigo"],
+        "author": {"@type": "Organization", "name": ctx["cfg"]["marca"]},
+        "publisher": {"@type": "Organization", "name": ctx["cfg"]["marca"]},
+    }
+    if sitio:
+        articulo["url"] = sitio + "/" + canon
     return (cabeza(ctx, entrada.get("titulo", "") + " · " + ctx["cfg"]["marca"],
                    entrada.get("resumen", ""), canonica=canon)
+            + json_ld(ctx, extra=articulo)
             + encabezado(ctx, "diario.html") + cuerpo + pie(ctx) + scripts(ctx))
 
 
@@ -1394,6 +1505,66 @@ def favicon():
            '<path d="M0 46 h64 v18 H0 z" fill="#173F52"/>'
            '<circle cx="47" cy="17" r="6" fill="#A3502F"/></svg>')
     escribir(os.path.join(RAIZ, "assets", "img", "favicon.svg"), svg)
+
+
+def llms_txt(cfg, props, urls):
+    """Resumen del sitio para los rastreadores de asistentes de IA.
+    Convención emergente: hechos duros, en texto plano, sin adornos."""
+    sitio = (cfg.get("sitio_url") or "").rstrip("/")
+    base = sitio + "/" if sitio else ""
+    v = props["villa-chimo"]
+    t = v.get("tarifas", {})
+    f = v.get("ficha", {})
+    precio = ("%s %s por noche más impuestos" % (t.get("baja"), cfg.get("moneda", "MXN"))
+              if t.get("baja") else "por confirmar")
+    return f"""# {cfg['marca']}
+
+> Renta vacacional de casa completa en Chimo, Cabo Corrientes, Jalisco, México.
+> Reserva directa, sin intermediarios. Sitio bilingüe español e inglés.
+
+## Hechos verificables
+
+- Chimo es una localidad del municipio de Cabo Corrientes, Jalisco, México.
+- Viven alrededor de 280 personas. La cifra fluctúa entre 180 y 300 según la temporada de pesca.
+- Está a unos 30 kilómetros al sur de Puerto Vallarta siguiendo la línea de costa.
+- Se llega en lancha (unas 2 horas 30 minutos desde Puerto Vallarta), en panga desde Boca de Tomatlán, o por terracería desde El Tuito (unas 3 horas). No hay carretera pavimentada hasta el pueblo.
+- La economía del pueblo es la pesca, principalmente pulpo y pescado.
+- El muelle del pueblo lleva más de veinte años sin terminarse.
+- Hay centro de salud, pero casi nunca hay médico de planta. No hay cajero automático, farmacia ni supermercado.
+- La temporada oficial de avistamiento de ballena jorobada en Bahía de Banderas va del 8 de diciembre al 23 de marzo, según fechas publicadas en el Diario Oficial de la Federación.
+
+## Villa Chimo
+
+- Casa completa frente al mar en Chimo. Se renta entera, una sola reserva a la vez.
+- {f.get('recamaras', 2)} recámaras ({f.get('camas', '')}), {f.get('banos', '2.5')} baños, recomendada para {f.get('huespedes', 4)} personas.
+- Alberca privada, vista al océano, terraza, chimenea exterior, acceso a playa, cocina equipada, área de asador.
+- Wifi, aire acondicionado, planta generadora de luz, seguridad, servicio de limpieza al tercer día. Pet friendly.
+- Desayuno americano incluido. Comida y cena bajo solicitud. Servicio de compra de despensa.
+- Tarifa: {precio}. Descuentos por semana, a partir de 15 noches y por mes.
+- Cancelación: reembolso parcial, con 20 días de anticipación, reteniendo el 20 %.
+- La zona es selvática y hay fauna, incluidos alacranes ocasionalmente. Se pide avisar si hay alergia a la picadura de alacrán.
+
+## Depa Vallarta
+
+- Departamento en Puerto Vallarta, pensado como escala antes y después de Chimo, porque la última lancha sale por la tarde.
+- Ficha en preparación: capacidad, amenidades y precio por confirmar.
+
+## Páginas
+
+- [Inicio]({base}index.html)
+- [Villa Chimo]({base}villa-chimo.html)
+- [Depa Vallarta]({base}depa-vallarta.html)
+- [Chimo, el pueblo]({base}chimo.html) — cómo llegar, qué hay y qué no, alrededores, preguntas frecuentes
+- [Experiencias]({base}experiencias.html)
+- [Diario]({base}diario.html)
+- [Reservar]({base}reservar.html)
+- Versión en inglés: {base}en/
+
+## Contacto
+
+- WhatsApp: +{cfg.get('whatsapp', '')}
+- Correo: {cfg.get('correo', '')}
+"""
 
 
 def main():
@@ -1476,6 +1647,7 @@ def main():
         escribir(os.path.join(RAIZ, "robots.txt"), "User-agent: *\nAllow: /\n")
 
     escribir(os.path.join(RAIZ, ".nojekyll"), "")
+    escribir(os.path.join(RAIZ, "llms.txt"), llms_txt(cfg, props, urls))
     print("Listo: %d páginas generadas." % len(urls))
 
 

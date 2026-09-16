@@ -123,11 +123,12 @@
     "muy_seguido": "You just posted. Give it a moment before writing again."
   },
   "inicio": {
-    "titulo_seo": "Villas Chimo · A house on the water in Chimo, Cabo Corrientes",
-    "descripcion_seo": "A whole two-bedroom house in Chimo, a fishing village of 280 people in Cabo Corrientes, Jalisco, reached by open boat from Boca de Tomatlán. Book direct, no middlemen.",
+    "titulo_seo": "Villa Chimo · A beachfront house in Chimo, Cabo Corrientes, Jalisco",
+    "descripcion_seo": "A whole house on the beach at Chimo, a village of 280 people in Cabo Corrientes, Jalisco, two and a half hours by boat from Puerto Vallarta. Two bedrooms, private pool, sleeps four. Book direct.",
     "hero": {
-      "titulo": "Villa Chimo",
-      "texto": "A whole two-bedroom house in a town of 280 people, with a private pool and direct beach access. No resort, no nightlife, no paved road to the door.",
+      "ubica": "Villa Chimo · Chimo, Cabo Corrientes",
+      "titulo": "The loudest thing here is the ocean.",
+      "texto": "Our villa on the beach at Chimo, for four people for now. Getting here is the adventure: you go in through the jungle and come out on the Pacific.",
       "sello_numero": "280",
       "sello_texto": "People"
     },
@@ -151,7 +152,7 @@
     ],
     "casa": {
       "etiqueta": "The house",
-      "titulo": "This house started as a way back",
+      "titulo": "I built it to come back to",
       "firma": "— The owner"
     },
     "casas": {
@@ -166,12 +167,12 @@
     "pueblo": {
       "etiqueta": "The village",
       "titulo": "Chimo",
-      "texto": "A fishing village in Cabo Corrientes, at the southern end of Banderas Bay. About 280 people live here and the catch is octopus. The beaches stay empty most of the year because getting here takes effort, and that is the point.",
+      "texto": "Two hundred and eighty people, a beach that is nearly always empty, and the sound of the boats going out at six in the morning. This place lives on octopus. There is no paved road to the village, and that is why it is still like this.",
       "enlace": "Meet the village and its people"
     },
     "experiencias": {
       "etiqueta": "Experiences",
-      "titulo": "What there is to do, and when you can do it",
+      "titulo": "Everything here has its month",
       "enlace": "See all experiences"
     },
     "ano": {
@@ -185,7 +186,7 @@
     },
     "cierre": {
       "titulo": "See you in Chimo?",
-      "texto": "Write to us and we will tell you what dates are open, what it costs, and how we get you here from the airport."
+      "texto": "Write to us with your dates. We will tell you what is open, what it comes to with tax, and how we pick you up from the airport."
     }
   },
   "rutas": [
@@ -344,18 +345,18 @@
     ]
   },
   "chimo": {
-    "titulo_seo": "Chimo, Jalisco: how to get there, what is there, when to come",
-    "descripcion_seo": "Chimo is a fishing village of 280 people in Cabo Corrientes, 30 km from Puerto Vallarta. How to get there by boat or dirt road, what there is and what there isn't, and when to come.",
+    "titulo_seo": "Chimo, Cabo Corrientes, Jalisco: how to get there and what is there",
+    "descripcion_seo": "Chimo is a fishing village of 280 people in Cabo Corrientes, Jalisco, 30 km from Puerto Vallarta. Two and a half hours by boat, or a dirt road from El Tuito. What there is, what there isn't, and when to come.",
     "hero_titulo": "Chimo",
-    "hero_texto": "A fishing village in Cabo Corrientes, at the southern end of Banderas Bay.",
+    "hero_texto": "A fishing village in Cabo Corrientes, at the southern end of Banderas Bay. Two hundred and eighty people and a beach that is nearly always empty.",
     "secciones": [
       {
         "etiqueta": "What this place is",
         "titulo": "Two hundred and eighty people and thirty kilometres of coast",
         "parrafos": [
-          "Chimo is a locality in the municipality of Cabo Corrientes, Jalisco. About 280 people live here year-round, though the number rises during fishing season and if you count the nearby ranches. It sits roughly 30 kilometres south of Puerto Vallarta along the coastline.",
-          "You hear the ocean all day. Fishing is the main activity and what gets sold is octopus and fish. The village pier has been half-built for more than twenty years, which limits how much can be landed. There is a health post, though there is rarely a doctor there.",
-          "The beaches stay empty most of the year because getting here takes effort. That is exactly the point."
+          "Chimo is a locality in the municipality of Cabo Corrientes, Jalisco. About 280 people live here year-round, though the number rises in fishing season. It sits roughly 30 kilometres south of Puerto Vallarta along the coastline, and no paved road reaches it.",
+          "The day starts early. The boats go out before dawn and come back mid-morning with octopus, which is what the village lives on. The pier has been half-built for more than twenty years, so everything is landed on the beach by hand. There is a health post, though rarely a doctor.",
+          "The rest is the ocean. You hear it all day, and on moonless nights you hear it more."
         ]
       }
     ],
@@ -368,7 +369,7 @@
     "gente": {
       "etiqueta": "The people",
       "titulo": "Who lives in Chimo",
-      "texto": "This section will carry portraits and names of the people of the village: who takes you out in the boat, who cooks, who guides you to the waterfalls. It is the one thing no other house on this coast can copy, which is why it is worth doing properly rather than quickly.",
+      "texto": "This section will carry portraits and names of the people of the village: who takes you out in the boat, who cooks, who walks you up to the waterfalls. It is the one thing no other house on this coast can copy, which is why we would rather do it properly than quickly.",
       "pendiente": "Photo session pending."
     },
     "alrededores": {
@@ -423,10 +424,10 @@
     }
   },
   "experiencias_pagina": {
-    "titulo_seo": "Experiences in Chimo and Cabo Corrientes",
-    "descripcion_seo": "Kayaks, whale watching, octopus fishing, waterfalls and the raicilla route. Each one with its season, its duration and who runs it.",
+    "titulo_seo": "What to do in Chimo and Cabo Corrientes: whales, waterfalls, fishing, kayaks",
+    "descripcion_seo": "Whale watching December 8 to March 23, Cabo Corrientes waterfalls in the rainy season, octopus fishing, kayaks, parrots and macaws. Each with its season and who runs it.",
     "hero_titulo": "Experiences",
-    "hero_texto": "Each one with its season, its duration and who runs it. An activity with a date on it is a reason to choose the week.",
+    "hero_texto": "Things here have a season. The whales arrive on December 8. The waterfalls run full when it rains. Octopus comes out year-round, before dawn.",
     "dia_titulo": "A day in Chimo",
     "dia": [
       [
@@ -470,7 +471,7 @@
     "titulo_seo": "Book Villas Chimo",
     "descripcion_seo": "Check availability for Villa Chimo and Depa Vallarta and request your dates. Book direct, with no platform commission.",
     "hero_titulo": "Book",
-    "hero_texto": "Pick the house and the dates. We come back with a firm price and how to get here.",
+    "hero_texto": "Pick the house and the dates. We come back with a firm price, tax included, and how to get here.",
     "politicas_titulo": "Policies",
     "politicas": [
       [
@@ -614,7 +615,7 @@
   "alimentos": {
     "etiqueta": "The table",
     "titulo": "From the wave to the pan",
-    "intro": "The fishermen leave before dawn and come back with the day's catch. What reaches the table is up to you.",
+    "intro": "The fishermen leave before first light and come back with the day's catch. What reaches the table is up to you.",
     "items": [
       {
         "etq": "Included",
@@ -635,8 +636,8 @@
   },
   "publico": {
     "etiqueta": "Who it is for",
-    "titulo": "People who want nothing to happen",
-    "texto": "The house rents whole, so it works the same for two people as for four. This is what comes up most among the people who write to us.",
+    "titulo": "People who come so that nothing happens",
+    "texto": "The house rents whole, so it makes no difference whether you are two or four. This is what comes up most among the people who write to us.",
     "items": [
       "Families",
       "Couples and honeymoons",
@@ -651,5 +652,47 @@
     "etiqueta": "Where it is",
     "titulo": "Chimo, Cabo Corrientes",
     "texto": "About 30 kilometres south of Puerto Vallarta along the coast. There is no paved road to the village: you arrive by boat or on the dirt road from El Tuito."
+  },
+  "faq": {
+    "etiqueta": "Frequently asked",
+    "titulo": "What people ask before they come",
+    "items": [
+      {
+        "p": "How many people live in Chimo, Jalisco?",
+        "r": "About 280. It is a locality in the municipality of Cabo Corrientes, Jalisco, and the number ranges between 180 and 300 depending on the fishing season and whether nearby ranches are counted."
+      },
+      {
+        "p": "How do you get to Chimo from Puerto Vallarta?",
+        "r": "Three ways. By boat, about 2 hours 30 minutes from Puerto Vallarta. By panga from Boca de Tomatlán, roughly 40 minutes from the airport. Or overland via El Tuito, with about 3 hours of dirt road. There is no paved road to the village."
+      },
+      {
+        "p": "How far is Chimo from Puerto Vallarta?",
+        "r": "About 30 kilometres south along the coastline, in the municipality of Cabo Corrientes, Jalisco."
+      },
+      {
+        "p": "When can you see whales in Chimo?",
+        "r": "The official humpback whale watching season in Banderas Bay runs December 8 to March 23, per the dates published in Mexico's federal gazette. Operators need a permit and a certification course."
+      },
+      {
+        "p": "Is there an ATM, pharmacy or supermarket in Chimo?",
+        "r": "No. There is a health post, though rarely a doctor on site, and beach restaurants. Bring cash in pesos and any medication you need."
+      },
+      {
+        "p": "Does Villa Chimo have Wi-Fi and power?",
+        "r": "Yes. The house has Wi-Fi, air conditioning and a backup power generator."
+      },
+      {
+        "p": "Are there scorpions or wildlife in Chimo?",
+        "r": "It is a jungle area, so insects get in and now and then a scorpion. The house is treated and checked. If anyone in your group is allergic to a scorpion sting, tell us when you book."
+      },
+      {
+        "p": "What does Chimo live on?",
+        "r": "Fishing. The catch sold is mainly octopus and fish. The village pier has been unfinished for more than twenty years, which limits the activity."
+      },
+      {
+        "p": "How much does Villa Chimo cost?",
+        "r": "150 US dollars per night plus taxes, for the whole house, up to 4 guests. There are discounts by the week, from 15 nights, and by the month."
+      }
+    ]
   }
 }

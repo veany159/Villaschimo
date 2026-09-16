@@ -1,0 +1,47 @@
+# Villas Chimo
+
+> Renta vacacional de casa completa en Chimo, Cabo Corrientes, Jalisco, México.
+> Reserva directa, sin intermediarios. Sitio bilingüe español e inglés.
+
+## Hechos verificables
+
+- Chimo es una localidad del municipio de Cabo Corrientes, Jalisco, México.
+- Viven alrededor de 280 personas. La cifra fluctúa entre 180 y 300 según la temporada de pesca.
+- Está a unos 30 kilómetros al sur de Puerto Vallarta siguiendo la línea de costa.
+- Se llega en lancha (unas 2 horas 30 minutos desde Puerto Vallarta), en panga desde Boca de Tomatlán, o por terracería desde El Tuito (unas 3 horas). No hay carretera pavimentada hasta el pueblo.
+- La economía del pueblo es la pesca, principalmente pulpo y pescado.
+- El muelle del pueblo lleva más de veinte años sin terminarse.
+- Hay centro de salud, pero casi nunca hay médico de planta. No hay cajero automático, farmacia ni supermercado.
+- La temporada oficial de avistamiento de ballena jorobada en Bahía de Banderas va del 8 de diciembre al 23 de marzo, según fechas publicadas en el Diario Oficial de la Federación.
+
+## Villa Chimo
+
+- Casa completa frente al mar en Chimo. Se renta entera, una sola reserva a la vez.
+- 2 recámaras (1 matrimonial y 2 individuales), 2.5 baños, recomendada para 4 personas.
+- Alberca privada, vista al océano, terraza, chimenea exterior, acceso a playa, cocina equipada, área de asador.
+- Wifi, aire acondicionado, planta generadora de luz, seguridad, servicio de limpieza al tercer día. Pet friendly.
+- Desayuno americano incluido. Comida y cena bajo solicitud. Servicio de compra de despensa.
+- Tarifa: 150 USD por noche más impuestos. Descuentos por semana, a partir de 15 noches y por mes.
+- Cancelación: reembolso parcial, con 20 días de anticipación, reteniendo el 20 %.
+- La zona es selvática y hay fauna, incluidos alacranes ocasionalmente. Se pide avisar si hay alergia a la picadura de alacrán.
+
+## Depa Vallarta
+
+- Departamento en Puerto Vallarta, pensado como escala antes y después de Chimo, porque la última lancha sale por la tarde.
+- Ficha en preparación: capacidad, amenidades y precio por confirmar.
+
+## Páginas
+
+- [Inicio](index.html)
+- [Villa Chimo](villa-chimo.html)
+- [Depa Vallarta](depa-vallarta.html)
+- [Chimo, el pueblo](chimo.html) — cómo llegar, qué hay y qué no, alrededores, preguntas frecuentes
+- [Experiencias](experiencias.html)
+- [Diario](diario.html)
+- [Reservar](reservar.html)
+- Versión en inglés: en/
+
+## Contacto
+
+- WhatsApp: +5213221234567
+- Correo: hola@villaschimo.com

@@ -7,8 +7,8 @@
     "es": {
       "nombre": "Villa Chimo",
       "lugar": "Chimo, Cabo Corrientes, Jalisco",
-      "resumen": "Una casa entera frente al mar, con alberca privada y acceso directo a la playa. Se renta completa, para una sola reserva a la vez.",
-      "historia": "Esta casa empezó como un regreso. Volví a Chimo a construir la casa que quería tener aquí: la alberca, la teja, la chimenea de la terraza, y el cerro y el mar en la misma ventana. La abrimos cuando no estamos, completa, para una sola reserva a la vez.",
+      "resumen": "Una casa entera frente al mar, con alberca privada y acceso directo a la playa. Dos recámaras, cuatro personas, una sola reserva a la vez.",
+      "historia": "Crecí viniendo a Chimo. Cuando por fin pude construir aquí, hice la casa que quería tener: la alberca picada en la roca, la teja, la chimenea afuera, y el cerro y el mar entrando por la misma ventana.\n\nLa rento entera y una reserva a la vez. La alberca, la terraza y la playa de enfrente son tuyas mientras estés.",
       "amenidades": [
         {
           "grupo": "La casa",
@@ -81,15 +81,15 @@
       },
       "diferenciador_titulo": "Privacidad y tranquilidad",
       "diferenciador": [
-        "Lo que hace distinta a esta casa no es una amenidad, es lo que no hay: ruido, prisa, gente de paso. Se renta completa, así que la alberca, la terraza y la playa son de quien llegó y de nadie más.",
-        "Y está el mar, que aquí no es paisaje sino despensa. Los pescadores salen de madrugada y regresan con lo del día. De la ola a la cacerola, como se dice en el pueblo."
+        "Lo que hace distinta a esta casa no es una amenidad. Es que no hay nadie más. Ni cuartos al lado, ni alberca compartida, ni gente de paso. Llegas, y el lugar es tuyo hasta que te vas.",
+        "Y está el mar, que aquí no es paisaje: es la despensa. Los pescadores salen de madrugada y regresan con lo del día. De la ola a la cacerola, como dicen en el pueblo."
       ]
     },
     "en": {
       "nombre": "Villa Chimo",
       "lugar": "Chimo, Cabo Corrientes, Jalisco",
-      "resumen": "A whole house on the water, with a private pool and direct beach access. It rents whole, one booking at a time.",
-      "historia": "This house started as a way back. I returned to Chimo to build the house I wanted here: the pool, the clay-tile roof, the outdoor fireplace, and the mountain and the ocean framed in the same window. We open it when we are away, whole, one booking at a time.",
+      "resumen": "A whole house on the water, with a private pool and direct beach access. Two bedrooms, four people, one booking at a time.",
+      "historia": "I grew up coming to Chimo. When I could finally build here, I made the house I wanted: the pool cut into the rock, the clay-tile roof, the fireplace outside, and the mountain and the ocean coming in through the same window.\n\nI rent it whole, one booking at a time. The pool, the terrace and the beach in front of it are yours for as long as you stay.",
       "amenidades": [
         {
           "grupo": "The house",
@@ -151,7 +151,7 @@
       },
       "diferenciador_titulo": "Privacy and quiet",
       "diferenciador": [
-        "What makes this house different is not an amenity, it is what isn't here: noise, hurry, people passing through. It rents whole, so the pool, the terrace and the beach belong to whoever arrived and to nobody else.",
+        "What makes this house different is not an amenity. It is that nobody else is here. No rooms next door, no shared pool, no one passing through. You arrive, and the place is yours until you leave.",
         "And there is the ocean, which here is not scenery but a pantry. The fishermen leave before dawn and come back with the day's catch. From the wave to the pan, as they say in the village."
       ]
     },
