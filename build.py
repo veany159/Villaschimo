@@ -800,7 +800,9 @@ def json_ld(ctx, slug=None, extra=None):
     que el texto, y lo que decide si te citan a ti o a otro."""
     cfg, L, props = ctx["cfg"], ctx["L"], ctx["props"]
     sitio = (cfg.get("sitio_url") or "").rstrip("/")
-    tel = "+" + cfg.get("whatsapp", "") if cfg.get("whatsapp") else None
+    # el numero de wa.me lleva un 1 extra que no es parte del numero real;
+    # para Google y los asistentes va el internacional de verdad
+    tel = cfg.get("telefono") or (("+" + cfg["whatsapp"]) if cfg.get("whatsapp") else None)
     bloques = []
 
     if slug:
@@ -1588,7 +1590,7 @@ def llms_txt(cfg, props, urls):
 
 ## Contacto
 
-- WhatsApp: +{cfg.get('whatsapp', '')}
+- WhatsApp: {cfg.get('telefono') or ('+' + cfg.get('whatsapp', ''))}
 - Correo: {cfg.get('correo', '')}
 """
 

@@ -64,7 +64,8 @@ Lo que hay que cambiar:
 
 | Renglón | Qué poner |
 |---|---|
-| `whatsapp` | Tu número completo, sin espacios ni signos. México: `52` + `1` + lada + número. Ejemplo: `5213221234567` |
+| `whatsapp` | Para los enlaces de WhatsApp. México: `52` + `1` + lada + número, sin espacios ni signos. Ejemplo: `5213221399526` |
+| `telefono` | El mismo número en formato internacional, **sin el 1**. Es el que leen Google y los asistentes de IA. Ejemplo: `+523221399526`. Si cambias uno, cambia el otro |
 | `correo` | El correo de contacto |
 | `instagram` | El link de tu perfil |
 
