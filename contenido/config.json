@@ -1,34 +1,31 @@
 {
   "_lee_esto": "Este es el único archivo con datos de contacto y servicios. Cambia lo que está entre comillas y guarda. No borres las comas ni las llaves.",
-
   "marca": "Villas Chimo",
   "bajada": "Cabo Corrientes",
   "sitio_url": "",
   "_sitio_url_nota": "Déjalo vacío hasta que tengas dominio. Cuando lo tengas, pon https://villaschimo.com sin diagonal al final.",
-
   "whatsapp": "5213221234567",
   "_whatsapp_nota": "Número completo con código de país y sin espacios, signos ni guiones. México: 52 + 1 + lada + número.",
-
   "correo": "hola@villaschimo.com",
   "instagram": "https://instagram.com/villaschimo",
-
-  "moneda": "MXN",
+  "moneda": "USD",
   "idioma_principal": "es",
-
   "supabase": {
     "url": "",
     "clave_publica": "",
     "_nota": "Se llenan hasta el paso 4 de GUIA.md. Mientras estén vacíos, los comentarios se muestran pero el formulario avisa que aún no está activo. El resto del sitio funciona igual."
   },
-
   "airbnb": {
     "villa-chimo": "",
     "depa-vallarta": "",
     "_nota": "Aquí van los links .ics que Airbnb genera cuando publiques cada anuncio (Calendario › Disponibilidad › Sincronizar calendarios › Exportar calendario). Mientras estén vacíos, la disponibilidad se edita a mano en contenido/disponibilidad.json."
   },
-
   "analytics": {
     "plausible_dominio": "",
     "_nota": "Opcional. Si algún día contratas Plausible, pon aquí el dominio y se agrega el script solo. Vacío = sin rastreo, sin cookies, sin aviso de cookies."
+  },
+  "mapa": {
+    "consulta": "Chimo, Jalisco, México",
+    "_nota": "Lo que se busca en Google Maps. Cuando tengas las coordenadas exactas de la casa, cambia esto por algo como '20.31,-105.67' y el mapa apuntará al punto exacto. El mapa no carga hasta que el visitante lo pide, así que el sitio no pone cookies de Google a nadie que no quiera."
   }
 }

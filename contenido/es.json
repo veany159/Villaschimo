@@ -1,21 +1,40 @@
 {
   "_lee_esto": "Todo el texto del sitio en español. Su gemelo es en.json, con lo mismo en inglés. Si cambias algo aquí, cámbialo allá.",
-
   "codigo": "es",
   "nombre_idioma": "Español",
-  "otro_idioma": { "codigo": "en", "nombre": "English", "prefijo": "en/" },
-
+  "otro_idioma": {
+    "codigo": "en",
+    "nombre": "English",
+    "prefijo": "en/"
+  },
   "menu": [
-    { "texto": "Inicio", "url": "index.html" },
-    { "texto": "Villa Chimo", "url": "villa-chimo.html" },
-    { "texto": "Depa Vallarta", "url": "depa-vallarta.html" },
-    { "texto": "Chimo", "url": "chimo.html" },
-    { "texto": "Experiencias", "url": "experiencias.html" },
-    { "texto": "Diario", "url": "diario.html" }
+    {
+      "texto": "Inicio",
+      "url": "index.html"
+    },
+    {
+      "texto": "Villa Chimo",
+      "url": "villa-chimo.html"
+    },
+    {
+      "texto": "Depa Vallarta",
+      "url": "depa-vallarta.html"
+    },
+    {
+      "texto": "Chimo",
+      "url": "chimo.html"
+    },
+    {
+      "texto": "Experiencias",
+      "url": "experiencias.html"
+    },
+    {
+      "texto": "Diario",
+      "url": "diario.html"
+    }
   ],
   "cta": "Reservar",
   "cta_url": "reservar.html",
-
   "ui": {
     "ver_disponibilidad": "Ver disponibilidad",
     "como_se_llega": "Cómo se llega",
@@ -45,8 +64,29 @@
     "actualizado": "Disponibilidad actualizada el",
     "mes_anterior": "Mes anterior",
     "mes_siguiente": "Mes siguiente",
-    "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
-    "dias": ["L", "M", "M", "J", "V", "S", "D"],
+    "meses": [
+      "enero",
+      "febrero",
+      "marzo",
+      "abril",
+      "mayo",
+      "junio",
+      "julio",
+      "agosto",
+      "septiembre",
+      "octubre",
+      "noviembre",
+      "diciembre"
+    ],
+    "dias": [
+      "L",
+      "M",
+      "M",
+      "J",
+      "V",
+      "S",
+      "D"
+    ],
     "escribir_whatsapp": "Escribir por WhatsApp",
     "volver": "Volver",
     "galeria": "Galería",
@@ -55,9 +95,13 @@
     "imagen_siguiente": "Imagen siguiente",
     "menu_abrir": "Abrir menú",
     "menu_cerrar": "Cerrar menú",
-    "saltar": "Saltar al contenido"
+    "saltar": "Saltar al contenido",
+    "mas_impuestos": "más impuestos",
+    "ver_mapa": "Ver el mapa",
+    "mapa_aviso": "El mapa es de Google. Se carga solo si tú lo pides, para no dejarte cookies sin avisar.",
+    "abrir_google": "Abrir en Google Maps",
+    "proximamente": "Próximamente"
   },
-
   "comentarios": {
     "titulo": "Lo que dicen los que ya vinieron",
     "intro": "Si te quedaste en alguna de las dos casas, cuéntalo aquí. Se publica al momento.",
@@ -78,21 +122,32 @@
     "muy_largo": "El comentario es demasiado largo. Máximo 800 caracteres.",
     "muy_seguido": "Ya publicaste hace un momento. Espera un poco antes de escribir otra vez."
   },
-
   "inicio": {
     "titulo_seo": "Villas Chimo · Una casa frente al mar en Chimo, Cabo Corrientes",
     "descripcion_seo": "Casa completa de dos recámaras en Chimo, un pueblo pesquero de 280 personas en Cabo Corrientes, Jalisco. Se llega en panga desde Boca de Tomatlán. Reserva directa, sin intermediarios.",
     "hero": {
       "titulo": "Villa Chimo",
-      "texto": "Una casa de dos recámaras en un pueblo de 280 personas, a dos horas y media de lancha de Puerto Vallarta. No hay resort, no hay antro, no hay carretera hasta la puerta.",
+      "texto": "Una casa entera de dos recámaras en un pueblo de 280 personas, con alberca privada y acceso directo a la playa. No hay resort, no hay antro, no hay carretera hasta la puerta.",
       "sello_numero": "280",
       "sello_texto": "Habitantes"
     },
     "datos": [
-      { "n": "2", "t": "Recámaras" },
-      { "n": "2½", "t": "Baños" },
-      { "n": "1", "t": "Alberca de piedra" },
-      { "n": "0", "t": "Vecinos a la vista" }
+      {
+        "n": "2",
+        "t": "Recámaras"
+      },
+      {
+        "n": "2½",
+        "t": "Baños"
+      },
+      {
+        "n": "4",
+        "t": "Huéspedes"
+      },
+      {
+        "n": "1",
+        "t": "Alberca privada"
+      }
     ],
     "casa": {
       "etiqueta": "La casa",
@@ -133,35 +188,161 @@
       "texto": "Escríbenos y te decimos qué fechas hay, cuánto sale y cómo te llevamos desde el aeropuerto."
     }
   },
-
   "rutas": [
     {
       "n": "RUTA 01",
       "titulo": "Panga desde Boca de Tomatlán",
-      "filas": [["Salida", "Boca de Tomatlán"], ["Del aeropuerto", "40 min en taxi"], ["Horario", "8:00 – 18:30"], ["Para", "Pareja o viajero solo"]]
+      "filas": [
+        [
+          "Salida",
+          "Boca de Tomatlán"
+        ],
+        [
+          "Del aeropuerto",
+          "40 min en taxi"
+        ],
+        [
+          "Horario",
+          "8:00 – 18:30"
+        ],
+        [
+          "Para",
+          "Pareja o viajero solo"
+        ]
+      ]
     },
     {
       "n": "RUTA 02",
       "titulo": "Lancha privada desde Vallarta",
-      "filas": [["Salida", "Marina Vallarta"], ["Duración", "2 h 30 min"], ["Equipaje", "Sin límite práctico"], ["Para", "Grupos y familias"]]
+      "filas": [
+        [
+          "Salida",
+          "Marina Vallarta"
+        ],
+        [
+          "Duración",
+          "2 h 30 min"
+        ],
+        [
+          "Equipaje",
+          "Sin límite práctico"
+        ],
+        [
+          "Para",
+          "Grupos y familias"
+        ]
+      ]
     },
     {
       "n": "RUTA 03",
       "titulo": "Terracería vía El Tuito",
-      "filas": [["Salida", "El Tuito, 46 km de PV"], ["Duración", "1 h + 3 h de terracería"], ["Vehículo", "Camioneta alta"], ["Para", "El viaje como parte del plan"]]
+      "filas": [
+        [
+          "Salida",
+          "El Tuito, 46 km de PV"
+        ],
+        [
+          "Duración",
+          "1 h + 3 h de terracería"
+        ],
+        [
+          "Vehículo",
+          "Camioneta alta"
+        ],
+        [
+          "Para",
+          "El viaje como parte del plan"
+        ]
+      ]
     }
   ],
-
   "calendario_ano": {
     "filas": [
-      { "nombre": "Ballena jorobada", "color": "mar", "tramos": [[1, 2, "Temporada oficial"], [3, 1, "al 23"], [12, 1, "8 dic"]] },
-      { "nombre": "Tortuga golfina", "color": "selva", "tramos": [[1, 2, "Anidación"], [5, 8, "Anidación y liberación en Mayto"]] },
-      { "nombre": "Lluvias y cascadas", "color": "agua", "tramos": [[6, 5, "Ríos y cascadas con agua"]] },
-      { "nombre": "Temporada", "color": "teja", "tramos": [[1, 4, "Alta"], [5, 6, "Baja · estancias largas y retiros"], [11, 2, "Alta"]] }
+      {
+        "nombre": "Ballena jorobada",
+        "color": "mar",
+        "tramos": [
+          [
+            1,
+            2,
+            "Temporada oficial"
+          ],
+          [
+            3,
+            1,
+            "al 23"
+          ],
+          [
+            12,
+            1,
+            "8 dic"
+          ]
+        ]
+      },
+      {
+        "nombre": "Tortuga golfina",
+        "color": "selva",
+        "tramos": [
+          [
+            1,
+            2,
+            "Anidación"
+          ],
+          [
+            5,
+            8,
+            "Anidación y liberación en Mayto"
+          ]
+        ]
+      },
+      {
+        "nombre": "Lluvias y cascadas",
+        "color": "agua",
+        "tramos": [
+          [
+            6,
+            5,
+            "Ríos y cascadas con agua"
+          ]
+        ]
+      },
+      {
+        "nombre": "Temporada",
+        "color": "teja",
+        "tramos": [
+          [
+            1,
+            4,
+            "Alta"
+          ],
+          [
+            5,
+            6,
+            "Baja · estancias largas y retiros"
+          ],
+          [
+            11,
+            2,
+            "Alta"
+          ]
+        ]
+      }
     ],
-    "meses_cortos": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+    "meses_cortos": [
+      "Ene",
+      "Feb",
+      "Mar",
+      "Abr",
+      "May",
+      "Jun",
+      "Jul",
+      "Ago",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dic"
+    ]
   },
-
   "chimo": {
     "titulo_seo": "Chimo, Jalisco: cómo llegar, qué hay y cuándo venir",
     "descripcion_seo": "Chimo es un pueblo pesquero de 280 personas en Cabo Corrientes, a 30 km de Puerto Vallarta. Cómo llegar en panga o por terracería, qué hay y qué no, y cuándo conviene venir.",
@@ -194,14 +375,38 @@
       "etiqueta": "Alrededores",
       "titulo": "Qué hay cerca",
       "items": [
-        { "nombre": "Yelapa", "texto": "El pueblo más visitado del corredor sur. Mismo mar, mucha más gente." },
-        { "nombre": "Quimixto", "texto": "Cascada y paseo a caballo. Se ha publicado como el pueblo más virgen de México." },
-        { "nombre": "Majahuitas", "texto": "Playa pequeña de acceso solo por mar." },
-        { "nombre": "Las Ánimas", "texto": "Primera parada del corredor, con restaurantes de playa." },
-        { "nombre": "Playa Corrales", "texto": "Oleaje fuerte para surfistas, con un faro de 1902." },
-        { "nombre": "Tehuamixtle", "texto": "Bahía entre acantilados, famosa por sus ostiones. Hay un barco camaronero hundido en 1920 que se bucea." },
-        { "nombre": "Mayto", "texto": "Playa abierta de 12 km, con campamento tortuguero desde 2005." },
-        { "nombre": "El Tuito", "texto": "Cabecera municipal a 1 085 metros, de 5 a 10 °C más fresco. Queso panela, café, miel y raicilla." }
+        {
+          "nombre": "Yelapa",
+          "texto": "El pueblo más visitado del corredor sur. Mismo mar, mucha más gente."
+        },
+        {
+          "nombre": "Quimixto",
+          "texto": "Cascada y paseo a caballo. Se ha publicado como el pueblo más virgen de México."
+        },
+        {
+          "nombre": "Majahuitas",
+          "texto": "Playa pequeña de acceso solo por mar."
+        },
+        {
+          "nombre": "Las Ánimas",
+          "texto": "Primera parada del corredor, con restaurantes de playa."
+        },
+        {
+          "nombre": "Playa Corrales",
+          "texto": "Oleaje fuerte para surfistas, con un faro de 1902."
+        },
+        {
+          "nombre": "Tehuamixtle",
+          "texto": "Bahía entre acantilados, famosa por sus ostiones. Hay un barco camaronero hundido en 1920 que se bucea."
+        },
+        {
+          "nombre": "Mayto",
+          "texto": "Playa abierta de 12 km, con campamento tortuguero desde 2005."
+        },
+        {
+          "nombre": "El Tuito",
+          "texto": "Cabecera municipal a 1 085 metros, de 5 a 10 °C más fresco. Queso panela, café, miel y raicilla."
+        }
       ]
     },
     "llevar": {
@@ -217,7 +422,6 @@
       ]
     }
   },
-
   "experiencias_pagina": {
     "titulo_seo": "Experiencias en Chimo y Cabo Corrientes",
     "descripcion_seo": "Kayaks, avistamiento de ballenas, pesca de pulpo, cascadas y la ruta de la raicilla. Cada actividad con su temporada, duración y quién la opera.",
@@ -225,16 +429,36 @@
     "hero_texto": "Cada una con su temporada, su duración y quién la opera. Una actividad con fecha es una razón para elegir la semana.",
     "dia_titulo": "Un día en Chimo",
     "dia": [
-      ["06:30", "Sale la panga de los pescadores. Si vas, te levantas antes."],
-      ["09:00", "Desayuno en la terraza con lo que se pescó."],
-      ["11:00", "Kayak hasta la cala de al lado, antes de que entre el viento."],
-      ["14:00", "Comida en una de las cocinas del pueblo."],
-      ["16:30", "Alberca, hamaca, o caminata al mirador."],
-      ["19:00", "Se prende el horno de leña."],
-      ["21:00", "Se oye el mar y nada más."]
+      [
+        "06:30",
+        "Sale la panga de los pescadores. Si vas, te levantas antes."
+      ],
+      [
+        "09:00",
+        "Desayuno en la terraza con lo que se pescó."
+      ],
+      [
+        "11:00",
+        "Kayak hasta la cala de al lado, antes de que entre el viento."
+      ],
+      [
+        "14:00",
+        "Comida en una de las cocinas del pueblo."
+      ],
+      [
+        "16:30",
+        "Alberca, hamaca, o caminata al mirador."
+      ],
+      [
+        "19:00",
+        "Se prende el horno de leña."
+      ],
+      [
+        "21:00",
+        "Se oye el mar y nada más."
+      ]
     ]
   },
-
   "diario_pagina": {
     "titulo_seo": "Diario de Chimo",
     "descripcion_seo": "Cómo llegar a Chimo, qué llevar, cuándo ver ballenas y en qué se diferencia de Yelapa. Lo que preguntan antes de venir, contestado a detalle.",
@@ -242,7 +466,6 @@
     "hero_texto": "Lo que preguntan antes de venir, contestado a detalle.",
     "vacio": "Todavía no hay entradas publicadas."
   },
-
   "reservar": {
     "titulo_seo": "Reservar en Villas Chimo",
     "descripcion_seo": "Consulta la disponibilidad de Villa Chimo y del Depa Vallarta y solicita tus fechas. Reserva directa, sin comisión de plataforma.",
@@ -250,26 +473,183 @@
     "hero_texto": "Elige la casa y las fechas. Te contestamos con el precio cerrado y cómo llegar.",
     "politicas_titulo": "Políticas",
     "politicas": [
-      ["Mínimo de noches", "3 en temporada baja, 5 en alta, 7 en fin de año."],
-      ["Llegada", "Ligada al horario de la panga, no a una hora fija. Llegas y entras."],
-      ["Depósito", "30 % al reservar, el resto 15 días antes."],
-      ["Cancelación", "Reembolso total a 30 días, 50 % a 15 días, sin reembolso después."],
-      ["Clima", "Si la capitanía cierra el puerto, cambias de fecha sin costo."],
-      ["Huéspedes extra", "El precio base cubre hasta la capacidad indicada. Consulta por personas adicionales."],
-      ["Eventos", "Bodas y fiestas solo con cotización aparte. Un pueblo de 280 personas no absorbe un evento sin avisar."],
-      ["Mascotas", "Consúltanos."]
+      [
+        "Tarifa",
+        "150 USD por noche más impuestos. Casa completa, hasta 4 personas."
+      ],
+      [
+        "Mínimo de noches",
+        "3 en temporada baja, 5 en alta, 7 en fin de año."
+      ],
+      [
+        "Llegada",
+        "Ligada al horario de la panga, no a una hora fija. Llegas y entras."
+      ],
+      [
+        "Depósito",
+        "Se hace por transferencia, tarjeta, Zelle o PayPal. El saldo se paga en efectivo al llegar."
+      ],
+      [
+        "Cancelación",
+        "Reembolso parcial. Se cancela con 20 días de anticipación y se retiene el 20 %."
+      ],
+      [
+        "Clima",
+        "Si la capitanía cierra el puerto, cambias de fecha sin costo."
+      ],
+      [
+        "Limpieza",
+        "Incluida al tercer día de la estancia, y se repite si te quedas más."
+      ],
+      [
+        "Estancias largas",
+        "Hay descuento por semana, a partir de 15 noches y por mes."
+      ],
+      [
+        "Mascotas",
+        "Pet friendly. Dinos el tamaño del perro al reservar."
+      ],
+      [
+        "Eventos",
+        "Bodas y fiestas solo con cotización aparte. Un pueblo de 280 personas no absorbe un evento sin avisar."
+      ]
     ],
-    "nota_pago": "Todavía no cobramos con tarjeta en el sitio. Solicitas las fechas, te confirmamos disponibilidad y precio, y el depósito se hace por transferencia. Sin comisión de plataforma."
+    "nota_pago": "Todavía no cobramos con tarjeta directamente en el sitio. Solicitas las fechas, te confirmamos disponibilidad y el precio cerrado con impuestos, y de ahí pasamos al depósito. Sin comisión de plataforma.",
+    "precio_etiqueta": "Tarifa",
+    "precio_nota": "Casa completa, hasta 4 personas. El impuesto se suma al confirmar.",
+    "descuentos_titulo": "Estancias largas",
+    "descuentos": [
+      {
+        "dt": "Una semana",
+        "dd": "Con descuento",
+        "p": "Se cotiza al confirmar tus fechas."
+      },
+      {
+        "dt": "15 noches o más",
+        "dd": "Con descuento",
+        "p": "Es el corte a partir del cual baja la noche."
+      },
+      {
+        "dt": "Por mes",
+        "dd": "Con descuento",
+        "p": "Para trabajo remoto y estancias de temporada baja."
+      }
+    ],
+    "pagos_titulo": "Cómo se paga",
+    "pagos_texto": "El depósito se puede hacer por cualquiera de estas vías. El saldo se liquida en efectivo a la llegada.",
+    "pagos": [
+      "Transferencia bancaria",
+      "Tarjeta de crédito",
+      "Zelle",
+      "PayPal"
+    ],
+    "pagos_saldo": "Saldo en efectivo al llegar"
   },
-
   "pie": {
     "descripcion": "Chimo, Cabo Corrientes, Jalisco, México. Reserva directa, sin intermediarios.",
     "columnas": [
-      { "titulo": "Las casas", "enlaces": [["Villa Chimo", "villa-chimo.html"], ["Depa Vallarta", "depa-vallarta.html"], ["Reservar", "reservar.html"]] },
-      { "titulo": "El lugar", "enlaces": [["Chimo", "chimo.html"], ["Experiencias", "experiencias.html"], ["Diario", "diario.html"]] }
+      {
+        "titulo": "Las casas",
+        "enlaces": [
+          [
+            "Villa Chimo",
+            "villa-chimo.html"
+          ],
+          [
+            "Depa Vallarta",
+            "depa-vallarta.html"
+          ],
+          [
+            "Reservar",
+            "reservar.html"
+          ]
+        ]
+      },
+      {
+        "titulo": "El lugar",
+        "enlaces": [
+          [
+            "Chimo",
+            "chimo.html"
+          ],
+          [
+            "Experiencias",
+            "experiencias.html"
+          ],
+          [
+            "Diario",
+            "diario.html"
+          ]
+        ]
+      }
     ],
     "contacto_titulo": "Contacto",
-    "legal": ["Aviso de privacidad", "Términos de reserva"],
+    "legal": [
+      "Aviso de privacidad",
+      "Términos de reserva"
+    ],
     "derechos": "Villas Chimo"
+  },
+  "avisos": {
+    "titulo": "Dos cosas que decimos siempre",
+    "items": [
+      {
+        "titulo": "Estás en la selva, y la selva tiene fauna",
+        "tipo": "teja",
+        "parrafos": [
+          "Chimo está metido entre el mar y el monte, y eso es justo lo que lo hace lo que es. También significa que aquí entran insectos, y de vez en cuando algún alacrán. La casa se fumiga y se revisa, pero es una casa en la selva, no un cuarto de hotel en la ciudad.",
+          "Si alguien de tu grupo es alérgico a la picadura de alacrán, avísanos al reservar. Es importante: el centro de salud del pueblo guarda inyecciones para urgencias, pero casi nunca hay médico de planta, y conviene que lo sepamos antes y no a media noche."
+        ]
+      },
+      {
+        "titulo": "Cómo cuidamos la casa mientras estás",
+        "tipo": "verde",
+        "parrafos": [
+          "Hay servicio de limpieza al tercer día de tu estancia, sin que tengas que pedirlo. Si te quedas más, lo repetimos.",
+          "La casa tiene seguridad y planta generadora de luz, y es pet friendly: si vienes con perro, dinos de qué tamaño para prepararlo todo."
+        ]
+      }
+    ]
+  },
+  "alimentos": {
+    "etiqueta": "La mesa",
+    "titulo": "De la ola a la cacerola",
+    "intro": "Los pescadores salen de madrugada y regresan con lo del día. Lo que sube a la mesa lo decides tú.",
+    "items": [
+      {
+        "etq": "Incluido",
+        "titulo": "Desayuno americano",
+        "texto": "Va incluido en la estancia. Estamos afinando el menú, así que si tienes alguna restricción, dinos y lo resolvemos."
+      },
+      {
+        "etq": "Bajo solicitud",
+        "titulo": "Comida y cena",
+        "texto": "Se pide con anticipación y se cocina en la casa. Pescado y mariscos del día cuando el mar lo permite."
+      },
+      {
+        "etq": "Antes de llegar",
+        "titulo": "Tu despensa lista",
+        "texto": "Mándanos tu lista y hacemos las compras en Vallarta o en El Tuito para que llegues con el refrigerador lleno. En Chimo no hay supermercado."
+      }
+    ]
+  },
+  "publico": {
+    "etiqueta": "Para quién es",
+    "titulo": "Quien busca que no pase nada",
+    "texto": "La casa se renta completa, así que funciona igual para dos personas que para cuatro. Esto es lo que más se repite entre quienes preguntan.",
+    "items": [
+      "Familias",
+      "Parejas y lunas de miel",
+      "Grupos de amigos",
+      "Viajeros de Estados Unidos y Canadá",
+      "Viajeros de Europa",
+      "Retiros de yoga y bienestar",
+      "Trabajo remoto y estancias largas"
+    ]
+  },
+  "mapa": {
+    "etiqueta": "Dónde está",
+    "titulo": "Chimo, Cabo Corrientes",
+    "texto": "A unos 30 kilómetros al sur de Puerto Vallarta siguiendo la costa. No hay carretera pavimentada hasta el pueblo: se llega en panga o por terracería desde El Tuito."
   }
 }

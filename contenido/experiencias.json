@@ -1,11 +1,10 @@
 {
   "_lee_esto": "Las actividades que se ofrecen. Agrega o quita bloques completos (desde la llave que abre hasta la que cierra). Cuando tengas el precio real, cambia 'precio_desde' de 0 al número.",
-
   "experiencias": [
     {
       "id": "kayak",
       "icono": "kayak",
-      "destacada": true,
+      "destacada": false,
       "temporada": "todo-el-ano",
       "precio_desde": 0,
       "es": {
@@ -108,27 +107,6 @@
       }
     },
     {
-      "id": "aves",
-      "icono": "ave",
-      "destacada": false,
-      "temporada": "todo-el-ano",
-      "precio_desde": 0,
-      "es": {
-        "nombre": "Guacamayas y aves",
-        "cuando": "Todo el año, mejor al amanecer",
-        "duracion": "2 horas",
-        "opera": "Guía local",
-        "texto": "La selva de Cabo Corrientes empieza donde termina la playa. Las guacamayas se oyen antes de verse, y pasan en pareja a la misma hora casi todos los días."
-      },
-      "en": {
-        "nombre": "Macaws and birdlife",
-        "cuando": "Year-round, best at dawn",
-        "duracion": "2 hours",
-        "opera": "Local guide",
-        "texto": "The jungle of Cabo Corrientes starts where the beach ends. You hear the macaws before you see them, and they pass in pairs at the same hour most days."
-      }
-    },
-    {
       "id": "tortugas",
       "icono": "tortuga",
       "destacada": false,
@@ -168,6 +146,69 @@
         "duracion": "Full day, by road",
         "opera": "El Tuito distilleries",
         "texto": "El Tuito sits at 1,085 metres and runs five to ten degrees cooler than Vallarta. This is where the raicilla distilleries are, along with panela cheese, coffee and honey. Cabo Corrientes is an official stop on Jalisco's Raicilla Route."
+      }
+    },
+    {
+      "id": "aves",
+      "icono": "ave",
+      "destacada": true,
+      "temporada": "todo-el-ano",
+      "precio_desde": 0,
+      "es": {
+        "nombre": "Cotorras y guacamayas",
+        "cuando": "Todo el año, mejor al amanecer",
+        "duracion": "2 horas",
+        "opera": "Guía local",
+        "texto": "La selva de Cabo Corrientes empieza donde termina la playa. Las guacamayas se oyen antes de verse, y pasan en pareja a la misma hora casi todos los días. Las cotorras andan en bola y hacen muchísimo ruido."
+      },
+      "en": {
+        "nombre": "Parrots and macaws",
+        "cuando": "Year-round, best at dawn",
+        "duracion": "2 hours",
+        "opera": "Local guide",
+        "texto": "The jungle of Cabo Corrientes starts where the beach ends. You hear the macaws before you see them, and they pass in pairs at the same hour most days. The parrots move in flocks and make a racket."
+      }
+    },
+    {
+      "id": "motos",
+      "icono": "moto",
+      "destacada": false,
+      "temporada": "todo-el-ano",
+      "precio_desde": 0,
+      "es": {
+        "nombre": "Motos",
+        "cuando": "Todo el año",
+        "duracion": "Por hora",
+        "opera": "Desde la casa",
+        "texto": "Disponibles en la casa. Cuéntanos cuántas personas van y te decimos disponibilidad al confirmar tus fechas."
+      },
+      "en": {
+        "nombre": "Motorbikes",
+        "cuando": "Year-round",
+        "duracion": "By the hour",
+        "opera": "From the house",
+        "texto": "Available at the house. Tell us how many of you are coming and we will confirm availability with your dates."
+      }
+    },
+    {
+      "id": "bote",
+      "icono": "bote",
+      "destacada": false,
+      "temporada": "proximamente",
+      "precio_desde": 0,
+      "es": {
+        "nombre": "Bote propio",
+        "cuando": "Próximamente",
+        "duracion": "—",
+        "opera": "La casa",
+        "texto": "Estamos por sumar un bote propio para salir a pescar y recorrer la costa sur sin depender de terceros."
+      },
+      "en": {
+        "nombre": "Our own boat",
+        "cuando": "Coming soon",
+        "duracion": "—",
+        "opera": "The house",
+        "texto": "We are adding a boat of our own, for fishing trips and running the south shore without depending on anyone else."
       }
     }
   ]

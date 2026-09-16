@@ -225,23 +225,53 @@ Todo vive en la carpeta `contenido/`. No hace falta tocar nada más.
 | `experiencias.json` | Las actividades |
 | `disponibilidad.json` | Fechas ocupadas |
 
-### Poner los precios
+### Cambiar los precios
 
 En `propiedades.json`, busca `"tarifas"` de cada casa:
 
 ```json
 "tarifas": {
-  "baja": 4800,
-  "alta": 7200,
-  "limpieza": 900
+  "baja": 150,
+  "alta": 150,
+  "limpieza": 0
 }
 ```
 
-Números sin comas, sin signo de pesos y sin centavos. **Mientras estén en `0`,
-el sitio dice "Precio a confirmar"** en vez de inventar una cifra.
+Números sin comas, sin signo de pesos y sin centavos. La moneda se define aparte,
+en `config.json`, renglón `"moneda"`. Hoy está en `USD`.
+
+El sitio agrega solo la leyenda **"más impuestos"** al total, para que nadie se
+lleve una sorpresa. **Si pones `0`, el sitio dice "Precio a confirmar"** en vez
+de inventar una cifra.
 
 La temporada alta va del 15 de diciembre al 30 de abril. Se cambia en
-`"temporada_alta"`, con el formato `mes-día`.
+`"temporada_alta"`, con el formato `mes-día`. Hoy las dos temporadas cuestan lo
+mismo; el día que quieras cobrar más en invierno, sube el número de `"alta"`.
+
+Los descuentos por semana, por 15 noches y por mes se describen en `es.json` y
+`en.json`, dentro de `"reservar"` › `"descuentos"`. No se calculan solos a
+propósito: se cotizan al confirmar, que es como los estás manejando.
+
+### Cambiar el aviso de la fauna y el de limpieza
+
+Están en `es.json` y `en.json`, en el bloque `"avisos"`. Son las dos cajas que
+aparecen en la portada y en la ficha de la villa. Cambia el texto ahí y se
+actualiza en los dos lugares.
+
+### Mover el mapa al punto exacto de la casa
+
+En `config.json`, renglón `"consulta"` dentro de `"mapa"`. Hoy dice
+`Chimo, Jalisco, México`. Cuando tengas las coordenadas exactas —las sacas
+abriendo Google Maps en el punto de la casa, clic derecho, y copiando los dos
+números que aparecen arriba— pega algo así:
+
+```json
+"mapa": { "consulta": "20.3140,-105.6730" }
+```
+
+El mapa no se carga hasta que el visitante le da clic a "Ver el mapa". Es a
+propósito: así el sitio no le deja cookies de Google a nadie que no las pidió,
+y no hace falta poner aviso de cookies.
 
 ### Agregar fotos
 
@@ -351,10 +381,11 @@ Analytics es gratis pero sí obliga.
 
 ## Lo que falta para que el sitio esté completo
 
-- [ ] Precios por noche de la villa, y el mínimo de noches que quieras cobrar
+- [ ] **Número de WhatsApp real** (hoy hay uno de ejemplo, y sin él no entra ninguna solicitud)
 - [ ] Fotos, descripción, amenidades y precio del Depa Vallarta
-- [ ] Internet, luz y señal medidos en la casa (hoy dice "por confirmar")
 - [ ] Horario y tarifa reales de la panga a Chimo
+- [ ] Coordenadas exactas de la casa para el mapa
 - [ ] Fotos de la gente del pueblo, con permiso y con su nombre
-- [ ] Número de WhatsApp real
+- [ ] Definir qué son las "motos" (acuáticas o cuatrimotos) en `experiencias.json`
 - [ ] Dominio
+- [ ] Activar los comentarios (paso 4)

@@ -201,7 +201,7 @@ def cabeza(ctx, titulo, descripcion, imagen=None, canonica=""):
 <meta property="og:image" content="{e(img_abs)}">
 <meta property="og:locale" content="{'es_MX' if L['codigo'] == 'es' else 'en_US'}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#EFEAE0">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="{base}assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -346,6 +346,34 @@ def img(ctx, nombre, alt, clase="", ancho=1600, lazy=True):
         b=base, n=nombre, a=ancho, alt=e(alt), c=clase, l='loading="lazy"' if lazy else "")
 
 
+ALT_CHIMO = {
+    "es": {
+        "chimo-bahia-pelicano": "Un pelícano sobre una baliza en la bahía de Chimo, con la sierra al fondo",
+        "chimo-espuma-arena": "Espuma del mar deshaciéndose sobre la arena dorada de Chimo",
+        "chimo-ola-verde": "Una ola verde rompiendo frente a la playa de Chimo",
+        "chimo-playa-palapas": "La playa abierta de Chimo al amanecer, con palapas y la sierra al fondo",
+        "chimo-velero": "Un velero navegando la costa sur de la Bahía de Banderas",
+        "chimo-atardecer-aereo": "Vista aérea del atardecer sobre la playa, con una persona sola en el agua",
+        "chimo-lancha-acantilado": "Una lancha rápida bordeando los acantilados de la costa sur",
+        "chimo-pueblo-lanchas": "El pueblo de Chimo visto desde el mar, con las lanchas fondeadas frente a la playa",
+    },
+    "en": {
+        "chimo-bahia-pelicano": "A pelican on a marker in Chimo bay, with the sierra behind",
+        "chimo-espuma-arena": "Sea foam breaking over the golden sand of Chimo",
+        "chimo-ola-verde": "A green wave breaking off Chimo beach",
+        "chimo-playa-palapas": "The open beach at Chimo at dawn, with palapas and the sierra behind",
+        "chimo-velero": "A sailboat working the south shore of Banderas Bay",
+        "chimo-atardecer-aereo": "Aerial view of sunset over the beach, one person alone in the water",
+        "chimo-lancha-acantilado": "A fast boat running the cliffs of the south shore",
+        "chimo-pueblo-lanchas": "The village of Chimo seen from the sea, boats moored off the beach",
+    },
+}
+
+
+def alt_chimo(ctx, nombre):
+    return ALT_CHIMO.get(ctx["L"]["codigo"], {}).get(nombre, "Chimo, Cabo Corrientes")
+
+
 def alt_de(ctx, slug_casa, nombre_img):
     p = ctx["props"].get(slug_casa, {})
     alts = p.get("es", {}).get("galeria_alt", {})
@@ -434,6 +462,119 @@ def bloque_ano(ctx):
   <div class="anio">
     <table><tr><td class="lb"></td>{encabezados}</tr>{filas}</table>
   </div>
+</div>
+</section>"""
+
+
+def bloque_mapa(ctx, fondo=""):
+    L, cfg = ctx["L"], ctx["cfg"]
+    U, M = L["ui"], L["mapa"]
+    consulta = (cfg.get("mapa") or {}).get("consulta") or "Chimo, Jalisco"
+    import urllib.parse as _u
+    q = _u.quote_plus(consulta)
+    return f"""<section class="pad {fondo}" id="mapa">
+<div class="u">
+  <div class="encabezado">
+    <p class="lbl">{e(M['etiqueta'])}</p>
+    <h2 class="h2">{e(M['titulo'])}</h2>
+    <p class="lead">{e(M['texto'])}</p>
+  </div>
+  <div class="mapa-google" data-mapa data-consulta="{e(q)}">
+    <div class="previo">
+      <p>{e(U['mapa_aviso'])}</p>
+      <button type="button" class="btn claro" data-cargar-mapa>{e(U['ver_mapa'])}</button>
+    </div>
+    <div class="pie-mapa">
+      <span>{e(consulta)}</span>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query={q}" target="_blank" rel="noopener">{e(U['abrir_google'])}</a>
+    </div>
+  </div>
+</div>
+</section>"""
+
+
+def bloque_avisos(ctx, fondo="fondo-cal2"):
+    L = ctx["L"]
+    A = L["avisos"]
+    cajas = ""
+    for it in A["items"]:
+        parrafos = "".join("<p>%s</p>" % e(x) for x in it["parrafos"])
+        clase = "verde" if it.get("tipo") == "verde" else ""
+        cajas += '<div class="aviso-caja %s"><h3>%s</h3>%s</div>' % (clase, e(it["titulo"]), parrafos)
+    return f"""<section class="pad {fondo}">
+<div class="u">
+  <div class="encabezado"><h2 class="h2">{e(A['titulo'])}</h2></div>
+  <div class="avisos">{cajas}</div>
+</div>
+</section>"""
+
+
+def bloque_alimentos(ctx, fondo=""):
+    L = ctx["L"]
+    A = L["alimentos"]
+    items = "".join(
+        '<div class="alimento"><p class="etq">%s</p><h3>%s</h3><p>%s</p></div>' % (
+            e(x["etq"]), e(x["titulo"]), e(x["texto"])) for x in A["items"])
+    return f"""<section class="pad {fondo}">
+<div class="u">
+  <div class="encabezado">
+    <p class="lbl">{e(A['etiqueta'])}</p>
+    <h2 class="h2">{e(A['titulo'])}</h2>
+    <p class="lead">{e(A['intro'])}</p>
+  </div>
+  <div class="alimentos">{items}</div>
+</div>
+</section>"""
+
+
+def bloque_publico(ctx, fondo=""):
+    L = ctx["L"]
+    P = L["publico"]
+    chips = "".join("<span>%s</span>" % e(x) for x in P["items"])
+    return f"""<section class="pad {fondo}">
+<div class="u">
+  <div class="encabezado">
+    <p class="lbl">{e(P['etiqueta'])}</p>
+    <h2 class="h2">{e(P['titulo'])}</h2>
+    <p class="lead">{e(P['texto'])}</p>
+  </div>
+  <div class="publicos">{chips}</div>
+</div>
+</section>"""
+
+
+def bloque_precio(ctx):
+    L, cfg, props = ctx["L"], ctx["cfg"], ctx["props"]
+    R, U = L["reservar"], L["ui"]
+    t = props["villa-chimo"].get("tarifas", {})
+    precio = t.get("baja") or 0
+    moneda = cfg.get("moneda", "MXN")
+    if precio:
+        cifra = '<b>$%s</b><span>%s · %s · %s</span>' % (
+            format(precio, ",d"), e(moneda), e(U["por_noche"]), e(U["mas_impuestos"]))
+    else:
+        cifra = '<b>%s</b>' % e(U["precio_pendiente"])
+
+    desc = "".join(
+        '<div><dt>%s</dt><dd>%s</dd><p>%s</p></div>' % (e(x["dt"]), e(x["dd"]), e(x["p"]))
+        for x in R["descuentos"])
+    pagos = "".join("<span>%s</span>" % e(x) for x in R["pagos"])
+
+    return f"""<section class="pad pad-top0">
+<div class="u">
+  <div class="encabezado">
+    <p class="lbl">{e(R['precio_etiqueta'])}</p>
+    <div class="precio-grande" style="margin-top:12px">{cifra}</div>
+    <p class="nota" style="margin-top:12px">{e(R['precio_nota'])}</p>
+  </div>
+
+  <h3 class="h3" style="margin-bottom:18px">{e(R['descuentos_titulo'])}</h3>
+  <dl class="descuentos">{desc}</dl>
+
+  <h3 class="h3" style="margin:40px 0 12px">{e(R['pagos_titulo'])}</h3>
+  <p class="lead">{e(R['pagos_texto'])}</p>
+  <div class="pagos">{pagos}</div>
+  <p class="nota" style="margin-top:14px">{e(R['pagos_saldo'])}</p>
 </div>
 </section>"""
 
@@ -652,14 +793,14 @@ def pagina_inicio(ctx):
       </dl>
     </article>"""
 
-    tira_nombres = ["villa-puerta-principal-mar", "villa-entrada-piedra-farol",
-                    "villa-terraza-horno-atardecer", "villa-sala-chimenea"]
+    tira_nombres = ["chimo-pueblo-lanchas", "chimo-bahia-pelicano",
+                    "chimo-playa-palapas", "chimo-atardecer-aereo"]
     pies = {
-        "es": ["La puerta principal", "Piedra de río y farol", "El horno, al atardecer", "La sala"],
-        "en": ["The front door", "River stone and lantern", "The oven, at dusk", "The living room"],
+        "es": ["El pueblo desde el mar", "La bahía", "La playa al amanecer", "El atardecer"],
+        "en": ["The village from the sea", "The bay", "The beach at dawn", "Sunset"],
     }[L["codigo"]]
     tira = "".join('<figure>%s<figcaption>%s</figcaption></figure>' % (
-        img(ctx, n, alt_de(ctx, "villa-chimo", n), ancho=400), e(p))
+        img(ctx, n, alt_chimo(ctx, n), ancho=400), e(p))
         for n, p in zip(tira_nombres, pies))
 
     entradas = ctx["entradas"][:3]
@@ -742,7 +883,15 @@ def pagina_inicio(ctx):
   </div>
 </section>
 
+{bloque_alimentos(ctx, "fondo-cal2")}
+
 {bloque_ano(ctx)}
+
+{bloque_publico(ctx, "pad-top0")}
+
+{bloque_avisos(ctx)}
+
+{bloque_mapa(ctx)}
 
 <section class="pad pad-top0">
   <div class="u">
@@ -840,6 +989,29 @@ def pagina_casa(ctx, slug):
 
     portada = p.get("portada") or "villa-fachada-terraza"
 
+    diferenciador = ""
+    if d.get("diferenciador"):
+        parrafos = "".join('<p class="lead">%s</p>' % e(x) for x in d["diferenciador"])
+        diferenciador = f"""<section class="pad pad-top0">
+  <div class="u split invertido">
+    {img(ctx, 'chimo-atardecer-aereo', alt_chimo(ctx, 'chimo-atardecer-aereo'), ancho=640)}
+    <div>
+      <p class="lbl">{'Por qué aquí' if es else 'Why here'}</p>
+      <h2 class="h2" style="margin-top:12px;margin-bottom:20px">{e(d.get('diferenciador_titulo', ''))}</h2>
+      {parrafos}
+    </div>
+  </div>
+</section>"""
+
+    alimentos = bloque_alimentos(ctx) if slug == "villa-chimo" else ""
+    avisos = bloque_avisos(ctx) if slug == "villa-chimo" else ""
+    mapa = bloque_mapa(ctx, "pad-top0") if slug == "villa-chimo" else ""
+
+    proximamente = ""
+    if p.get("proximamente"):
+        proximamente = '<p style="margin-top:26px"><span class="pendiente">%s</span> <span class="nota">%s</span></p>' % (
+            e(L["ui"]["proximamente"]), e(p["proximamente"][L["codigo"]]))
+
     cuerpo = f"""<main id="contenido">
 
 <section class="hero chico">
@@ -867,6 +1039,8 @@ def pagina_casa(ctx, slug):
   </div>
 </section>
 
+{diferenciador}
+
 <section class="pad pad-top0">
   <div class="u">
     <div class="encabezado">
@@ -874,6 +1048,7 @@ def pagina_casa(ctx, slug):
       <h2 class="h2">{'Amenidades' if es else 'Amenities'}</h2>
     </div>
     <div class="amen">{amen}</div>
+    {proximamente}
   </div>
 </section>
 
@@ -890,6 +1065,12 @@ def pagina_casa(ctx, slug):
     {pend}
   </div>
 </section>
+
+{alimentos}
+
+{avisos}
+
+{mapa}
 
 {bloque_calendario(ctx, casa_inicial=slug, con_selector=False)}
 
@@ -927,15 +1108,15 @@ def pagina_chimo(ctx):
 
     llevar = "".join("<li>%s</li>" % e(x) for x in C["llevar"]["items"])
 
-    tira_nombres = ["villa-terraza-vista-mar", "villa-vestibulo-arco-mar",
-                    "villa-comedor-cocina", "villa-entrada-piedra-farol"]
-    tira = "".join('<figure>%s</figure>' % img(ctx, n, alt_de(ctx, "villa-chimo", n), ancho=400)
+    tira_nombres = ["chimo-espuma-arena", "chimo-ola-verde",
+                    "chimo-velero", "chimo-lancha-acantilado"]
+    tira = "".join('<figure>%s</figure>' % img(ctx, n, alt_chimo(ctx, n), ancho=400)
                    for n in tira_nombres)
 
     cuerpo = f"""<main id="contenido">
 
 <section class="hero chico">
-  {img(ctx, 'villa-terraza-vista-mar', alt_de(ctx, 'villa-chimo', 'villa-terraza-vista-mar'), lazy=False)}
+  {img(ctx, 'chimo-bahia-pelicano', alt_chimo(ctx, 'chimo-bahia-pelicano'), lazy=False)}
   <span class="velo"></span>
   <div class="u">
     <h1>{e(C['hero_titulo'])}</h1>
@@ -996,6 +1177,8 @@ def pagina_chimo(ctx):
   </div>
 </section>
 
+{bloque_mapa(ctx, "pad-top0")}
+
 {bloque_ano(ctx)}
 
 </main>
@@ -1033,7 +1216,7 @@ def pagina_experiencias(ctx):
     cuerpo = f"""<main id="contenido">
 
 <section class="hero chico">
-  {img(ctx, 'villa-terraza-horno-atardecer', alt_de(ctx, 'villa-chimo', 'villa-terraza-horno-atardecer'), lazy=False)}
+  {img(ctx, 'chimo-ola-verde', alt_chimo(ctx, 'chimo-ola-verde'), lazy=False)}
   <span class="velo"></span>
   <div class="u">
     <h1>{e(E['hero_titulo'])}</h1>
@@ -1089,7 +1272,7 @@ def pagina_diario(ctx):
 
     cuerpo = f"""<main id="contenido">
 <section class="hero chico">
-  {img(ctx, 'villa-vestibulo-arco-mar', alt_de(ctx, 'villa-chimo', 'villa-vestibulo-arco-mar'), lazy=False)}
+  {img(ctx, 'chimo-lancha-acantilado', alt_chimo(ctx, 'chimo-lancha-acantilado'), lazy=False)}
   <span class="velo"></span>
   <div class="u">
     <h1>{e(D['hero_titulo'])}</h1>
@@ -1157,6 +1340,8 @@ def pagina_reservar(ctx):
     <p class="sub">{e(R['hero_texto'])}</p>
   </div>
 </section>
+
+{bloque_precio(ctx)}
 
 {bloque_calendario(ctx)}
 

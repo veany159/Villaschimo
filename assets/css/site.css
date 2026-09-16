@@ -5,9 +5,9 @@
    ========================================================================== */
 
 :root{
-  --cal:#EFEAE0;
-  --cal-2:#E5DFD2;
-  --blanco:#FBF9F4;
+  --cal:#FFFFFF;        /* fondo dominante: blanco */
+  --cal-2:#F5F3EF;      /* secciones alternas: hueso */
+  --blanco:#FAF9F6;     /* paneles, tarjetas, y texto sobre fondos oscuros */
   --tinta:#1C1A17;
   --tinta-70:#4A443B;
   --teja:#A3502F;
@@ -16,8 +16,8 @@
   --selva:#3C4F33;
   --agua:#5E7C8A;
   --arena:#8C7A63;
-  --linea:rgba(28,26,23,.12);
-  --linea-suave:rgba(28,26,23,.07);
+  --linea:rgba(28,26,23,.15);
+  --linea-suave:rgba(28,26,23,.09);
 
   --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
   --sans:"Karla","Helvetica Neue",Arial,sans-serif;
@@ -95,7 +95,7 @@ button{font:inherit;color:inherit}
 .enlace:hover{border-bottom-width:2px}
 
 /* ---------------------------------------------------------------- header */
-.head{position:sticky;top:0;z-index:40;background:rgba(239,234,224,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.head{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
 .head .u{display:flex;align-items:center;gap:26px;height:74px}
 .marca{font-family:var(--serif);font-size:16px;letter-spacing:.22em;text-transform:uppercase;line-height:1.05;text-decoration:none;white-space:nowrap}
 .marca span{display:block;font-family:var(--sans);font-size:9px;letter-spacing:.32em;color:var(--arena);margin-top:3px;font-weight:500}
@@ -431,6 +431,59 @@ button{font:inherit;color:inherit}
 .pie a:hover{color:var(--blanco);text-decoration:underline;text-underline-offset:3px}
 .pie .desc{margin-top:18px;max-width:32ch;color:#8C8477;font-size:13px}
 .pie .base{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:46px;padding-top:20px;border-top:1px solid rgba(207,200,188,.18);font-size:11.5px;color:#8C8477}
+
+/* ------------------------------------------------- mapa de Google Maps */
+.mapa-google{border:1px solid var(--linea-suave);background:var(--blanco);overflow:hidden}
+.mapa-google .previo{
+  position:relative;aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:16px;text-align:center;padding:30px;background:var(--cal-2);
+}
+.mapa-google .previo p{font-size:14.5px;color:var(--tinta-70);max-width:44ch}
+.mapa-google iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+.mapa-google .pie-mapa{padding:14px 20px;border-top:1px solid var(--linea-suave);font-size:13.5px;color:var(--arena);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.mapa-google .pie-mapa a{color:var(--teja)}
+@media (max-width:640px){.mapa-google .previo,.mapa-google iframe{aspect-ratio:4/3}}
+
+/* ----------------------------------------------------------- avisos */
+.aviso-caja{border:1px solid var(--linea);border-left:3px solid var(--teja);background:var(--blanco);padding:24px 26px 26px}
+.aviso-caja.verde{border-left-color:var(--selva)}
+.aviso-caja h3{font-family:var(--sans);font-size:17px;font-weight:700;letter-spacing:-.005em;margin-bottom:10px}
+.aviso-caja p{font-size:15.5px;line-height:1.7;color:var(--tinta-70)}
+.aviso-caja p + p{margin-top:11px}
+.aviso-caja strong{color:var(--tinta)}
+.avisos{display:grid;gap:20px}
+@media(min-width:860px){.avisos{grid-template-columns:1fr 1fr}}
+
+/* --------------------------------------------------------- precios */
+.precio-grande{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.precio-grande b{font-family:var(--serif);font-size:clamp(38px,5vw,54px);font-weight:400;line-height:1}
+.precio-grande span{font-size:15px;color:var(--arena)}
+.descuentos{display:grid;gap:0;border:1px solid var(--linea-suave);background:var(--blanco)}
+@media(min-width:760px){.descuentos{grid-template-columns:repeat(3,1fr)}}
+.descuentos > div{padding:22px 24px;border-right:1px solid var(--linea-suave)}
+.descuentos > div:last-child{border-right:none}
+@media(max-width:759px){.descuentos > div{border-right:none;border-bottom:1px solid var(--linea-suave)}.descuentos > div:last-child{border-bottom:none}}
+.descuentos dt{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--arena);font-weight:700}
+.descuentos dd{margin:8px 0 0;font-family:var(--serif);font-size:22px}
+.descuentos p{font-size:13.5px;color:var(--tinta-70);margin-top:7px}
+
+.pagos{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.pagos span{font-size:12.5px;border:1px solid var(--linea);border-radius:20px;padding:7px 15px;color:var(--tinta-70)}
+
+/* --------------------------------------------------------- público */
+.publicos{display:flex;flex-wrap:wrap;gap:10px}
+.publicos span{
+  font-size:13.5px;border:1px solid var(--linea);border-radius:2px;padding:9px 16px;
+  color:var(--tinta-70);background:var(--blanco);
+}
+
+/* -------------------------------------------------------- alimentos */
+.alimentos{display:grid;gap:22px}
+@media(min-width:860px){.alimentos{grid-template-columns:repeat(3,1fr)}}
+.alimento{border-top:2px solid var(--tinta);padding-top:18px}
+.alimento h3{font-size:20px}
+.alimento p{font-size:14.5px;color:var(--tinta-70);margin-top:10px;line-height:1.65}
+.alimento .etq{font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--teja)}
 
 /* ------------------------------------------------------- utilidades */
 .solo-lectores{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

@@ -19,6 +19,22 @@
     });
   }
 
+  /* ---------------------------------------------- mapa a petición */
+  document.querySelectorAll('[data-cargar-mapa]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var caja = b.closest('[data-mapa]');
+      if (!caja) return;
+      var previo = caja.querySelector('.previo');
+      var marco = document.createElement('iframe');
+      marco.src = 'https://www.google.com/maps?q=' + caja.dataset.consulta + '&z=11&output=embed';
+      marco.loading = 'lazy';
+      marco.title = caja.querySelector('.pie-mapa span').textContent;
+      marco.referrerPolicy = 'no-referrer-when-downgrade';
+      marco.setAttribute('allowfullscreen', '');
+      if (previo) previo.replaceWith(marco); else caja.prepend(marco);
+    });
+  });
+
   /* ------------------------------------------------------ visor galería */
   var galeria = document.querySelector('.galeria');
   var visor = document.querySelector('.visor');

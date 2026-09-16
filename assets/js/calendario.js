@@ -65,7 +65,8 @@
   }
 
   function dinero(n) {
-    return '$' + n.toLocaleString('es-MX') + ' ' + (CFG.moneda || 'MXN');
+    var loc = (document.documentElement.lang === 'en') ? 'en-US' : 'es-MX';
+    return '$' + n.toLocaleString(loc) + ' ' + (CFG.moneda || 'MXN');
   }
 
   /* ---------------------------------------------------------- disponible */
@@ -214,7 +215,8 @@
       var limpieza = casa.limpieza || 0;
       filas += '<div class="r"><span>' + esc(etiquetaNoches) + '</span><span>' + esc(dinero(subtotal)) + '</span></div>';
       if (limpieza) filas += fila(T.limpieza, dinero(limpieza));
-      filas += '<div class="r total"><span>' + esc(T.total || '') + '</span><span>' + esc(dinero(subtotal + limpieza)) + '</span></div>';
+      var extra = T.mas_impuestos ? ' <small style="font-size:12px;font-family:var(--sans);color:var(--arena)">' + esc(T.mas_impuestos) + '</small>' : '';
+      filas += '<div class="r total"><span>' + esc(T.total || '') + '</span><span>' + esc(dinero(subtotal + limpieza)) + extra + '</span></div>';
     }
 
     var puede = n >= min;
