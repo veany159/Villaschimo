@@ -100,7 +100,10 @@
     "ver_mapa": "Load the map",
     "mapa_aviso": "The map comes from Google. It only loads if you ask for it, so no cookies are set without telling you.",
     "abrir_google": "Open in Google Maps",
-    "proximamente": "Coming soon"
+    "proximamente": "Coming soon",
+    "galeria_todo": "All",
+    "galeria_de": "of",
+    "galeria_ver": "Open full photo"
   },
   "comentarios": {
     "titulo": "From people who have stayed",
@@ -427,7 +430,7 @@
     "titulo_seo": "What to do in Chimo, south of Puerto Vallarta",
     "descripcion_seo": "Whales December 8 to March 23, waterfalls, fishing from a panga, kayaks and macaws, a boat ride from Puerto Vallarta. Each with its season.",
     "hero_titulo": "Experiences",
-    "hero_texto": "Things here have a season. The whales arrive on December 8. The waterfalls run full when it rains. Octopus comes out year-round, before dawn.",
+    "hero_texto": "Things here have a season. The whales arrive on December 8. The waterfalls run full when it rains. The pangas go out to fish year-round, before dawn.",
     "dia_titulo": "A day in Chimo",
     "dia": [
       [
@@ -717,5 +720,12 @@
         "r": "No. The pool is private and sits at ambient temperature, which on this coast stays mild most of the year. The house does have a solar water heater for the showers."
       }
     ]
+  },
+  "galeria_grupos": {
+    "alberca": "Pool and terrace",
+    "recamaras": "Bedrooms and bath",
+    "cocina": "Kitchen and dining",
+    "estancias": "Living areas",
+    "fuera": "The house outside"
   }
 }

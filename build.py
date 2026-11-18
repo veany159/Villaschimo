@@ -27,6 +27,19 @@ PAGINAS = ["index.html", "villa-chimo.html", "depa-vallarta.html",
 
 
 # --------------------------------------------------------------- utilidades
+def aplanar_galerias(props):
+    """La galería se escribe por grupos (alberca, recámaras, cocina...).
+    El resto del generador sigue esperando una lista plana: la armamos aquí
+    en el mismo orden, para no tener la lista escrita dos veces."""
+    for p in props.values():
+        if not isinstance(p, dict):
+            continue
+        grupos = p.get("galeria_grupos")
+        if grupos:
+            p["galeria"] = [f for g in grupos for f in g.get("fotos", [])]
+    return props
+
+
 def leer_json(nombre):
     with open(os.path.join(CONTENIDO, nombre), encoding="utf-8") as f:
         return json.load(f)
@@ -1059,20 +1072,46 @@ def pagina_casa(ctx, slug):
     es = L["codigo"] == "es"
 
     if p.get("galeria"):
-        botones = "".join(
-            '<button type="button">%s</button>' % img(ctx, n, alt_de(ctx, slug, n), ancho=800)
-            for n in p["galeria"])
+        nombres = L.get("galeria_grupos", {})
+        grupos = p.get("galeria_grupos") or [{"id": "todo", "fotos": p.get("galeria", [])}]
+        total = sum(len(g.get("fotos", [])) for g in grupos)
+
+        pestanas = ['<button type="button" class="gal-tab activa" data-grupo="todo" '
+                    'aria-pressed="true">%s <span>%d</span></button>'
+                    % (e(L["ui"].get("galeria_todo", "Todo")), total)]
+        for g in grupos:
+            if not g.get("fotos"):
+                continue
+            pestanas.append('<button type="button" class="gal-tab" data-grupo="%s" '
+                            'aria-pressed="false">%s <span>%d</span></button>'
+                            % (e(g["id"]), e(nombres.get(g["id"], g["id"])), len(g["fotos"])))
+
+        celdas = []
+        for g in grupos:
+            etiqueta = nombres.get(g["id"], "")
+            for n in g.get("fotos", []):
+                alt = alt_de(ctx, slug, n)
+                celdas.append(
+                    '<button type="button" class="gal-celda" data-grupo="%s" data-etiqueta="%s" '
+                    'title="%s">%s<span class="gal-pie">%s</span></button>'
+                    % (e(g["id"]), e(etiqueta), e(L["ui"].get("galeria_ver", "")),
+                       img(ctx, n, alt, ancho=800), e(etiqueta)))
+
         galeria = f"""<section class="pad pad-top0">
   <div class="u">
-    <div class="galeria">{botones}</div>
+    <div class="gal-tabs" role="group" aria-label="{e(L['ui']['galeria'])}">{''.join(pestanas)}</div>
+    <div class="galeria" data-total="{total}">{''.join(celdas)}</div>
   </div>
 </section>
 <div class="visor" role="dialog" aria-modal="true" aria-label="{e(L['ui']['galeria'])}">
   <button class="cerrar" data-accion="cerrar" aria-label="{e(L['ui']['cerrar'])}">&#10005;</button>
   <button class="nav-v prev" data-accion="prev" aria-label="{e(L['ui']['imagen_anterior'])}">&#8592;</button>
-  <img src="" alt="">
+  <figure class="visor-marco"><img src="" alt=""></figure>
   <button class="nav-v sig" data-accion="sig" aria-label="{e(L['ui']['imagen_siguiente'])}">&#8594;</button>
-  <p class="pie-v"></p>
+  <div class="visor-pie">
+    <p class="pie-v"></p>
+    <p class="cuenta-v" data-de="{e(L['ui'].get('galeria_de', 'de'))}"></p>
+  </div>
 </div>"""
     else:
         texto = "Las fotografías de este departamento están pendientes." if es else \
@@ -1642,7 +1681,7 @@ def revisar_etiquetas():
 
 def main():
     cfg = leer_json("config.json")
-    props = leer_json("propiedades.json")
+    props = aplanar_galerias(leer_json("propiedades.json"))
     exps = leer_json("experiencias.json")
 
     limpiar()

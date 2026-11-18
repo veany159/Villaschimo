@@ -100,7 +100,10 @@
     "ver_mapa": "Ver el mapa",
     "mapa_aviso": "El mapa es de Google. Se carga solo si tú lo pides, para no dejarte cookies sin avisar.",
     "abrir_google": "Abrir en Google Maps",
-    "proximamente": "Próximamente"
+    "proximamente": "Próximamente",
+    "galeria_todo": "Todo",
+    "galeria_de": "de",
+    "galeria_ver": "Ver la foto completa"
   },
   "comentarios": {
     "titulo": "Lo que dicen los que ya vinieron",
@@ -425,9 +428,9 @@
   },
   "experiencias_pagina": {
     "titulo_seo": "Qué hacer en Chimo: ballenas, cascadas y pesca",
-    "descripcion_seo": "Ballenas del 8 de diciembre al 23 de marzo, cascadas de Cabo Corrientes, pesca de pulpo, kayaks y guacamayas. Cada actividad con su temporada.",
+    "descripcion_seo": "Ballenas del 8 de diciembre al 23 de marzo, cascadas de Cabo Corrientes, pesca en panga, kayaks y guacamayas. Cada actividad con su temporada.",
     "hero_titulo": "Experiencias",
-    "hero_texto": "Aquí las cosas tienen temporada. Las ballenas llegan el 8 de diciembre. Las cascadas bajan llenas cuando llueve. El pulpo se saca todo el año, de madrugada.",
+    "hero_texto": "Aquí las cosas tienen temporada. Las ballenas llegan el 8 de diciembre. Las cascadas bajan llenas cuando llueve. Las pangas salen a pescar todo el año, de madrugada.",
     "dia_titulo": "Un día en Chimo",
     "dia": [
       [
@@ -717,5 +720,12 @@
         "r": "No. La alberca es privada y está a temperatura ambiente, que en esta costa ronda lo templado casi todo el año. La casa sí tiene calentador solar para el agua de las regaderas."
       }
     ]
+  },
+  "galeria_grupos": {
+    "alberca": "Alberca y terraza",
+    "recamaras": "Recámaras y baño",
+    "cocina": "Cocina y comedor",
+    "estancias": "Sala y pasillos",
+    "fuera": "La casa por fuera"
   }
 }

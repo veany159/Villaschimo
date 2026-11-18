@@ -72,21 +72,27 @@
       "galeria_alt": {
         "villa-alberca-casa-mar": "La alberca de piedra de Villa Chimo con la casa detrás y el océano Pacífico al fondo",
         "villa-alberca-olas": "El borde de la alberca, las palmeras y las olas rompiendo en la playa de Chimo",
-        "villa-lateral-jardin-mar": "Villa Chimo vista desde el jardín, con buganvilias y el mar a un costado",
+        "villa-palapa-alberca": "La palapa junto a la alberca, con sillas de madera frente al mar",
         "villa-terraza-vista-mar": "Terraza con mesa de tronco, techo de teja y vista abierta al Pacífico",
         "villa-terraza-chimenea": "Terraza de Villa Chimo con chimenea exterior de ladrillo y comedor de madera",
-        "villa-palapa-alberca": "La palapa junto a la alberca, con sillas de madera frente al mar",
+        "villa-escaleras-alberca": "Escaleras de talavera azul que suben a la alberca entre la vegetación",
         "villa-recamara-principal": "Recámara principal de Villa Chimo con cama matrimonial de madera labrada",
         "villa-recamara-vista-mar": "Recámara con cama matrimonial y ventana arqueada abierta al océano",
+        "villa-puerta-abierta-mar": "Puerta de arco abierta desde la recámara hacia la terraza y el mar",
         "villa-recamara-individuales": "Segunda recámara de Villa Chimo con dos camas individuales de madera",
         "villa-bano-talavera": "Baño de Villa Chimo revestido en talavera azul, con piso de barro",
         "villa-cocina-talavera": "Cocina equipada con azulejo azul de talavera, candil de hierro y mesa de madera",
-        "villa-sala-sillones": "Sala de Villa Chimo con sillones azules, tapete y ventanas al jardín",
-        "villa-recibidor": "Recibidor de Villa Chimo con muro de piedra de río y mobiliario antiguo",
+        "villa-cocina-comedor": "Cocina de talavera azul con candil de hierro y mesa de madera junto al arco",
         "villa-comedor-escalera": "Comedor de madera labrada junto a la escalera de talavera azul",
-        "villa-puerta-abierta-mar": "Puerta de arco abierta desde la recámara hacia la terraza y el mar",
-        "villa-escaleras-alberca": "Escaleras de talavera azul que suben a la alberca entre la vegetación",
+        "villa-sala-sillones": "Sala de Villa Chimo con sillones azules, tapete y ventanas al jardín",
+        "villa-sala-mesa": "Mesa de la sala con sillones antiguos y tapete rojo sobre el piso de barro",
+        "villa-recibidor": "Recibidor de Villa Chimo con muro de piedra de río y mobiliario antiguo",
+        "villa-pasillo-barro": "Pasillo de Villa Chimo con piso de barro, talavera azul y mobiliario antiguo",
+        "villa-rincon-tocadiscos": "Rincón de la casa con sillón de terciopelo, tocadiscos y cuadros",
+        "villa-molino-cafe": "Molino de café de hierro montado en el muro blanco de Villa Chimo",
+        "villa-lateral-jardin-mar": "Villa Chimo vista desde el jardín, con buganvilias y el mar a un costado",
         "villa-frente-camino": "Villa Chimo vista desde el camino, sobre el muro de piedra de río",
+        "villa-costado-jardin": "Costado de Villa Chimo con el jardín de pasto y la terraza de teja",
         "villa-casa-selva-mar": "Villa Chimo entre la selva, sobre la ladera que baja a la playa de Chimo"
       },
       "diferenciador_titulo": "Privacidad y tranquilidad",
@@ -170,44 +176,30 @@
       "galeria_alt": {
         "villa-alberca-casa-mar": "Villa Chimo's stone pool with the house behind it and the Pacific Ocean beyond",
         "villa-alberca-olas": "The edge of the pool, the palms, and the waves breaking on Chimo beach",
-        "villa-lateral-jardin-mar": "Villa Chimo seen from the garden, with bougainvillea and the ocean alongside",
+        "villa-palapa-alberca": "The palapa beside the pool, with wooden chairs facing the ocean",
         "villa-terraza-vista-mar": "Terrace with a log table, clay-tile roof and an open view of the Pacific",
         "villa-terraza-chimenea": "Villa Chimo's terrace with its outdoor brick fireplace and wooden dining table",
-        "villa-palapa-alberca": "The palapa beside the pool, with wooden chairs facing the ocean",
+        "villa-escaleras-alberca": "Blue talavera steps climbing to the pool through the vegetation",
         "villa-recamara-principal": "Villa Chimo's main bedroom with a carved wooden king bed",
         "villa-recamara-vista-mar": "Bedroom with a king bed and an arched window open to the ocean",
+        "villa-puerta-abierta-mar": "An arched door open from the bedroom onto the terrace and the sea",
         "villa-recamara-individuales": "Villa Chimo's second bedroom with two wooden single beds",
         "villa-bano-talavera": "Villa Chimo's bathroom tiled in blue talavera, with a clay-tile floor",
         "villa-cocina-talavera": "Fully equipped kitchen in blue talavera tile, with an iron chandelier and wooden table",
-        "villa-sala-sillones": "Villa Chimo's living room with blue armchairs, a rug and windows onto the garden",
-        "villa-recibidor": "Villa Chimo's entrance hall with a river-stone wall and antique furniture",
+        "villa-cocina-comedor": "Blue talavera kitchen with an iron chandelier and a wooden table beside the arch",
         "villa-comedor-escalera": "Carved wooden dining table beside the blue talavera staircase",
-        "villa-puerta-abierta-mar": "An arched door open from the bedroom onto the terrace and the sea",
-        "villa-escaleras-alberca": "Blue talavera steps climbing to the pool through the vegetation",
+        "villa-sala-sillones": "Villa Chimo's living room with blue armchairs, a rug and windows onto the garden",
+        "villa-sala-mesa": "The living room table with antique armchairs and a red rug on the clay-tile floor",
+        "villa-recibidor": "Villa Chimo's entrance hall with a river-stone wall and antique furniture",
+        "villa-pasillo-barro": "Villa Chimo's hallway with clay-tile floor, blue talavera and antique furniture",
+        "villa-rincon-tocadiscos": "A corner of the house with a velvet armchair, a record player and framed pictures",
+        "villa-molino-cafe": "A cast-iron coffee grinder mounted on Villa Chimo's white wall",
+        "villa-lateral-jardin-mar": "Villa Chimo seen from the garden, with bougainvillea and the ocean alongside",
         "villa-frente-camino": "Villa Chimo seen from the road, above the river-stone wall",
+        "villa-costado-jardin": "The side of Villa Chimo, with the lawn and the clay-tile terrace",
         "villa-casa-selva-mar": "Villa Chimo in the jungle, on the slope that drops to Chimo beach"
       }
     },
-    "galeria": [
-      "villa-alberca-casa-mar",
-      "villa-alberca-olas",
-      "villa-lateral-jardin-mar",
-      "villa-terraza-vista-mar",
-      "villa-terraza-chimenea",
-      "villa-palapa-alberca",
-      "villa-recamara-principal",
-      "villa-recamara-vista-mar",
-      "villa-recamara-individuales",
-      "villa-bano-talavera",
-      "villa-cocina-talavera",
-      "villa-sala-sillones",
-      "villa-recibidor",
-      "villa-comedor-escalera",
-      "villa-puerta-abierta-mar",
-      "villa-escaleras-alberca",
-      "villa-frente-camino",
-      "villa-casa-selva-mar"
-    ],
     "portada": "villa-alberca-casa-mar",
     "ficha": {
       "recamaras": 2,
@@ -233,7 +225,58 @@
     "proximamente": {
       "es": "Segunda etapa en construcción.",
       "en": "A second phase is being built."
-    }
+    },
+    "galeria_grupos": [
+      {
+        "id": "alberca",
+        "fotos": [
+          "villa-alberca-casa-mar",
+          "villa-alberca-olas",
+          "villa-palapa-alberca",
+          "villa-terraza-vista-mar",
+          "villa-terraza-chimenea",
+          "villa-escaleras-alberca"
+        ]
+      },
+      {
+        "id": "recamaras",
+        "fotos": [
+          "villa-recamara-principal",
+          "villa-recamara-vista-mar",
+          "villa-puerta-abierta-mar",
+          "villa-recamara-individuales",
+          "villa-bano-talavera"
+        ]
+      },
+      {
+        "id": "cocina",
+        "fotos": [
+          "villa-cocina-talavera",
+          "villa-cocina-comedor",
+          "villa-comedor-escalera"
+        ]
+      },
+      {
+        "id": "estancias",
+        "fotos": [
+          "villa-sala-sillones",
+          "villa-sala-mesa",
+          "villa-recibidor",
+          "villa-pasillo-barro",
+          "villa-rincon-tocadiscos",
+          "villa-molino-cafe"
+        ]
+      },
+      {
+        "id": "fuera",
+        "fotos": [
+          "villa-lateral-jardin-mar",
+          "villa-frente-camino",
+          "villa-costado-jardin",
+          "villa-casa-selva-mar"
+        ]
+      }
+    ]
   },
   "depa-vallarta": {
     "slug": "depa-vallarta",

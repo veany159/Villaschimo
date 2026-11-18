@@ -223,24 +223,52 @@ button{font:inherit;color:inherit}
 .casa .precio small{font-size:12px;font-family:var(--sans);color:var(--arena);margin-left:5px}
 
 /* -------------------------------------------------------------- galería */
-.galeria{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.galeria button{padding:0;border:none;background:var(--cal-2);cursor:pointer;overflow:hidden;aspect-ratio:4/5}
-.galeria button:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
-.galeria img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.galeria button:hover img{transform:scale(1.04)}
-@media (max-width:760px){
-  .galeria{grid-template-columns:1fr 1fr}
-  .galeria button:first-child{grid-column:span 2;grid-row:span 1;aspect-ratio:4/3}
+/* pestañas por estancia: alberca, recámaras, cocina... */
+.gal-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.gal-tab{font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacing:.03em;
+  padding:8px 15px;border:1px solid rgba(28,26,23,.16);background:transparent;color:var(--arena);
+  border-radius:2px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;
+  transition:background .18s ease,color .18s ease,border-color .18s ease}
+.gal-tab span{font-size:11px;font-weight:500;opacity:.6;font-variant-numeric:tabular-nums}
+.gal-tab:hover{color:var(--tinta);border-color:rgba(28,26,23,.42)}
+.gal-tab.activa{background:var(--tinta);border-color:var(--tinta);color:var(--blanco)}
+.gal-tab.activa span{opacity:.55}
+
+.galeria{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal-celda[hidden]{display:none}  /* si no, el display:block de abajo le gana al atributo */
+.gal-celda{position:relative;display:block;padding:0;border:none;background:var(--cal-2);
+  cursor:zoom-in;overflow:hidden;aspect-ratio:4/3}
+.gal-celda img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s ease}
+.gal-celda:hover img,.gal-celda:focus-visible img{transform:scale(1.045)}
+.gal-pie{position:absolute;left:0;right:0;bottom:0;padding:30px 13px 10px;text-align:left;
+  font-family:var(--sans);font-size:10px;letter-spacing:.15em;text-transform:uppercase;
+  font-weight:600;color:var(--blanco);opacity:0;transition:opacity .22s ease;
+  background:linear-gradient(to top,rgba(20,18,15,.7),rgba(20,18,15,0))}
+.gal-celda:hover .gal-pie,.gal-celda:focus-visible .gal-pie{opacity:1}
+@media (max-width:860px){
+  .galeria{grid-template-columns:1fr 1fr;gap:9px}
+  .gal-pie{opacity:1;font-size:9.5px;padding:24px 10px 8px}
 }
+@media (prefers-reduced-motion:reduce){.gal-celda img{transition:none}}
 
 .visor{position:fixed;inset:0;z-index:90;background:rgba(20,18,15,.94);display:none;align-items:center;justify-content:center;padding:clamp(16px,4vw,50px)}
 .visor.abierto{display:flex}
-.visor img{max-width:100%;max-height:86vh;object-fit:contain;width:auto;height:auto}
+.visor-marco{margin:0;max-width:100%;display:flex;align-items:center;justify-content:center}
+.visor img{max-width:100%;max-height:82vh;object-fit:contain;width:auto;height:auto}
 .visor .cerrar,.visor .nav-v{position:absolute;background:none;border:1px solid rgba(251,249,244,.4);color:var(--blanco);width:46px;height:46px;border-radius:50%;cursor:pointer;font-size:19px;line-height:1;display:flex;align-items:center;justify-content:center}
 .visor .cerrar{top:20px;right:20px}
 .visor .prev{left:16px;top:50%;transform:translateY(-50%)}
 .visor .sig{right:16px;top:50%;transform:translateY(-50%)}
-.visor .pie-v{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:rgba(251,249,244,.75);font-size:12.5px;padding:0 60px}
+.visor .visor-pie{position:absolute;bottom:16px;left:0;right:0;padding:0 70px;
+  display:flex;flex-direction:column;align-items:center;gap:5px}
+.visor .pie-v{margin:0;text-align:center;color:rgba(251,249,244,.8);font-size:12.5px;max-width:64ch}
+.visor .cuenta-v{margin:0;color:rgba(251,249,244,.45);font-size:10.5px;letter-spacing:.18em;
+  text-transform:uppercase;font-variant-numeric:tabular-nums}
+@media (max-width:620px){
+  .visor .visor-pie{padding:0 16px;bottom:12px}
+  .visor .cerrar,.visor .nav-v{width:40px;height:40px}
+  .visor .prev{left:8px} .visor .sig{right:8px}
+}
 
 /* ---------------------------------------------------------------- rutas */
 .rutas{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(233,239,241,.22)}
