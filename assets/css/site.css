@@ -489,20 +489,41 @@ button{font:inherit;color:inherit}
 @media(min-width:860px){.avisos{grid-template-columns:1fr 1fr}}
 
 /* --------------------------------------------------------- precios */
+/* la tarifa es la cifra que decide la reserva: va centrada, entre dos
+   hairlines, con aire alrededor y a una escala que se sostiene sola */
+.tarifa-panel{text-align:center;border-top:1px solid var(--linea-suave);
+  border-bottom:1px solid var(--linea-suave);
+  padding-block:clamp(46px,6.5vw,78px);
+  /* la sección viene sin padding arriba: el aire se lo damos aquí, para que
+     la línea de arriba no quede pegada a la foto del encabezado */
+  margin-top:clamp(42px,5.5vw,70px);margin-bottom:clamp(50px,6.5vw,84px)}
+.tarifa-lbl{font-size:11.5px;letter-spacing:.34em;color:var(--arena)}
+.tarifa-cifra{margin-top:clamp(20px,2.6vw,30px)}
+.tarifa-cifra b{display:block;font-family:var(--serif);font-weight:400;
+  font-size:clamp(58px,8.4vw,96px);line-height:.95;letter-spacing:-.022em;color:var(--tinta)}
+.tarifa-cifra span{display:block;margin-top:16px;font-size:14.5px;
+  letter-spacing:.07em;color:var(--arena)}
+.tarifa-nota{margin:clamp(22px,2.6vw,30px) auto 0;max-width:58ch;
+  font-size:14.5px;line-height:1.62;text-wrap:balance}
+.tarifa-h{margin:clamp(54px,7vw,86px) 0 22px}
+.tarifa-panel + .tarifa-h{margin-top:0}
+.tarifa-saldo{margin-top:18px}
+
 .precio-grande{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .precio-grande b{font-family:var(--serif);font-size:clamp(38px,5vw,54px);font-weight:400;line-height:1}
 .precio-grande span{font-size:15px;color:var(--arena)}
 .descuentos{display:grid;gap:0;border:1px solid var(--linea-suave);background:var(--blanco)}
 @media(min-width:760px){.descuentos{grid-template-columns:repeat(3,1fr)}}
-.descuentos > div{padding:22px 24px;border-right:1px solid var(--linea-suave)}
+.descuentos > div{padding:clamp(26px,3vw,34px) clamp(24px,2.6vw,30px);border-right:1px solid var(--linea-suave)}
 .descuentos > div:last-child{border-right:none}
 @media(max-width:759px){.descuentos > div{border-right:none;border-bottom:1px solid var(--linea-suave)}.descuentos > div:last-child{border-bottom:none}}
-.descuentos dt{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--arena);font-weight:700}
-.descuentos dd{margin:8px 0 0;font-family:var(--serif);font-size:22px}
-.descuentos p{font-size:13.5px;color:var(--tinta-70);margin-top:7px}
+.descuentos dt{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--arena);font-weight:700}
+.descuentos dd{margin:12px 0 0;font-family:var(--serif);font-size:clamp(22px,2.2vw,26px);line-height:1.15}
+.descuentos p{font-size:13.5px;color:var(--tinta-70);margin-top:10px;line-height:1.62}
 
-.pagos{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.pagos span{font-size:12.5px;border:1px solid var(--linea);border-radius:20px;padding:7px 15px;color:var(--tinta-70)}
+.pagos{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.pagos span{font-size:13px;border:1px solid var(--linea);border-radius:2px;padding:10px 18px;
+  color:var(--tinta-70);background:var(--blanco)}
 
 /* --------------------------------------------------------- público */
 .publicos{display:flex;flex-wrap:wrap;gap:10px}

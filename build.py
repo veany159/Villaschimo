@@ -382,8 +382,11 @@ def img(ctx, nombre, alt, clase="", ancho=1600, lazy=True):
     base = ctx["base"]
     if not nombre:
         return ""
+    fuentes = "{b}assets/img/{n}-800.webp 800w, {b}assets/img/{n}.webp 1600w"
+    if os.path.exists(os.path.join(RAIZ, "assets", "img", nombre + "-2400.webp")):
+        fuentes += ", {b}assets/img/{n}-2400.webp 2400w"
     return ('<img src="{b}assets/img/{n}.webp" '
-            'srcset="{b}assets/img/{n}-800.webp 800w, {b}assets/img/{n}.webp 1600w" '
+            'srcset="' + fuentes + '" '
             'sizes="(max-width:860px) 100vw, {a}px" '
             'alt="{alt}" class="{c}" {l} decoding="async">').format(
         b=base, n=nombre, a=ancho, alt=e(alt), c=clase, l='loading="lazy"' if lazy else "")
@@ -637,19 +640,19 @@ def bloque_precio(ctx):
 
     return f"""<section class="pad pad-top0">
 <div class="u">
-  <div class="encabezado">
-    <p class="lbl">{e(R['precio_etiqueta'])}</p>
-    <div class="precio-grande" style="margin-top:12px">{cifra}</div>
-    <p class="nota" style="margin-top:12px">{e(R['precio_nota'])}</p>
+  <div class="tarifa-panel">
+    <p class="lbl tarifa-lbl">{e(R['precio_etiqueta'])}</p>
+    <div class="tarifa-cifra">{cifra}</div>
+    <p class="nota tarifa-nota">{e(R['precio_nota'])}</p>
   </div>
 
-  <h3 class="h3" style="margin-bottom:18px">{e(R['descuentos_titulo'])}</h3>
+  <h3 class="h3 tarifa-h">{e(R['descuentos_titulo'])}</h3>
   <dl class="descuentos">{desc}</dl>
 
-  <h3 class="h3" style="margin:40px 0 12px">{e(R['pagos_titulo'])}</h3>
+  <h3 class="h3 tarifa-h">{e(R['pagos_titulo'])}</h3>
   <p class="lead">{e(R['pagos_texto'])}</p>
   <div class="pagos">{pagos}</div>
-  <p class="nota" style="margin-top:14px">{e(R['pagos_saldo'])}</p>
+  <p class="nota tarifa-saldo">{e(R['pagos_saldo'])}</p>
 </div>
 </section>"""
 
@@ -958,7 +961,7 @@ def pagina_inicio(ctx):
     cuerpo = f"""<main id="contenido">
 
 <section class="hero">
-  {img(ctx, 'villa-fachada-terraza', alt_de(ctx, 'villa-chimo', 'villa-fachada-terraza'), lazy=False, ancho=1600)}
+  {img(ctx, 'villa-casa-selva-mar', alt_de(ctx, 'villa-chimo', 'villa-casa-selva-mar'), lazy=False, ancho=2400)}
   <span class="velo"></span>
   <div class="sello"><b>{e(I['hero']['sello_numero'])}</b><span>{e(I['hero']['sello_texto'])}</span></div>
   <div class="u">
@@ -1152,7 +1155,7 @@ def pagina_casa(ctx, slug):
         pend = '<p style="margin-top:22px"><span class="pendiente">%s</span> <span class="nota">%s</span></p>' % (
             e(etiqueta), e(" · ".join(ex["pendientes"])))
 
-    portada = p.get("portada") or "villa-fachada-terraza"
+    portada = p.get("portada") or "villa-casa-selva-mar"
 
     diferenciador = ""
     if d.get("diferenciador"):
@@ -1180,7 +1183,7 @@ def pagina_casa(ctx, slug):
     cuerpo = f"""<main id="contenido">
 
 <section class="hero chico">
-  {img(ctx, portada, alt_de(ctx, slug, portada), lazy=False)}
+  {img(ctx, portada, alt_de(ctx, slug, portada), lazy=False, ancho=2400)}
   <span class="velo"></span>
   <div class="u">
     <h1>{e(d['nombre'])}</h1>

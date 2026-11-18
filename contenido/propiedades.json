@@ -200,7 +200,7 @@
         "villa-casa-selva-mar": "Villa Chimo in the jungle, on the slope that drops to Chimo beach"
       }
     },
-    "portada": "villa-alberca-casa-mar",
+    "portada": "villa-casa-selva-mar",
     "ficha": {
       "recamaras": 2,
       "banos": "2.5",
@@ -227,6 +227,15 @@
       "en": "A second phase is being built."
     },
     "galeria_grupos": [
+      {
+        "id": "fuera",
+        "fotos": [
+          "villa-casa-selva-mar",
+          "villa-lateral-jardin-mar",
+          "villa-frente-camino",
+          "villa-costado-jardin"
+        ]
+      },
       {
         "id": "alberca",
         "fotos": [
@@ -265,15 +274,6 @@
           "villa-pasillo-barro",
           "villa-rincon-tocadiscos",
           "villa-molino-cafe"
-        ]
-      },
-      {
-        "id": "fuera",
-        "fotos": [
-          "villa-lateral-jardin-mar",
-          "villa-frente-camino",
-          "villa-costado-jardin",
-          "villa-casa-selva-mar"
         ]
       }
     ]
