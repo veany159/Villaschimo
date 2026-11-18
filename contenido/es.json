@@ -141,7 +141,7 @@
         "t": "Recámaras"
       },
       {
-        "n": "2½",
+        "n": "1½",
         "t": "Baños"
       },
       {
@@ -195,19 +195,27 @@
   "rutas": [
     {
       "n": "RUTA 01",
-      "titulo": "Panga desde Boca de Tomatlán",
+      "titulo": "Water taxi desde Boca de Tomatlán",
       "filas": [
         [
           "Salida",
-          "Boca de Tomatlán"
+          "Boca de Tomatlán, 8:00"
         ],
         [
-          "Del aeropuerto",
-          "40 min en taxi"
+          "Hay que estar",
+          "7:30, la panga sale a las 8:00"
         ],
         [
-          "Horario",
-          "8:00 – 18:30"
+          "Duración",
+          "1 hora hasta Chimo"
+        ],
+        [
+          "Costo",
+          "150 a 200 pesos por persona"
+        ],
+        [
+          "Al llegar",
+          "Canoa a la playa, 50 pesos"
         ],
         [
           "Para",
@@ -217,19 +225,27 @@
     },
     {
       "n": "RUTA 02",
-      "titulo": "Lancha privada desde Vallarta",
+      "titulo": "Lancha privada",
       "filas": [
         [
           "Salida",
-          "Marina Vallarta"
+          "Boca de Tomatlán o Marina Vallarta"
         ],
         [
-          "Duración",
-          "2 h 30 min"
+          "Recomendado",
+          "Salir de Boca de Tomatlán"
+        ],
+        [
+          "Costo",
+          "3,000 a 5,000 pesos, según la lancha"
         ],
         [
           "Equipaje",
           "Sin límite práctico"
+        ],
+        [
+          "Al llegar",
+          "Canoa a la playa, 50 pesos"
         ],
         [
           "Para",
@@ -251,7 +267,15 @@
         ],
         [
           "Vehículo",
-          "Camioneta alta"
+          "4x4, sin excepción"
+        ],
+        [
+          "Temporada",
+          "De finales de octubre a junio"
+        ],
+        [
+          "Con lluvia",
+          "La terracería se complica"
         ],
         [
           "Para",
@@ -665,7 +689,7 @@
       },
       {
         "p": "¿Cómo se llega a Chimo desde Puerto Vallarta?",
-        "r": "De tres formas. En lancha, unas 2 horas 30 minutos desde Puerto Vallarta. En panga desde Boca de Tomatlán, que está a unos 40 minutos del aeropuerto. O por tierra vía El Tuito, con cerca de 3 horas de terracería. No hay carretera pavimentada hasta el pueblo."
+        "r": "De tres formas. El water taxi sale de Boca de Tomatlán a las 8:00 de la mañana —hay que estar a las 7:30— y hace una hora hasta Chimo; cuesta entre 150 y 200 pesos por persona. Como no hay muelle, al llegar te lleva una canoa a la playa por 50 pesos. También se puede contratar una lancha privada desde Boca de Tomatlán o Marina Vallarta, entre 3,000 y 5,000 pesos. O por tierra vía El Tuito, con unas 3 horas de terracería, solo en 4x4 y de preferencia en temporada seca, de finales de octubre a junio."
       },
       {
         "p": "¿A qué distancia está Chimo de Puerto Vallarta?",

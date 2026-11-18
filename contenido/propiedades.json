@@ -14,7 +14,7 @@
           "grupo": "La casa",
           "items": [
             "2 recámaras: una con cama matrimonial y otra con dos camas individuales",
-            "2 baños y medio",
+            "1 baño y medio",
             "Recomendada para 4 personas",
             "Alberca privada a temperatura ambiente",
             "Vista directa al océano",
@@ -112,7 +112,7 @@
           "grupo": "The house",
           "items": [
             "2 bedrooms: one king, one with two singles",
-            "2.5 bathrooms",
+            "1.5 bathrooms",
             "Recommended for 4 guests",
             "Private pool, at ambient temperature",
             "Direct ocean view",
@@ -203,7 +203,7 @@
     "portada": "villa-casa-selva-mar",
     "ficha": {
       "recamaras": 2,
-      "banos": "2.5",
+      "banos": "1.5",
       "huespedes": 4,
       "huespedes_max": 4,
       "camas": "1 matrimonial y 2 individuales",

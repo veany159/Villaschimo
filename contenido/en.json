@@ -141,7 +141,7 @@
         "t": "Bedrooms"
       },
       {
-        "n": "2½",
+        "n": "1½",
         "t": "Baths"
       },
       {
@@ -195,41 +195,57 @@
   "rutas": [
     {
       "n": "ROUTE 01",
-      "titulo": "Panga from Boca de Tomatlán",
+      "titulo": "Water taxi from Boca de Tomatlán",
       "filas": [
         [
           "Departs",
-          "Boca de Tomatlán"
+          "Boca de Tomatlán, 8:00 am"
         ],
         [
-          "From the airport",
-          "40 min by taxi"
+          "Be there by",
+          "7:30 am; the boat leaves at 8:00"
         ],
         [
-          "Service",
-          "8:00 am – 6:30 pm"
+          "Crossing",
+          "1 hour to Chimo"
+        ],
+        [
+          "Fare",
+          "150 to 200 pesos per person"
+        ],
+        [
+          "On arrival",
+          "A canoe takes you ashore, 50 pesos"
         ],
         [
           "Best for",
-          "Couples and solo travellers"
+          "A couple or a solo traveller"
         ]
       ]
     },
     {
       "n": "ROUTE 02",
-      "titulo": "Private boat from Vallarta",
+      "titulo": "Private boat",
       "filas": [
         [
           "Departs",
-          "Marina Vallarta"
+          "Boca de Tomatlán or Marina Vallarta"
         ],
         [
-          "Duration",
-          "2 h 30 min"
+          "We suggest",
+          "Leaving from Boca de Tomatlán"
+        ],
+        [
+          "Cost",
+          "3,000 to 5,000 pesos, depending on the boat"
         ],
         [
           "Luggage",
           "No practical limit"
+        ],
+        [
+          "On arrival",
+          "A canoe takes you ashore, 50 pesos"
         ],
         [
           "Best for",
@@ -242,20 +258,28 @@
       "titulo": "Dirt road via El Tuito",
       "filas": [
         [
-          "Departs",
-          "El Tuito, 46 km from PV"
+          "Start",
+          "El Tuito, 46 km from Puerto Vallarta"
         ],
         [
-          "Duration",
-          "1 h + 3 h of dirt road"
+          "Time",
+          "1 h paved + 3 h of dirt road"
         ],
         [
           "Vehicle",
-          "High-clearance truck"
+          "4x4, no exceptions"
+        ],
+        [
+          "Season",
+          "Late October to June"
+        ],
+        [
+          "In the rains",
+          "The dirt road gets difficult"
         ],
         [
           "Best for",
-          "Making the trip part of the trip"
+          "Making the journey part of the trip"
         ]
       ]
     }
@@ -665,7 +689,7 @@
       },
       {
         "p": "How do you get to Chimo from Puerto Vallarta?",
-        "r": "Three ways. By boat, about 2 hours 30 minutes from Puerto Vallarta. By panga from Boca de Tomatlán, roughly 40 minutes from the airport. Or overland via El Tuito, with about 3 hours of dirt road. There is no paved road to the village."
+        "r": "Three ways. The water taxi leaves Boca de Tomatlán at 8:00 am — be there by 7:30 — and takes an hour to Chimo; the fare is 150 to 200 pesos per person. There is no pier, so a canoe takes you ashore for 50 pesos. You can also hire a private boat from Boca de Tomatlán or Marina Vallarta, 3,000 to 5,000 pesos. Or overland via El Tuito, about 3 hours of dirt road, 4x4 only and best in the dry season, late October to June."
       },
       {
         "p": "How far is Chimo from Puerto Vallarta?",

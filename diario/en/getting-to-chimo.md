@@ -15,7 +15,11 @@ The most common route, and the most beautiful one.
 
 Boca de Tomatlán is a fishing village about forty minutes from the Puerto Vallarta airport. You get there by taxi, or on the local bus that leaves from the corner of Basilio Badillo and Constitución in the Zona Romántica — the same one that goes to Mismaloya.
 
-From there the *pangas* leave. A panga is an open fishing boat that works as a water taxi; it is how this whole coast moves. Service runs daily, roughly 8:00 a.m. to 6:30 p.m.
+From there the *pangas* leave. A panga is an open fishing boat that works as a water taxi; it is how this whole coast moves.
+
+**The water taxi to Chimo leaves first thing: 8:00 a.m.** Be at the Boca de Tomatlán pier by 7:30. The crossing takes **one hour** and costs **150 to 200 pesos per person**.
+
+And here is the part nobody tells you beforehand: **there is no pier in Chimo**. The panga anchors offshore and a canoe takes you in to the beach, for about 50 pesos more. It is part of the arrival.
 
 Reference fares along the corridor, so you have a sense of the scale:
 
@@ -33,7 +37,9 @@ Reference fares along the corridor, so you have a sense of the scale:
 
 ## 2. By private boat from Puerto Vallarta
 
-From Marina Vallarta the run to Chimo takes about **two and a half hours**. This is the option for groups, families and anyone bringing luggage or gear, because there is no practical limit on what you load.
+You can hire one from **Marina Vallarta** or from **Boca de Tomatlán**, and we suggest the second: you start closer and pay for less crossing. From Marina Vallarta it is about two and a half hours.
+
+The cost runs **3,000 to 5,000 pesos** for the whole boat, depending on who you hire. This is the option for groups, families and anyone bringing luggage or gear, because there is no practical limit on what you load. The canoe on arrival is paid the same way.
 
 Split between several people it stops being expensive, and it has one advantage: you leave when you want and stop where you want. The route passes Las Ánimas, Quimixto, Majahuitas and Yelapa.
 
@@ -43,7 +49,9 @@ The long way, and the more interesting one if you have the day.
 
 Take Highway 200 south to **El Tuito**, 46 kilometres from Puerto Vallarta, roughly an hour's drive. El Tuito is the seat of the Cabo Corrientes municipality: it sits at 1,085 metres and runs five to ten degrees cooler than the coast. There is a two-hundred-year-old stone church, panela and Oaxaca cheese, coffee, honey, and the raicilla distilleries — Cabo Corrientes is an official stop on Jalisco's Raicilla Route.
 
-From El Tuito the dirt road begins. It is roughly **three hours** and you need a high-clearance vehicle. Road conditions change in the rainy season, so it is worth asking before you set out.
+From El Tuito the dirt road begins. It is roughly **three hours** and you need a **4x4, no exceptions** — this is about traction, not careful driving.
+
+It also has a season. We recommend this route **from late October to June**, the dry months. In the rains the road gets genuinely difficult, and we would rather you came by sea.
 
 If you come this way, it is worth splitting it over two days and adding **Mayto** — a twelve-kilometre open beach with a sea turtle camp that has run since 2005 — and **Tehuamixtle**, the oyster bay, where divers visit a shrimp boat that sank in 1920.
 

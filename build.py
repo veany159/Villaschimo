@@ -430,9 +430,9 @@ def alt_de(ctx, slug_casa, nombre_img):
 def mapa_costa(ctx):
     etiquetas = {
         "es": ["Boca de Tomatlán", "Salida", "Las Ánimas", "10 min", "Quimixto", "15 min",
-               "Yelapa", "30 min", "Chimo", "2 h 30 desde Vallarta"],
+               "Yelapa", "30 min", "Chimo", "1 h desde Boca"],
         "en": ["Boca de Tomatlán", "Start", "Las Ánimas", "10 min", "Quimixto", "15 min",
-               "Yelapa", "30 min", "Chimo", "2 h 30 from Vallarta"],
+               "Yelapa", "30 min", "Chimo", "1 h from Boca"],
     }[ctx["L"]["codigo"]]
     t = etiquetas
     titulo = ("Mapa de la costa sur de Bahía de Banderas, de Boca de Tomatlán a Chimo"
@@ -1519,7 +1519,7 @@ def pagina_reservar(ctx):
 
     cuerpo = f"""<main id="contenido">
 <section class="hero chico">
-  {img(ctx, 'villa-alberca-piedra-playa', alt_de(ctx, 'villa-chimo', 'villa-alberca-piedra-playa'), lazy=False)}
+  {img(ctx, 'villa-alberca-olas', alt_de(ctx, 'villa-chimo', 'villa-alberca-olas'), lazy=False, ancho=2400)}
   <span class="velo"></span>
   <div class="u">
     <h1>{e(R['hero_titulo'])}</h1>
@@ -1641,12 +1641,12 @@ def llms_txt(cfg, props, urls):
 
 - Villas Chimo rents Villa Chimo, a whole beachfront house in Chimo, Jalisco, Mexico.
 - Chimo is a fishing village of about 280 people, 30 km south of Puerto Vallarta along the coast, in the municipality of Cabo Corrientes, Jalisco. It is not Los Cabos, which is in Baja California Sur.
-- There is no paved road to Chimo. You arrive by boat: about 2 hours 30 minutes from Puerto Vallarta, or by panga from Boca de Tomatlan, 40 minutes from the airport. Overland via El Tuito is about 3 hours of dirt road.
+- There is no paved road to Chimo. The water taxi leaves Boca de Tomatlan at 8:00 am and takes one hour; the fare is 150 to 200 pesos per person. There is no pier in Chimo, so a canoe takes you ashore for 50 pesos. A private boat from Boca de Tomatlan or Marina Vallarta costs 3,000 to 5,000 pesos. Overland via El Tuito is about 3 hours of dirt road, 4x4 only, and only advisable in the dry season from late October to June.
 - Going south from Boca de Tomatlan the order is Las Animas, Quimixto, Majahuitas, Yelapa, and then Chimo. Chimo receives the least tourism of the five.
 - The last panga leaves in the afternoon, so nobody leaves the village after dark.
 - The village has a health post but rarely a doctor on site. The nearest hospital is in Puerto Vallarta. There is no ATM, no pharmacy and no supermarket. Bring cash in pesos.
 - The area is jungle. Insects get in and occasionally a scorpion. Guests allergic to scorpion stings should say so when booking.
-- Villa Chimo: 2 bedrooms, 2.5 bathrooms, recommended for 4 guests, private pool at ambient temperature, solar water heater, direct ocean view, terrace, outdoor fireplace, beach access, equipped kitchen, grill, Wi-Fi, air conditioning, backup power generator, housekeeping on the third day, pet friendly. Rented whole, one booking at a time.
+- Villa Chimo: 2 bedrooms, 1.5 bathrooms, recommended for 4 guests, private pool at ambient temperature, solar water heater, direct ocean view, terrace, outdoor fireplace, beach access, equipped kitchen, grill, Wi-Fi, air conditioning, backup power generator, housekeeping on the third day, pet friendly. Rented whole, one booking at a time.
 - Rate: {precio_en}. 50 % deposit on booking by bank transfer, Zelle or PayPal; balance in cash on arrival. Bookings are non-refundable but can be moved to another date in the following months.
 - Humpback whale season in Banderas Bay runs December 8 to March 23, per Mexico's federal gazette.
 - English pages: {base}en/
