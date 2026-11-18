@@ -103,7 +103,8 @@
     "proximamente": "Coming soon",
     "galeria_todo": "All",
     "galeria_de": "of",
-    "galeria_ver": "Open full photo"
+    "galeria_ver": "Open full photo",
+    "ver_chimo": "More about Chimo and getting there"
   },
   "comentarios": {
     "titulo": "From people who have stayed",
@@ -131,9 +132,7 @@
     "hero": {
       "ubica": "Villa Chimo · Chimo, Cabo Corrientes",
       "titulo": "The loudest thing here is the ocean.",
-      "texto": "Our villa on the beach at Chimo, for four people for now. Getting here is the adventure: you go in through the jungle and come out on the Pacific.",
-      "sello_numero": "280",
-      "sello_texto": "People"
+      "texto": "Our villa on the beach at Chimo, for four people for now. Getting here is the adventure: you go in through the jungle and come out on the Pacific."
     },
     "datos": [
       {
@@ -155,8 +154,8 @@
     ],
     "casa": {
       "etiqueta": "The house",
-      "titulo": "I built it to come back to",
-      "firma": "— The owner"
+      "titulo": "This is my house for part of the year",
+      "firma": "— Sergio"
     },
     "casas": {
       "etiqueta": "Where you sleep",
@@ -165,7 +164,7 @@
     "llegar": {
       "etiqueta": "How you get here",
       "titulo": "Thirty kilometres of coast, three ways to cover them",
-      "aviso": "The last boat leaves in the afternoon. If you land later than that, sleep at Depa Vallarta and travel in the morning. We arrange the boat."
+      "aviso": "The last boat leaves in the afternoon. If you land later than that, you sleep in Vallarta and travel the next morning. We have an apartment in Nuevo Vallarta that is sometimes free: ask us about availability. We arrange the boat."
     },
     "pueblo": {
       "etiqueta": "The village",

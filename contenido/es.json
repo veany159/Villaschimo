@@ -103,7 +103,8 @@
     "proximamente": "Próximamente",
     "galeria_todo": "Todo",
     "galeria_de": "de",
-    "galeria_ver": "Ver la foto completa"
+    "galeria_ver": "Ver la foto completa",
+    "ver_chimo": "Todo sobre Chimo y cómo se llega"
   },
   "comentarios": {
     "titulo": "Lo que dicen los que ya vinieron",
@@ -131,9 +132,7 @@
     "hero": {
       "ubica": "Villa Chimo · Chimo, Cabo Corrientes",
       "titulo": "Aquí el ruido más fuerte son las olas del mar.",
-      "texto": "Nuestra villa frente a la playa de Chimo, para cuatro personas por ahora. Llegar ya es la aventura: te internas en la selva y sales al Pacífico.",
-      "sello_numero": "280",
-      "sello_texto": "Habitantes"
+      "texto": "Nuestra villa frente a la playa de Chimo, para cuatro personas por ahora. Llegar ya es la aventura: te internas en la selva y sales al Pacífico."
     },
     "datos": [
       {
@@ -155,8 +154,8 @@
     ],
     "casa": {
       "etiqueta": "La casa",
-      "titulo": "La hice para volver",
-      "firma": "— El dueño"
+      "titulo": "Es mi casa por temporadas",
+      "firma": "— Sergio"
     },
     "casas": {
       "etiqueta": "Dónde dormir",
@@ -165,7 +164,7 @@
     "llegar": {
       "etiqueta": "Cómo se llega",
       "titulo": "Treinta kilómetros de costa, tres maneras de recorrerlos",
-      "aviso": "La última panga sale por la tarde. Si tu vuelo aterriza después, duerme en el Depa Vallarta y sal al día siguiente. Nosotros coordinamos la lancha."
+      "aviso": "La última panga sale por la tarde. Si tu vuelo aterriza después, hay que dormir en Vallarta y salir al día siguiente. Tenemos un departamento en Nuevo Vallarta que a veces está libre: pregúntanos por disponibilidad. La lancha la coordinamos nosotros."
     },
     "pueblo": {
       "etiqueta": "El pueblo",

@@ -8,7 +8,7 @@
       "nombre": "Villa Chimo",
       "lugar": "Chimo, Cabo Corrientes, Jalisco",
       "resumen": "Una casa entera frente al mar, con alberca privada y acceso directo a la playa. Dos recámaras, cuatro personas, una sola reserva a la vez.",
-      "historia": "Crecí viniendo a Chimo. Cuando por fin pude construir aquí, hice la casa que quería tener: la alberca picada en la roca, la teja, la chimenea afuera, y el cerro y el mar entrando por la misma ventana.\n\nLa rento entera y una reserva a la vez. La alberca, la terraza y la playa de enfrente son tuyas mientras estés.",
+      "historia": "Crecí viniendo a Chimo. Cuando por fin pude construir aquí, hice la casa que quería tener: la alberca picada en la roca, la teja, la chimenea afuera, y el cerro y el mar entrando por la misma ventana.\n\nVengo por temporadas, y el resto del año me gusta compartirla. No solo la casa: también lo que uno aprende después de tantos años viniendo —dónde se pesca, a qué hora sale la panga, con quién se compra el pulpo. La rento entera y una reserva a la vez.",
       "amenidades": [
         {
           "grupo": "La casa",
@@ -106,7 +106,7 @@
       "nombre": "Villa Chimo",
       "lugar": "Chimo, Cabo Corrientes, Jalisco",
       "resumen": "A whole house on the water, with a private pool and direct beach access. Two bedrooms, four people, one booking at a time.",
-      "historia": "I grew up coming to Chimo. When I could finally build here, I made the house I wanted: the pool cut into the rock, the clay-tile roof, the fireplace outside, and the mountain and the ocean coming in through the same window.\n\nI rent it whole, one booking at a time. The pool, the terrace and the beach in front of it are yours for as long as you stay.",
+      "historia": "I grew up coming to Chimo. When I could finally build here, I made the house I wanted: the pool cut into the rock, the clay-tile roof, the fireplace outside, and the mountain and the ocean coming in through the same window.\n\nI come for part of the year, and the rest of it I like to share the place. Not only the house: also what you learn after years of coming here — where the fishing is, what time the boat leaves, who to buy the octopus from. I rent it whole, one booking at a time.",
       "amenidades": [
         {
           "grupo": "The house",
@@ -285,9 +285,9 @@
     "_estado": "BORRADOR — faltan fotos, descripción y precio. Todo lo marcado como 'por confirmar' aparece en el sitio como pendiente, no inventado.",
     "es": {
       "nombre": "Depa Vallarta",
-      "lugar": "Puerto Vallarta, Jalisco",
-      "resumen": "La noche antes y la noche de regreso. La última panga a Chimo sale por la tarde: si tu vuelo llega tarde, aquí duermes y sales temprano al día siguiente.",
-      "historia": "Por confirmar.",
+      "lugar": "Nuevo Vallarta, Nayarit",
+      "resumen": "Un departamento nuestro en Nuevo Vallarta, pensado como casa puente antes y después de Chimo. Se renta por separado y sujeto a disponibilidad.",
+      "historia": "La última panga a Chimo sale por la tarde, así que casi nadie llega el mismo día que aterriza. Para eso existe este departamento: para no perder un día de viaje.\n\nEs un alojamiento aparte, con su propio calendario. No va incluido con Villa Chimo y no siempre está disponible, así que lo primero es preguntar por las fechas.",
       "amenidades": [
         {
           "grupo": "El departamento",
@@ -310,7 +310,7 @@
       ],
       "expectativas": {
         "titulo": "Lo que hay que saber antes de reservar",
-        "intro": "Estamos terminando la ficha de este departamento.",
+        "intro": "Estamos terminando la ficha de este departamento. Mientras tanto, lo que sí conviene saber es que se renta por separado y sujeto a disponibilidad.",
         "hay": [
           "Por confirmar"
         ],
@@ -325,13 +325,13 @@
           "Fotografías"
         ]
       },
-      "titulo_seo": "Depa Vallarta: la escala antes y después de Chimo"
+      "titulo_seo": "Depa Vallarta: la casa puente antes de ir a Chimo"
     },
     "en": {
       "nombre": "Depa Vallarta",
-      "lugar": "Puerto Vallarta, Jalisco",
-      "resumen": "The night before and the night back. The last boat to Chimo leaves in the afternoon: if you land late, you sleep here and travel in the morning.",
-      "historia": "To be confirmed.",
+      "lugar": "Nuevo Vallarta, Nayarit",
+      "resumen": "An apartment of ours in Nuevo Vallarta, a bridge house before and after Chimo. Rented separately and subject to availability.",
+      "historia": "The last boat to Chimo leaves in the afternoon, so almost nobody arrives the same day they land. That is what this apartment is for: so you do not lose a day of your trip.\n\nIt is a separate place with its own calendar. It does not come with Villa Chimo and it is not always available, so the first step is to ask about dates.",
       "amenidades": [
         {
           "grupo": "The apartment",
@@ -354,7 +354,7 @@
       ],
       "expectativas": {
         "titulo": "What to know before you book",
-        "intro": "We are still finishing this listing.",
+        "intro": "We are still finishing this listing. In the meantime, what matters is that it is rented separately and subject to availability.",
         "hay": [
           "To be confirmed"
         ],
@@ -369,7 +369,7 @@
           "Photographs"
         ]
       },
-      "titulo_seo": "Depa Vallarta: your stopover before and after Chimo"
+      "titulo_seo": "Depa Vallarta: the bridge house before Chimo"
     },
     "galeria": [],
     "portada": "",
@@ -391,6 +391,10 @@
           "04-30"
         ]
       ]
+    },
+    "proximamente": {
+      "es": "Se renta por separado y sujeto a disponibilidad. Pregúntanos por tus fechas.",
+      "en": "Rented separately and subject to availability. Ask us about your dates."
     }
   }
 }

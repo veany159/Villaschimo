@@ -463,7 +463,9 @@ def mapa_costa(ctx):
 </div>"""
 
 
-def bloque_rutas(ctx):
+def bloque_rutas(ctx, enlace=False):
+    """enlace: en el inicio se remata con una liga a la página de Chimo,
+    que es donde está el detalle. En la propia página de Chimo sobra."""
     L = ctx["L"]
     rutas = ""
     for r in L["rutas"]:
@@ -478,6 +480,8 @@ def bloque_rutas(ctx):
   {mapa_costa(ctx)}
   <div class="rutas">{rutas}</div>
   <p class="aviso">{e(L['inicio']['llegar']['aviso'])}</p>
+  {('<p style="margin-top:26px"><a class="enlace" href="' + ctx.get("pre","") + 'chimo.html">'
+    + e(L["ui"].get("ver_chimo", "")) + '</a></p>') if enlace else ''}
 </div>
 </section>"""
 
@@ -963,7 +967,6 @@ def pagina_inicio(ctx):
 <section class="hero">
   {img(ctx, 'villa-casa-selva-mar', alt_de(ctx, 'villa-chimo', 'villa-casa-selva-mar'), lazy=False, ancho=2400)}
   <span class="velo"></span>
-  <div class="sello"><b>{e(I['hero']['sello_numero'])}</b><span>{e(I['hero']['sello_texto'])}</span></div>
   <div class="u">
     <p class="ubica">{e(I['hero']['ubica'])}</p>
     <h1>{e(I['hero']['titulo'])}</h1>
@@ -979,7 +982,7 @@ def pagina_inicio(ctx):
 
 <section class="pad">
   <div class="u split">
-    {img(ctx, 'villa-alberca-piedra-playa', alt_de(ctx, 'villa-chimo', 'villa-alberca-piedra-playa'), ancho=640)}
+    {img(ctx, 'villa-sala-sillones', alt_de(ctx, 'villa-chimo', 'villa-sala-sillones'), ancho=640)}
     <div>
       <p class="lbl">{e(I['casa']['etiqueta'])}</p>
       <h2 class="h2" style="margin-top:12px">{e(I['casa']['titulo'])}</h2>
@@ -1000,7 +1003,7 @@ def pagina_inicio(ctx):
   </div>
 </section>
 
-{bloque_rutas(ctx)}
+{bloque_rutas(ctx, enlace=True)}
 
 <section class="pad">
   <div class="u">
@@ -1623,7 +1626,7 @@ def llms_txt(cfg, props, urls):
 
 ## Depa Vallarta
 
-- Departamento en Puerto Vallarta, pensado como escala antes y después de Chimo, porque la última lancha sale por la tarde.
+- Departamento en Nuevo Vallarta, pensado como casa puente antes y después de Chimo, porque la última lancha sale por la tarde. Se renta por separado y no siempre está libre: hay que consultar disponibilidad.
 - Ficha en preparación: capacidad, amenidades y precio por confirmar.
 
 ## Páginas

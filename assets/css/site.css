@@ -195,6 +195,8 @@ button{font:inherit;color:inherit}
 .fondo-mar .lbl{color:#8FB0BF}
 .fondo-mar .h2,.fondo-mar h3{color:var(--blanco)}
 .fondo-mar .lead{color:#C6D6DD}
+/* sobre el azul, el enlace hereda tinta y se pierde */
+.fondo-mar .enlace{color:var(--blanco)}
 .fondo-cal2{background:var(--cal-2)}
 .fondo-blanco{background:var(--blanco)}
 
