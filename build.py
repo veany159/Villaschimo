@@ -406,7 +406,8 @@ def alt_chimo(ctx, nombre):
 
 def alt_de(ctx, slug_casa, nombre_img):
     p = ctx["props"].get(slug_casa, {})
-    alts = p.get("es", {}).get("galeria_alt", {})
+    # antes todas las paginas usaban el alt en espanol, tambien las de ingles
+    alts = p.get(ctx["L"]["codigo"], {}).get("galeria_alt") or p.get("es", {}).get("galeria_alt", {})
     return alts.get(nombre_img, p.get(ctx["L"]["codigo"], {}).get("nombre", ""))
 
 
@@ -861,7 +862,11 @@ def json_ld(ctx, slug=None, extra=None):
             "description": L["inicio"]["descripcion_seo"],
             "address": {"@type": "PostalAddress", "addressLocality": "Chimo",
                         "addressRegion": "Jalisco", "addressCountry": "MX"},
-            "areaServed": "Cabo Corrientes, Jalisco, México",
+            # en ingles confunden Cabo Corrientes con Los Cabos, en Baja California
+            "containedInPlace": {"@type": "Place", "name": "Cabo Corrientes, Jalisco, Mexico"},
+            "areaServed": ["Chimo, Cabo Corrientes, Jalisco, Mexico",
+                           "Puerto Vallarta, Jalisco, Mexico",
+                           "Bahia de Banderas"],
             "telephone": tel,
             "email": cfg.get("correo") or None,
             "sameAs": [cfg.get("instagram")] if cfg.get("instagram") else None,
@@ -1545,6 +1550,8 @@ def llms_txt(cfg, props, urls):
     f = v.get("ficha", {})
     precio = ("%s %s por noche más impuestos" % (t.get("baja"), cfg.get("moneda", "MXN"))
               if t.get("baja") else "por confirmar")
+    precio_en = ("%s %s per night plus taxes" % (t.get("baja"), cfg.get("moneda", "MXN"))
+                 if t.get("baja") else "to be confirmed")
     return f"""# {cfg['marca']}
 
 > Renta vacacional de casa completa en Chimo, Cabo Corrientes, Jalisco, México.
@@ -1587,6 +1594,20 @@ def llms_txt(cfg, props, urls):
 - [Diario]({base}diario.html)
 - [Reservar]({base}reservar.html)
 - Versión en inglés: {base}en/
+
+## Facts in English
+
+- Villas Chimo rents Villa Chimo, a whole beachfront house in Chimo, Jalisco, Mexico.
+- Chimo is a fishing village of about 280 people, 30 km south of Puerto Vallarta along the coast, in the municipality of Cabo Corrientes, Jalisco. It is not Los Cabos, which is in Baja California Sur.
+- There is no paved road to Chimo. You arrive by boat: about 2 hours 30 minutes from Puerto Vallarta, or by panga from Boca de Tomatlan, 40 minutes from the airport. Overland via El Tuito is about 3 hours of dirt road.
+- Going south from Boca de Tomatlan the order is Las Animas, Quimixto, Majahuitas, Yelapa, and then Chimo. Chimo receives the least tourism of the five.
+- The last panga leaves in the afternoon, so nobody leaves the village after dark.
+- The village has a health post but rarely a doctor on site. The nearest hospital is in Puerto Vallarta. There is no ATM, no pharmacy and no supermarket. Bring cash in pesos.
+- The area is jungle. Insects get in and occasionally a scorpion. Guests allergic to scorpion stings should say so when booking.
+- Villa Chimo: 2 bedrooms, 2.5 bathrooms, recommended for 4 guests, private pool at ambient temperature, solar water heater, direct ocean view, terrace, outdoor fireplace, beach access, equipped kitchen, grill, Wi-Fi, air conditioning, backup power generator, housekeeping on the third day, pet friendly. Rented whole, one booking at a time.
+- Rate: {precio_en}. 50 % deposit on booking by bank transfer, Zelle or PayPal; balance in cash on arrival. Bookings are non-refundable but can be moved to another date in the following months.
+- Humpback whale season in Banderas Bay runs December 8 to March 23, per Mexico's federal gazette.
+- English pages: {base}en/
 
 ## Contacto
 

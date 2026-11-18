@@ -488,11 +488,11 @@
       ],
       [
         "Depósito",
-        "Se hace por transferencia, tarjeta, Zelle o PayPal. El saldo se paga en efectivo al llegar."
+        "50 % al reservar, por transferencia, Zelle o PayPal. El saldo se paga en efectivo al llegar."
       ],
       [
         "Cancelación",
-        "Reembolso parcial. Se cancela con 20 días de anticipación y se retiene el 20 %."
+        "La reserva no es reembolsable. Si no puedes venir, reagendamos tus fechas dentro de los meses siguientes, sujeto a disponibilidad."
       ],
       [
         "Clima",
@@ -537,10 +537,9 @@
       }
     ],
     "pagos_titulo": "Cómo se paga",
-    "pagos_texto": "El depósito se puede hacer por cualquiera de estas vías. El saldo se liquida en efectivo a la llegada.",
+    "pagos_texto": "El depósito del 50 % se puede hacer por cualquiera de estas vías. El saldo se liquida en efectivo a la llegada.",
     "pagos": [
       "Transferencia bancaria",
-      "Tarjeta de crédito",
       "Zelle",
       "PayPal"
     ],
@@ -692,6 +691,30 @@
       {
         "p": "¿Cuánto cuesta Villa Chimo?",
         "r": "150 dólares por noche más impuestos, por la casa completa, hasta 4 personas. Hay descuento por semana, a partir de 15 noches y por mes."
+      },
+      {
+        "p": "¿Es seguro Chimo, Jalisco?",
+        "r": "Chimo tiene alrededor de 280 habitantes y no llega carretera pavimentada, así que no hay tránsito de paso: quien llega, llega en lancha y el pueblo entero lo ve. Los riesgos reales aquí no son de delincuencia, son de aislamiento. No hay cajero, no hay farmacia, casi nunca hay médico de planta y la última panga sale por la tarde. Se resuelven llegando con efectivo en pesos, con tus medicamentos, y sabiendo que después de cierta hora ya no se sale del pueblo."
+      },
+      {
+        "p": "¿Hay médico u hospital en Chimo?",
+        "r": "Hay centro de salud en el pueblo, pero casi nunca hay médico de planta. El hospital más cercano está en Puerto Vallarta, a unas 2 horas 30 minutos en lancha. Conviene traer los medicamentos que se vayan a necesitar y avisarnos antes de llegar si alguien de tu grupo requiere atención."
+      },
+      {
+        "p": "¿Se puede salir de Chimo por la noche?",
+        "r": "No. La última panga sale por la tarde y no hay carretera pavimentada, así que al caer la noche te quedas en el pueblo hasta la mañana siguiente. Conviene planear la llegada con eso en mente: si tu vuelo aterriza tarde, la noche anterior se duerme en Puerto Vallarta."
+      },
+      {
+        "p": "¿Se puede pagar con tarjeta en Chimo?",
+        "r": "En el pueblo no. No hay cajero ni terminales, así que el efectivo en pesos es lo único que funciona en los restaurantes de playa y con los pescadores. El depósito de la casa sí se paga por transferencia, Zelle o PayPal, y el saldo se liquida en efectivo."
+      },
+      {
+        "p": "¿Dónde queda Chimo respecto de Yelapa?",
+        "r": "Más al sur, siguiendo la misma línea de costa. Desde Boca de Tomatlán, Las Ánimas está a 10 minutos, Quimixto a 15, Majahuitas a 20 y Yelapa a 30. Chimo viene después de todos ellos y es el que menos turismo recibe de los cinco."
+      },
+      {
+        "p": "¿La alberca de Villa Chimo es climatizada?",
+        "r": "No. La alberca es privada y está a temperatura ambiente, que en esta costa ronda lo templado casi todo el año. La casa sí tiene calentador solar para el agua de las regaderas."
       }
     ]
   }

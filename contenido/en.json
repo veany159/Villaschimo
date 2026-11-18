@@ -123,8 +123,8 @@
     "muy_seguido": "You just posted. Give it a moment before writing again."
   },
   "inicio": {
-    "titulo_seo": "Villa Chimo: a beachfront house in Chimo, Jalisco",
-    "descripcion_seo": "A whole house on the beach at Chimo, Cabo Corrientes. Two bedrooms, private pool, sleeps four. Two and a half hours by boat from Puerto Vallarta.",
+    "titulo_seo": "Villa Chimo: beach house south of Puerto Vallarta",
+    "descripcion_seo": "A whole house on the beach at Chimo, a boat ride south of Puerto Vallarta. Two bedrooms, private pool, sleeps four. 150 USD a night.",
     "hero": {
       "ubica": "Villa Chimo · Chimo, Cabo Corrientes",
       "titulo": "The loudest thing here is the ocean.",
@@ -345,8 +345,8 @@
     ]
   },
   "chimo": {
-    "titulo_seo": "Chimo, Cabo Corrientes: how to get there, what's there",
-    "descripcion_seo": "Chimo is a fishing village of 280 people in Cabo Corrientes, 30 km from Puerto Vallarta. How to get there by boat or dirt road, and what is there.",
+    "titulo_seo": "Chimo, Mexico: the village south of Puerto Vallarta",
+    "descripcion_seo": "Chimo is a fishing village of 280 people 30 km south of Puerto Vallarta, reached only by boat. How to get there, what is there and what is not.",
     "hero_titulo": "Chimo",
     "hero_texto": "A fishing village in Cabo Corrientes, at the southern end of Banderas Bay. Two hundred and eighty people and a beach that is nearly always empty.",
     "secciones": [
@@ -424,8 +424,8 @@
     }
   },
   "experiencias_pagina": {
-    "titulo_seo": "What to do in Chimo: whales, waterfalls and fishing",
-    "descripcion_seo": "Whales December 8 to March 23, Cabo Corrientes waterfalls, octopus fishing, kayaks and macaws. Each one with its season and who runs it.",
+    "titulo_seo": "What to do in Chimo, south of Puerto Vallarta",
+    "descripcion_seo": "Whales December 8 to March 23, waterfalls, fishing from a panga, kayaks and macaws, a boat ride from Puerto Vallarta. Each with its season.",
     "hero_titulo": "Experiences",
     "hero_texto": "Things here have a season. The whales arrive on December 8. The waterfalls run full when it rains. Octopus comes out year-round, before dawn.",
     "dia_titulo": "A day in Chimo",
@@ -461,15 +461,15 @@
     ]
   },
   "diario_pagina": {
-    "titulo_seo": "Chimo Journal: getting there, what to bring, whales",
-    "descripcion_seo": "How to get to Chimo from Puerto Vallarta, what to bring, when to see whales, and how it differs from Yelapa, Quimixto and Majahuitas.",
+    "titulo_seo": "Chimo Journal: a boat ride from Puerto Vallarta",
+    "descripcion_seo": "How to reach Chimo from Puerto Vallarta, what to bring, when the whales come, and how it compares with Yelapa, Quimixto and Majahuitas.",
     "hero_titulo": "Journal",
     "hero_texto": "What people ask before they come, answered properly.",
     "vacio": "No entries published yet."
   },
   "reservar": {
-    "titulo_seo": "Book Villa Chimo: availability and rates in Chimo, Jalisco",
-    "descripcion_seo": "Check open dates for Villa Chimo and Depa Vallarta. 150 USD per night plus taxes, whole house. Book direct, no platform commission.",
+    "titulo_seo": "Book Villa Chimo: a beach house near Puerto Vallarta",
+    "descripcion_seo": "Open dates for Villa Chimo and Depa Vallarta. 150 USD per night plus taxes, the whole house, south of Puerto Vallarta. Book direct, no middleman.",
     "hero_titulo": "Book",
     "hero_texto": "Pick the house and the dates. We come back with a firm price, tax included, and how to get here.",
     "politicas_titulo": "Policies",
@@ -488,11 +488,11 @@
       ],
       [
         "Deposit",
-        "By bank transfer, card, Zelle or PayPal. The balance is paid in cash on arrival."
+        "50 % on booking, by bank transfer, Zelle or PayPal. The balance is paid in cash on arrival."
       ],
       [
         "Cancellation",
-        "Partial refund. Cancel 20 days ahead; 20 % is retained."
+        "Bookings are non-refundable. If you cannot come, we move your dates to another time in the following months, subject to availability."
       ],
       [
         "Weather",
@@ -537,10 +537,9 @@
       }
     ],
     "pagos_titulo": "How you pay",
-    "pagos_texto": "The deposit can be made any of these ways. The balance is settled in cash on arrival.",
+    "pagos_texto": "The 50 % deposit can be made any of these ways. The balance is settled in cash on arrival.",
     "pagos": [
       "Bank transfer",
-      "Credit card",
       "Zelle",
       "PayPal"
     ],
@@ -692,6 +691,30 @@
       {
         "p": "How much does Villa Chimo cost?",
         "r": "150 US dollars per night plus taxes, for the whole house, up to 4 guests. There are discounts by the week, from 15 nights, and by the month."
+      },
+      {
+        "p": "Is Chimo, Jalisco safe?",
+        "r": "Chimo has about 280 residents and no paved road, so there is no through traffic: everyone who arrives comes by boat and the whole village sees them. The real risks here are not crime, they are isolation. There is no ATM, no pharmacy, rarely a doctor on site, and the last panga leaves in the afternoon. You handle them by arriving with cash in pesos, with your own medication, and knowing that after a certain hour nobody leaves the village."
+      },
+      {
+        "p": "Is there a doctor or hospital in Chimo?",
+        "r": "There is a health post in the village, but rarely a doctor on site. The nearest hospital is in Puerto Vallarta, about 2 hours 30 minutes away by boat. Bring any medication you will need, and tell us before you arrive if anyone in your group needs medical attention."
+      },
+      {
+        "p": "Can you leave Chimo at night?",
+        "r": "No. The last panga leaves in the afternoon and there is no paved road, so once night falls you stay in the village until morning. Plan your arrival around that: if your flight lands late, you sleep in Puerto Vallarta the night before."
+      },
+      {
+        "p": "Can you pay by card in Chimo?",
+        "r": "Not in the village. There are no ATMs and no card terminals, so cash in pesos is the only thing that works at the beach restaurants and with the fishermen. The deposit for the house is paid by bank transfer, Zelle or PayPal, and the balance in cash."
+      },
+      {
+        "p": "Where is Chimo in relation to Yelapa?",
+        "r": "Further south, along the same stretch of coast. From Boca de Tomatlán it is 10 minutes to Las Ánimas, 15 to Quimixto, 20 to Majahuitas and 30 to Yelapa. Chimo comes after all of them and gets the least tourism of the five."
+      },
+      {
+        "p": "Is the pool at Villa Chimo heated?",
+        "r": "No. The pool is private and sits at ambient temperature, which on this coast stays mild most of the year. The house does have a solar water heater for the showers."
       }
     ]
   }

@@ -50,18 +50,18 @@
       "temporada": "todo-el-ano",
       "precio_desde": 0,
       "es": {
-        "nombre": "Salir a pescar pulpo",
+        "nombre": "Salir a pescar en panga",
         "cuando": "Todo el año",
         "duracion": "4 horas",
         "opera": "Pescadores del pueblo",
-        "texto": "Con quien lo hace todos los días. Se sale de madrugada y se regresa a desayunar lo que se pescó. Chimo vive de esto: el pulpo y el pescado son la economía del pueblo."
+        "texto": "Con quien lo hace todos los días. Se sale de madrugada en la panga de los pescadores del pueblo y se regresa a desayunar lo que se pescó."
       },
       "en": {
-        "nombre": "Octopus fishing",
+        "nombre": "Fishing from a panga",
         "cuando": "Year-round",
         "duracion": "4 hours",
         "opera": "Village fishermen",
-        "texto": "With the people who do it every day. You leave before dawn and come back to eat what you caught. This is what Chimo lives on: octopus and fish are the village economy."
+        "texto": "With the people who do it every day. You head out before dawn in the village fishermen's panga and come back to eat what you caught for breakfast."
       }
     },
     {
