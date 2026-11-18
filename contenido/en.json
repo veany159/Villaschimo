@@ -169,7 +169,7 @@
     "pueblo": {
       "etiqueta": "The village",
       "titulo": "Chimo",
-      "texto": "Two hundred and eighty people, a beach that is nearly always empty, and the sound of the boats going out at six in the morning. This place lives on octopus. There is no paved road to the village, and that is why it is still like this.",
+      "texto": "Chimo is a fishing village of two hundred and eighty people, in the municipality of Cabo Corrientes, south of Puerto Vallarta. The beach is nearly always empty and village life still turns around the fishing.\n\nYou eat the day's catch on the sand, at Socios or at Sunset, with the Pacific in front of you. There is no paved road here, and that is exactly what keeps it this way: one of the beaches in Jalisco that tourism has not reached.",
       "enlace": "Meet the village and its people"
     },
     "experiencias": {
@@ -391,12 +391,6 @@
       "intro": "We would rather tell you now than have you find out on arrival.",
       "hay_titulo": "There is",
       "no_hay_titulo": "There isn't"
-    },
-    "gente": {
-      "etiqueta": "The people",
-      "titulo": "Who lives in Chimo",
-      "texto": "This section will carry portraits and names of the people of the village: who takes you out in the boat, who cooks, who walks you up to the waterfalls. It is the one thing no other house on this coast can copy, which is why we would rather do it properly than quickly.",
-      "pendiente": "Photo session pending."
     },
     "alrededores": {
       "etiqueta": "Nearby",
@@ -661,8 +655,8 @@
   },
   "publico": {
     "etiqueta": "Who it is for",
-    "titulo": "People who come so that nothing happens",
-    "texto": "The house rents whole, so it makes no difference whether you are two or four. This is what comes up most among the people who write to us.",
+    "titulo": "Whatever you are coming for",
+    "texto": "The house is rented as a whole, so you have it to yourselves: no rooms next door, no shared pool, and it makes no difference whether you are two or four. Whoever you come with, the place is yours while you are here. This is what we hear most from the people who write to us.",
     "items": [
       "Families",
       "Couples and honeymoons",

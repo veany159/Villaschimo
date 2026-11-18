@@ -1010,7 +1010,7 @@ def pagina_inicio(ctx):
     <div class="encabezado">
       <p class="lbl">{e(I['pueblo']['etiqueta'])}</p>
       <h2 class="h2">{e(I['pueblo']['titulo'])}</h2>
-      <p class="lead" style="max-width:58ch">{e(I['pueblo']['texto'])}</p>
+      <div style="max-width:58ch">{parrafos(I['pueblo']['texto'])}</div>
     </div>
     <div class="tira">{tira}</div>
     <p style="margin-top:28px"><a class="enlace" href="{pre}chimo.html">{e(I['pueblo']['enlace'])}</a></p>
@@ -1316,17 +1316,6 @@ def pagina_chimo(ctx):
   </div>
 </section>
 
-<section class="pad pad-top0">
-  <div class="u">
-    <div class="encabezado">
-      <p class="lbl">{e(C['gente']['etiqueta'])}</p>
-      <h2 class="h2">{e(C['gente']['titulo'])}</h2>
-    </div>
-    <p class="lead">{e(C['gente']['texto'])}</p>
-    <p style="margin-top:18px"><span class="pendiente">{e(C['gente']['pendiente'])}</span></p>
-  </div>
-</section>
-
 <section class="pad fondo-cal2">
   <div class="u">
     <div class="encabezado">
@@ -1615,7 +1604,7 @@ def llms_txt(cfg, props, urls):
 
 ## Villa Chimo
 
-- Casa completa frente al mar en Chimo. Se renta entera, una sola reserva a la vez.
+- Casa completa frente al mar en Chimo. Se renta completa, una sola reserva a la vez: no se comparte con nadie.
 - {f.get('recamaras', 2)} recámaras ({f.get('camas', '')}), {f.get('banos', '2.5')} baños, recomendada para {f.get('huespedes', 4)} personas.
 - Alberca privada, vista al océano, terraza, chimenea exterior, acceso a playa, cocina equipada, área de asador.
 - Wifi, aire acondicionado, planta generadora de luz, seguridad, servicio de limpieza al tercer día. Pet friendly.
@@ -1649,7 +1638,7 @@ def llms_txt(cfg, props, urls):
 - The last panga leaves in the afternoon, so nobody leaves the village after dark.
 - The village has a health post but rarely a doctor on site. The nearest hospital is in Puerto Vallarta. There is no ATM, no pharmacy and no supermarket. Bring cash in pesos.
 - The area is jungle. Insects get in and occasionally a scorpion. Guests allergic to scorpion stings should say so when booking.
-- Villa Chimo: 2 bedrooms, 1.5 bathrooms, recommended for 4 guests, private pool at ambient temperature, solar water heater, direct ocean view, terrace, outdoor fireplace, beach access, equipped kitchen, grill, Wi-Fi, air conditioning, backup power generator, housekeeping on the third day, pet friendly. Rented whole, one booking at a time.
+- Villa Chimo: 2 bedrooms, 1.5 bathrooms, recommended for 4 guests, private pool at ambient temperature, solar water heater, direct ocean view, terrace, outdoor fireplace, beach access, equipped kitchen, grill, Wi-Fi, air conditioning, backup power generator, housekeeping on the third day, pet friendly. Rented as a whole house, one booking at a time, never shared.
 - Rate: {precio_en}. 50 % deposit on booking by bank transfer, Zelle or PayPal; balance in cash on arrival. Bookings are non-refundable but can be moved to another date in the following months.
 - Humpback whale season in Banderas Bay runs December 8 to March 23, per Mexico's federal gazette.
 - English pages: {base}en/

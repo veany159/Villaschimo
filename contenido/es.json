@@ -169,7 +169,7 @@
     "pueblo": {
       "etiqueta": "El pueblo",
       "titulo": "Chimo",
-      "texto": "Doscientas ochenta personas, una playa que casi siempre está sola, y el ruido de las pangas saliendo a las seis de la mañana. Aquí se vive del pulpo. No hay carretera pavimentada hasta el pueblo, y por eso sigue siendo así.",
+      "texto": "Chimo es un pueblo de pescadores de doscientas ochenta personas, en el municipio de Cabo Corrientes, al sur de Puerto Vallarta. La playa está casi siempre sola y la vida del pueblo sigue girando alrededor de la pesca.\n\nSe come marisco del día a pie de playa, en Socios o en Sunset, con el Pacífico enfrente. No hay carretera pavimentada hasta aquí, y eso es justo lo que lo mantiene así: una de las playas de Jalisco a las que todavía no llega el turismo.",
       "enlace": "Conocer el pueblo y a su gente"
     },
     "experiencias": {
@@ -391,12 +391,6 @@
       "intro": "Preferimos decirlo antes y no que te enteres al llegar.",
       "hay_titulo": "Sí hay",
       "no_hay_titulo": "No hay"
-    },
-    "gente": {
-      "etiqueta": "La gente",
-      "titulo": "Quiénes viven en Chimo",
-      "texto": "Esta sección va a llevar los retratos y los nombres de la gente del pueblo: quién te lleva en panga, quién cocina, quién sube a las cascadas. Es lo único que ninguna otra casa de la costa puede copiar, y por eso preferimos hacerlo bien y no con prisa.",
-      "pendiente": "Sesión de fotos pendiente."
     },
     "alrededores": {
       "etiqueta": "Alrededores",
@@ -661,8 +655,8 @@
   },
   "publico": {
     "etiqueta": "Para quién es",
-    "titulo": "Quien viene a que no pase nada",
-    "texto": "La casa se renta entera, así que da lo mismo si son dos o cuatro. Esto es lo que más se repite entre quienes nos escriben.",
+    "titulo": "Para el plan con el que vengas",
+    "texto": "La casa se renta completa, así que tendrás privacidad: no hay cuartos al lado ni alberca compartida, y da lo mismo si son dos o cuatro. Vengan con quien vengan, el lugar es de ustedes mientras estén. Esto es lo que más se repite entre quienes nos escriben.",
     "items": [
       "Familias",
       "Parejas y lunas de miel",
