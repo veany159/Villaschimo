@@ -743,6 +743,11 @@
     "recamaras": "Bedrooms and bath",
     "cocina": "Kitchen and dining",
     "estancias": "Living areas",
-    "fuera": "The house outside"
+    "fuera": "The house outside",
+    "vista": "The view",
+    "sala": "Living and dining",
+    "recamara": "Bedroom and bath",
+    "detalles": "Details",
+    "cocina-depa": "Kitchen"
   }
 }

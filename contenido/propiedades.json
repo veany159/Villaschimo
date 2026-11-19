@@ -286,8 +286,8 @@
     "es": {
       "nombre": "Depa Vallarta",
       "lugar": "Nuevo Vallarta, Nayarit",
-      "resumen": "Un departamento nuestro en Nuevo Vallarta, pensado como casa puente antes y después de Chimo. Se renta por separado y sujeto a disponibilidad.",
-      "historia": "La última panga a Chimo sale por la tarde, así que casi nadie llega el mismo día que aterriza. Para eso existe este departamento: para no perder un día de viaje.\n\nEs un alojamiento aparte, con su propio calendario. No va incluido con Villa Chimo y no siempre está disponible, así que lo primero es preguntar por las fechas.",
+      "resumen": "Nuestro departamento en Nuevo Vallarta, para dos personas. Lo compartimos cuando no lo usamos, así que conviene revisar disponibilidad.",
+      "historia": "También tenemos un departamento en Nuevo Vallarta, y nos gusta compartirlo cuando no lo estamos usando. Es para dos personas, con el mar enfrente y el balcón que mira a las albercas y a las palmeras.\n\nComo es nuestro y lo ocupamos, no siempre está libre: por eso lo primero es revisar la disponibilidad de tus fechas. Se renta por separado y no va incluido con Villa Chimo.\n\nLa última panga a Chimo sale por la tarde, así que casi nadie llega el mismo día que aterriza. Para eso funciona tan bien: para no perder un día de viaje, ni a la ida ni a la vuelta.",
       "amenidades": [
         {
           "grupo": "El departamento",
@@ -318,20 +318,39 @@
           "Por confirmar"
         ],
         "pendientes": [
-          "Colonia",
-          "Capacidad",
           "Amenidades",
-          "Precio por noche",
-          "Fotografías"
+          "Precio por noche"
         ]
       },
-      "titulo_seo": "Depa Vallarta: la casa puente antes de ir a Chimo"
+      "titulo_seo": "Depa Vallarta: la casa puente antes de ir a Chimo",
+      "galeria_alt": {
+        "depa-vista-albercas": "Vista desde el balcón del departamento, sobre las albercas y las palmeras de Nuevo Vallarta",
+        "depa-balcon-mar": "Balcón del departamento con mesa y sombrilla, frente al Pacífico",
+        "depa-vista-mar": "El mar abierto visto desde el balcón del departamento en Nuevo Vallarta",
+        "depa-balcon-mesa": "Mesa de hierro y sillas azules en el balcón, con la puerta corrediza abierta",
+        "depa-sala-completa": "Sala del departamento con sofá, mesa de madera maciza y repisas con recuerdos de mar",
+        "depa-sala-mesa": "Mesa larga de madera maciza junto al sofá, en la sala del departamento",
+        "depa-sala-comedor": "Sala y comedor del departamento, con la cocina y el timón de madera al fondo",
+        "depa-sala-timon": "Rincón de la sala con un timón de barco, sillones de mimbre y mesa redonda",
+        "depa-sala-sillones": "Sillones de mimbre con cojines rojos y el tapete redondo de la sala",
+        "depa-sala-tocadiscos": "Rincón de la sala con tocadiscos, cojines rojos y repisas con figuras",
+        "depa-recamara": "Recámara del departamento con cama de madera, muro turquesa y talavera enmarcada",
+        "depa-bano": "Baño del departamento con regadera de cristal y lavabo de talavera",
+        "depa-cocina-mar": "Cocina del departamento con la puerta del balcón abierta al mar",
+        "depa-cocina": "Cocina equipada del departamento, con azulejo y alacenas de madera",
+        "depa-recibidor": "Recibidor del departamento con consola de madera y cuadro de barcos",
+        "depa-silla": "Sillón de mimbre con cojín amarillo junto al tocadiscos",
+        "depa-lampara": "Lámpara de metal colgando sobre la mesa, con un cuadro antiguo detrás",
+        "depa-ventilador": "Ventilador de mesa antiguo sobre una pila de libros",
+        "depa-reloj-arena": "Reloj de arena de latón sobre la mesa de la sala",
+        "depa-letrero": "Letrero de madera en la entrada que dice Show me the way to go home"
+      }
     },
     "en": {
       "nombre": "Depa Vallarta",
       "lugar": "Nuevo Vallarta, Nayarit",
-      "resumen": "An apartment of ours in Nuevo Vallarta, a bridge house before and after Chimo. Rented separately and subject to availability.",
-      "historia": "The last boat to Chimo leaves in the afternoon, so almost nobody arrives the same day they land. That is what this apartment is for: so you do not lose a day of your trip.\n\nIt is a separate place with its own calendar. It does not come with Villa Chimo and it is not always available, so the first step is to ask about dates.",
+      "resumen": "Our apartment in Nuevo Vallarta, for two. We share it when we are not using it, so availability is worth checking first.",
+      "historia": "We also have an apartment in Nuevo Vallarta, and we like to share it when we are not using it. It sleeps two, with the ocean in front and a balcony looking over the pools and the palms.\n\nBecause it is ours and we use it, it is not always free: the first step is to check availability for your dates. It is rented separately and does not come with Villa Chimo.\n\nThe last boat to Chimo leaves in the afternoon, so almost nobody arrives the same day they land. That is what makes it work: you do not lose a day of your trip, coming or going.",
       "amenidades": [
         {
           "grupo": "The apartment",
@@ -362,22 +381,40 @@
           "To be confirmed"
         ],
         "pendientes": [
-          "Neighborhood",
-          "Capacity",
           "Amenities",
-          "Nightly rate",
-          "Photographs"
+          "Nightly rate"
         ]
       },
-      "titulo_seo": "Depa Vallarta: the bridge house before Chimo"
+      "titulo_seo": "Depa Vallarta: the bridge house before Chimo",
+      "galeria_alt": {
+        "depa-vista-albercas": "The view from the apartment balcony, over the pools and palms of Nuevo Vallarta",
+        "depa-balcon-mar": "The apartment balcony with a table and parasol, facing the Pacific",
+        "depa-vista-mar": "Open ocean seen from the apartment balcony in Nuevo Vallarta",
+        "depa-balcon-mesa": "An iron table and blue chairs on the balcony, with the sliding door open",
+        "depa-sala-completa": "The apartment living room with a sofa, a solid wood table and shelves of sea keepsakes",
+        "depa-sala-mesa": "A long solid wood table beside the sofa in the apartment living room",
+        "depa-sala-comedor": "Living and dining area, with the kitchen and a wooden ship's wheel beyond",
+        "depa-sala-timon": "A corner of the living room with a ship's wheel, wicker chairs and a round table",
+        "depa-sala-sillones": "Wicker chairs with red cushions and the round rug in the living room",
+        "depa-sala-tocadiscos": "A corner of the living room with a record player, red cushions and shelves of figures",
+        "depa-recamara": "The apartment bedroom with a wooden bed, turquoise wall and framed talavera",
+        "depa-bano": "The apartment bathroom with a glass shower and a talavera basin",
+        "depa-cocina-mar": "The apartment kitchen with the balcony door open to the sea",
+        "depa-cocina": "The apartment's equipped kitchen, with tile and wooden cabinets",
+        "depa-recibidor": "The entrance hall with a wooden console and a painting of boats",
+        "depa-silla": "A wicker armchair with a yellow cushion beside the record player",
+        "depa-lampara": "A metal lamp hanging over the table, with an old painting behind it",
+        "depa-ventilador": "An antique desk fan on a stack of books",
+        "depa-reloj-arena": "A brass hourglass on the living room table",
+        "depa-letrero": "A wooden sign by the door reading Show me the way to go home"
+      }
     },
-    "galeria": [],
-    "portada": "",
+    "portada": "depa-vista-albercas",
     "ficha": {
-      "recamaras": 0,
-      "banos": "0",
-      "huespedes": 0,
-      "huespedes_max": 0,
+      "recamaras": 1,
+      "banos": "1",
+      "huespedes": 2,
+      "huespedes_max": 2,
       "minimo_noches_baja": 2,
       "minimo_noches_alta": 2
     },
@@ -395,6 +432,53 @@
     "proximamente": {
       "es": "Se renta por separado y sujeto a disponibilidad. Pregúntanos por tus fechas.",
       "en": "Rented separately and subject to availability. Ask us about your dates."
-    }
+    },
+    "galeria_grupos": [
+      {
+        "id": "vista",
+        "fotos": [
+          "depa-vista-albercas",
+          "depa-balcon-mar",
+          "depa-vista-mar",
+          "depa-balcon-mesa"
+        ]
+      },
+      {
+        "id": "sala",
+        "fotos": [
+          "depa-sala-completa",
+          "depa-sala-mesa",
+          "depa-sala-comedor",
+          "depa-sala-timon",
+          "depa-sala-sillones",
+          "depa-sala-tocadiscos"
+        ]
+      },
+      {
+        "id": "recamara",
+        "fotos": [
+          "depa-recamara",
+          "depa-bano"
+        ]
+      },
+      {
+        "id": "cocina-depa",
+        "fotos": [
+          "depa-cocina-mar",
+          "depa-cocina"
+        ]
+      },
+      {
+        "id": "detalles",
+        "fotos": [
+          "depa-recibidor",
+          "depa-silla",
+          "depa-lampara",
+          "depa-ventilador",
+          "depa-reloj-arena",
+          "depa-letrero"
+        ]
+      }
+    ]
   }
 }

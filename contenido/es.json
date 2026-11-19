@@ -743,6 +743,11 @@
     "recamaras": "Recámaras y baño",
     "cocina": "Cocina y comedor",
     "estancias": "Sala y pasillos",
-    "fuera": "La casa por fuera"
+    "fuera": "La casa por fuera",
+    "vista": "La vista",
+    "sala": "Sala y comedor",
+    "recamara": "Recámara y baño",
+    "detalles": "Detalles",
+    "cocina-depa": "Cocina"
   }
 }

@@ -1566,11 +1566,14 @@ def limpiar():
 
 
 def favicon():
-    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">'
-           '<rect width="64" height="64" fill="#EFEAE0"/>'
-           '<path d="M6 44 L22 24 L34 38 L44 28 L58 44 Z" fill="#3C4F33"/>'
-           '<path d="M0 46 h64 v18 H0 z" fill="#173F52"/>'
-           '<circle cx="47" cy="17" r="6" fill="#A3502F"/></svg>')
+    """Techo de teja sobre muro blanco y puerta de arco: lo primero que se ve
+    al llegar, y lo unico de la casa que sigue leyendose a 16 pixeles."""
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">'
+           '<rect width="32" height="32" rx="5" fill="#F5F3EF"/>'
+           '<path d="M7 17h18v10H7z" fill="#FFFFFF"/>'
+           '<path d="M13.2 27v-4.6a2.8 2.8 0 0 1 5.6 0V27z" fill="#173F52"/>'
+           '<path d="M16 4.2 3.4 15.4h25.2z" fill="#A3502F"/>'
+           '<path d="M3.4 15.4h25.2v2.3H3.4z" fill="#8C4323"/></svg>')
     escribir(os.path.join(RAIZ, "assets", "img", "favicon.svg"), svg)
 
 
