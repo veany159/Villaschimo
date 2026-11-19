@@ -136,7 +136,14 @@ button{font:inherit;color:inherit}
 /* ------------------------------------------------------------------ hero */
 .hero{position:relative;min-height:min(640px,86vh);display:flex;align-items:flex-end;overflow:hidden;background:var(--mar)}
 .hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero .velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,63,82,.44) 0%,rgba(23,63,82,.08) 36%,rgba(20,18,15,.74) 100%)}
+/* dos capas: una de lado, que sostiene la columna de texto aunque la foto
+   sea clara ahi, y la de siempre de arriba abajo */
+.hero .velo{position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(14,28,36,.62) 0%,rgba(14,28,36,.46) 32%,rgba(14,28,36,.20) 58%,rgba(14,28,36,0) 82%),
+  linear-gradient(180deg,rgba(23,63,82,.40) 0%,rgba(23,63,82,.10) 34%,rgba(20,18,15,.76) 100%)}
+@media (max-width:860px){
+  .hero .velo{background:linear-gradient(180deg,rgba(23,63,82,.50) 0%,rgba(20,18,15,.44) 38%,rgba(20,18,15,.82) 100%)}
+}
 .hero .u{position:relative;width:100%;padding-top:96px;padding-bottom:60px;color:var(--blanco)}
 .hero .ubica{
   font-family:var(--sans);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
@@ -144,6 +151,8 @@ button{font:inherit;color:inherit}
 }
 .hero h1{font-size:clamp(40px,6.4vw,82px);letter-spacing:-.01em;line-height:1.03;max-width:17ch}
 .hero .sub{max-width:48ch;font-size:clamp(15.5px,1.7vw,18.5px);margin-top:22px;color:rgba(251,249,244,.94)}
+/* por si la foto trae un claro justo detras de una linea */
+.hero h1,.hero .sub,.hero .ubica{text-shadow:0 1px 26px rgba(10,20,26,.5)}
 .hero .acciones{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
 .hero.chico{min-height:min(430px,60vh)}
 .hero.chico h1{font-size:clamp(38px,5.6vw,68px);max-width:20ch}

@@ -328,22 +328,26 @@
         "depa-balcon-mar": "Balcón del departamento con mesa y sombrilla, frente al Pacífico",
         "depa-vista-mar": "El mar abierto visto desde el balcón del departamento en Nuevo Vallarta",
         "depa-balcon-mesa": "Mesa de hierro y sillas azules en el balcón, con la puerta corrediza abierta",
-        "depa-sala-completa": "Sala del departamento con sofá, mesa de madera maciza y repisas con recuerdos de mar",
-        "depa-sala-mesa": "Mesa larga de madera maciza junto al sofá, en la sala del departamento",
-        "depa-sala-comedor": "Sala y comedor del departamento, con la cocina y el timón de madera al fondo",
-        "depa-sala-timon": "Rincón de la sala con un timón de barco, sillones de mimbre y mesa redonda",
+        "depa-playa": "La playa de Nuevo Vallarta vista desde arriba, con un paracaídas sobre la arena",
         "depa-sala-sillones": "Sillones de mimbre con cojines rojos y el tapete redondo de la sala",
-        "depa-sala-tocadiscos": "Rincón de la sala con tocadiscos, cojines rojos y repisas con figuras",
-        "depa-recamara": "Recámara del departamento con cama de madera, muro turquesa y talavera enmarcada",
-        "depa-bano": "Baño del departamento con regadera de cristal y lavabo de talavera",
-        "depa-cocina-mar": "Cocina del departamento con la puerta del balcón abierta al mar",
-        "depa-cocina": "Cocina equipada del departamento, con azulejo y alacenas de madera",
-        "depa-recibidor": "Recibidor del departamento con consola de madera y cuadro de barcos",
-        "depa-silla": "Sillón de mimbre con cojín amarillo junto al tocadiscos",
-        "depa-lampara": "Lámpara de metal colgando sobre la mesa, con un cuadro antiguo detrás",
-        "depa-ventilador": "Ventilador de mesa antiguo sobre una pila de libros",
+        "depa-tocadiscos": "Tocadiscos y una colección de discos de vinil en la repisa de la sala",
+        "depa-sala-completa": "Sala del departamento con sofá, mesa de madera maciza y repisas con recuerdos de mar",
         "depa-reloj-arena": "Reloj de arena de latón sobre la mesa de la sala",
-        "depa-letrero": "Letrero de madera en la entrada que dice Show me the way to go home"
+        "depa-sala-comedor": "Sala y comedor del departamento, con la cocina y el timón de madera al fondo",
+        "depa-silla": "Sillón de mimbre con cojín amarillo junto al tocadiscos",
+        "depa-sala-mesa": "Mesa larga de madera maciza junto al sofá, en la sala del departamento",
+        "depa-fraile": "Repisa de la sala con una figura de fraile tallada, un calendario azteca y relojes antiguos",
+        "depa-sala-timon": "Rincón de la sala con un timón de barco, sillones de mimbre y mesa redonda",
+        "depa-ventilador": "Ventilador de mesa antiguo sobre una pila de libros",
+        "depa-sala-tocadiscos": "Rincón de la sala con tocadiscos, cojines rojos y repisas con figuras",
+        "depa-lampara": "Lámpara de metal colgando sobre la mesa, con un cuadro antiguo detrás",
+        "depa-recibidor": "Recibidor del departamento con consola de madera y cuadro de barcos",
+        "depa-letrero": "Letrero de madera en la entrada que dice Show me the way to go home",
+        "depa-recamara-toallas": "Toallas enrolladas sobre la cama, con la cómoda de madera y el muro turquesa al fondo",
+        "depa-bano": "Baño del departamento con regadera de cristal y lavabo de talavera",
+        "depa-recamara": "Recámara del departamento con cama de madera, muro turquesa y talavera enmarcada",
+        "depa-cocina-mar": "Cocina del departamento con la puerta del balcón abierta al mar",
+        "depa-cocina": "Cocina equipada del departamento, con azulejo y alacenas de madera"
       }
     },
     "en": {
@@ -391,22 +395,26 @@
         "depa-balcon-mar": "The apartment balcony with a table and parasol, facing the Pacific",
         "depa-vista-mar": "Open ocean seen from the apartment balcony in Nuevo Vallarta",
         "depa-balcon-mesa": "An iron table and blue chairs on the balcony, with the sliding door open",
-        "depa-sala-completa": "The apartment living room with a sofa, a solid wood table and shelves of sea keepsakes",
-        "depa-sala-mesa": "A long solid wood table beside the sofa in the apartment living room",
-        "depa-sala-comedor": "Living and dining area, with the kitchen and a wooden ship's wheel beyond",
-        "depa-sala-timon": "A corner of the living room with a ship's wheel, wicker chairs and a round table",
+        "depa-playa": "Nuevo Vallarta beach seen from above, with a parasail over the sand",
         "depa-sala-sillones": "Wicker chairs with red cushions and the round rug in the living room",
-        "depa-sala-tocadiscos": "A corner of the living room with a record player, red cushions and shelves of figures",
-        "depa-recamara": "The apartment bedroom with a wooden bed, turquoise wall and framed talavera",
-        "depa-bano": "The apartment bathroom with a glass shower and a talavera basin",
-        "depa-cocina-mar": "The apartment kitchen with the balcony door open to the sea",
-        "depa-cocina": "The apartment's equipped kitchen, with tile and wooden cabinets",
-        "depa-recibidor": "The entrance hall with a wooden console and a painting of boats",
-        "depa-silla": "A wicker armchair with a yellow cushion beside the record player",
-        "depa-lampara": "A metal lamp hanging over the table, with an old painting behind it",
-        "depa-ventilador": "An antique desk fan on a stack of books",
+        "depa-tocadiscos": "A record player and a vinyl collection on the living room shelf",
+        "depa-sala-completa": "The apartment living room with a sofa, a solid wood table and shelves of sea keepsakes",
         "depa-reloj-arena": "A brass hourglass on the living room table",
-        "depa-letrero": "A wooden sign by the door reading Show me the way to go home"
+        "depa-sala-comedor": "Living and dining area, with the kitchen and a wooden ship's wheel beyond",
+        "depa-silla": "A wicker armchair with a yellow cushion beside the record player",
+        "depa-sala-mesa": "A long solid wood table beside the sofa in the apartment living room",
+        "depa-fraile": "A living room shelf with a carved friar, an Aztec calendar and antique clocks",
+        "depa-sala-timon": "A corner of the living room with a ship's wheel, wicker chairs and a round table",
+        "depa-ventilador": "An antique desk fan on a stack of books",
+        "depa-sala-tocadiscos": "A corner of the living room with a record player, red cushions and shelves of figures",
+        "depa-lampara": "A metal lamp hanging over the table, with an old painting behind it",
+        "depa-recibidor": "The entrance hall with a wooden console and a painting of boats",
+        "depa-letrero": "A wooden sign by the door reading Show me the way to go home",
+        "depa-recamara-toallas": "Rolled towels on the bed, with the wooden dresser and turquoise wall behind",
+        "depa-bano": "The apartment bathroom with a glass shower and a talavera basin",
+        "depa-recamara": "The apartment bedroom with a wooden bed, turquoise wall and framed talavera",
+        "depa-cocina-mar": "The apartment kitchen with the balcony door open to the sea",
+        "depa-cocina": "The apartment's equipped kitchen, with tile and wooden cabinets"
       }
     },
     "portada": "depa-vista-albercas",
@@ -440,25 +448,35 @@
           "depa-vista-albercas",
           "depa-balcon-mar",
           "depa-vista-mar",
-          "depa-balcon-mesa"
+          "depa-balcon-mesa",
+          "depa-playa"
         ]
       },
       {
         "id": "sala",
         "fotos": [
-          "depa-sala-completa",
-          "depa-sala-mesa",
-          "depa-sala-comedor",
-          "depa-sala-timon",
           "depa-sala-sillones",
-          "depa-sala-tocadiscos"
+          "depa-tocadiscos",
+          "depa-sala-completa",
+          "depa-reloj-arena",
+          "depa-sala-comedor",
+          "depa-silla",
+          "depa-sala-mesa",
+          "depa-fraile",
+          "depa-sala-timon",
+          "depa-ventilador",
+          "depa-sala-tocadiscos",
+          "depa-lampara",
+          "depa-recibidor",
+          "depa-letrero"
         ]
       },
       {
         "id": "recamara",
         "fotos": [
-          "depa-recamara",
-          "depa-bano"
+          "depa-recamara-toallas",
+          "depa-bano",
+          "depa-recamara"
         ]
       },
       {
@@ -466,17 +484,6 @@
         "fotos": [
           "depa-cocina-mar",
           "depa-cocina"
-        ]
-      },
-      {
-        "id": "detalles",
-        "fotos": [
-          "depa-recibidor",
-          "depa-silla",
-          "depa-lampara",
-          "depa-ventilador",
-          "depa-reloj-arena",
-          "depa-letrero"
         ]
       }
     ]
